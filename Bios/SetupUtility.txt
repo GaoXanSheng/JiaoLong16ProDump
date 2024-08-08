@@ -1,0 +1,1769 @@
+                                UEFI Protocol Detected
+--------------------------------------------------------------------------------
+
+
+                                String Packages
+--------------------------------------------------------------------------------
+Offset:		Language:
+--------------------------------------------------------------------------------
+0xD1888		en-US (0x0)
+0xD554A		zh-CN (0x1)
+0x252C38		en-US (0x2)
+0x257E8F		zh-CN (0x3)
+
+
+                                   Form Sets
+--------------------------------------------------------------------------------
+Offset:		Title:
+--------------------------------------------------------------------------------
+0xD6AB8		  (0xF from string package 0x2)
+0xD7DE8		  (0xF from string package 0x2)
+0x259568		Main (0x5 from string package 0x2)
+0x25A778		Boot (0x4D from string package 0x2)
+0x25C268		Security (0x2D from string package 0x2)
+0x25DC98		Exit (0x93 from string package 0x2)
+
+
+                         Internal Forms Representation
+--------------------------------------------------------------------------------
+Offset:		Instruction:
+--------------------------------------------------------------------------------
+0xD6ABC Form Set:   [A6712873-925F-46C6-90B4-A40F86A0917B], ClassGuid0 [9F85453E-2F03-4989-AD3B-4A840791AF3A] {0E A7 73 28 71 A6 5F 92 C6 46 90 B4 A4 0F 86 A0 91 7B 0F 00 06 00 01 3E 45 85 9F 03 2F 89 49 AD 3B 4A 84 07 91 AF 3A}
+0xD6AE3 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0xD6AF8 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 05 00}
+0xD6B0D 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0xD6B13 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0xD6B19 	Image: Id: 0x1 {04 04 01 00}
+0xD6B1D 	VarStore: VarStoreId: 0x1234 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0x2BC, Name: SystemConfig {24 23 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 34 12 BC 02 53 79 73 74 65 6D 43 6F 6E 66 69 67 00}
+0xD6B40 	Form: Enabled, FormId: 0x1 {01 86 01 00 6E 00}
+0xD6B46 		Gray Out If {19 82}
+0xD6B48 			QuestionId: 0xC equals value 0x2 {12 86 0C 00 02 00}
+0xD6B4E 				QuestionId: 0xB equals value 0x1 {12 06 0B 00 01 00}
+0xD6B54 				And {15 02}
+0xD6B56 			End {29 02}
+0xD6B58 			Suppress If {0A 82}
+0xD6B5A 				QuestionId: 0x1 equals value in list (0x0, 0x1) {14 0A 01 00 02 00 00 00 01 00}
+0xD6B64 				One Of: ACPI Selection, VarStoreInfo (VarOffset/VarName): 0x84, VarStore: 0x1234, QuestionId: 0x1, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 6F 00 70 00 01 00 34 12 84 00 00 10 00 01 00}
+0xD6B75 					One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD6B7C 					One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD6B83 				End One Of {29 02}
+0xD6B85 			End If {29 02}
+0xD6B87 		End If {29 02}
+0xD6B89 		Gray Out If {19 82}
+0xD6B8B 			QuestionId: 0xC equals value 0x2 {12 86 0C 00 02 00}
+0xD6B91 				QuestionId: 0xB equals value 0x1 {12 06 0B 00 01 00}
+0xD6B97 				And {15 02}
+0xD6B99 			End {29 02}
+0xD6B9B 			Suppress If {0A 82}
+0xD6B9D 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0xD6BA7 				One Of: Enabled and Activated, VarStoreInfo (VarOffset/VarName): 0xFE, VarStore: 0x1234, QuestionId: 0x2, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 BC 00 BD 00 02 00 34 12 FE 00 00 10 00 01 00}
+0xD6BB8 					One Of Option: [Not Detected], Value (8 bit): 0x0 {09 07 09 00 00 00 00}
+0xD6BBF 					One Of Option: BIOS Version, Value (8 bit): 0x1 (default) {09 07 07 00 10 00 01}
+0xD6BC6 				End One Of {29 02}
+0xD6BC8 			End If {29 02}
+0xD6BCA 			Suppress If {0A 82}
+0xD6BCC 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0xD6BD6 				One Of: Acpi5.0, VarStoreInfo (VarOffset/VarName): 0x88, VarStore: 0x1234, QuestionId: 0x3, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 73 00 74 00 03 00 34 12 88 00 00 10 00 02 00}
+0xD6BE7 					One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD6BEE 					One Of Option: Acpi6.2, Value (8 bit): 0x1 {09 07 76 00 00 00 01}
+0xD6BF5 					One Of Option: Acpi6.1, Value (8 bit): 0x2 {09 07 75 00 00 00 02}
+0xD6BFC 				End One Of {29 02}
+0xD6BFE 			End If {29 02}
+0xD6C00 		End If {29 02}
+0xD6C02 		One Of: TPM Hardware Supported Hash Algorithm: SHA1, SHA256, SHA384, SHA512, SM3_256, VarStoreInfo (VarOffset/VarName): 0x254, VarStore: 0x1234, QuestionId: 0x4, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 F5 00 F6 00 04 00 34 12 54 02 00 10 00 01 00}
+0xD6C13 			One Of Option: BIOS Supported Hash Algorithm, Value (8 bit): 0x0 (default) {09 07 F7 00 10 00 00}
+0xD6C1A 			One Of Option: BIOS Supported Hash Algorithm: SHA1, SHA256, SHA384, SHA512, SM3_256, Value (8 bit): 0x1 {09 07 F8 00 00 00 01}
+0xD6C21 		End One Of {29 02}
+0xD6C23 		One Of: , VarStoreInfo (VarOffset/VarName): 0x255, VarStore: 0x1234, QuestionId: 0x5, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 F9 00 FA 00 05 00 34 12 55 02 00 10 00 02 00}
+0xD6C34 			One Of Option: PCR Bank: SHA256, Value (8 bit): 0x0 {09 07 FC 00 00 00 00}
+0xD6C3B 			One Of Option: TCG2 Request PCR Bank: SHA1, Value (8 bit): 0x1 {09 07 FB 00 00 00 01}
+0xD6C42 			One Of Option: TCG2 Request PCR Bank: SHA256, Value (8 bit): 0x2 (default) {09 07 FD 00 10 00 02}
+0xD6C49 		End One Of {29 02}
+0xD6C4B 		One Of: PCR Bank: SHA384, VarStoreInfo (VarOffset/VarName): 0x256, VarStore: 0x1234, QuestionId: 0x6, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 FE 00 FF 00 06 00 34 12 56 02 00 10 00 01 00}
+0xD6C5C 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD6C63 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD6C6A 		End One Of {29 02}
+0xD6C6C 		One Of: PCR Bank: SHA512, VarStoreInfo (VarOffset/VarName): 0x257, VarStore: 0x1234, QuestionId: 0x7, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 00 01 01 01 07 00 34 12 57 02 00 10 00 01 00}
+0xD6C7D 			One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD6C84 			One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD6C8B 		End One Of {29 02}
+0xD6C8D 		Gray Out If {19 82}
+0xD6C8F 			True {46 02}
+0xD6C91 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 17 10}
+0xD6CA6 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 18 10}
+0xD6CBB 		End If {29 02}
+0xD6CBD 		Gray Out If {19 82}
+0xD6CBF 			QuestionId: 0xC equals value 0x2 {12 86 0C 00 02 00}
+0xD6CC5 				QuestionId: 0xB equals value 0x1 {12 06 0B 00 01 00}
+0xD6CCB 				And {15 02}
+0xD6CCD 			End {29 02}
+0xD6CCF 			Suppress If {0A 82}
+0xD6CD1 				QuestionId: 0x3 equals value 0x0 {12 06 03 00 00 00}
+0xD6CD7 				Time: Acpi6.3, VarStoreInfo (VarOffset/VarName): 0x89, VarStore: 0x1234, QuestionId: 0x8 {1B 8E 77 00 0D 00 08 00 34 12 89 00 00 00}
+0xD6CE5 					Default: DefaultId: 0x0, Value (Time) {5B 08 00 00 05 00 00 00}
+0xD6CED 				End {29 02}
+0xD6CEF 			End If {29 02}
+0xD6CF1 		End If {29 02}
+0xD6CF3 		Gray Out If {19 82}
+0xD6CF5 			QuestionId: 0xC equals value 0x2 {12 86 0C 00 02 00}
+0xD6CFB 				QuestionId: 0xB equals value 0x1 {12 06 0B 00 01 00}
+0xD6D01 				And {15 02}
+0xD6D03 			End {29 02}
+0xD6D05 			Suppress If {0A 82}
+0xD6D07 				QuestionId: 0x3 equals value in list (0x0, 0x1) {14 0A 03 00 02 00 00 00 01 00}
+0xD6D11 				Numeric: Advance, VarStoreInfo (VarOffset/VarName): 0x8C, VarStore: 0x1234, QuestionId: 0x9, Size: 1, Min: 0x1, Max 0x1F, Step: 0x1 {07 91 78 00 0E 00 09 00 34 12 8C 00 00 10 01 1F 01}
+0xD6D22 					Default: DefaultId: 0x0, Value (8 bit): 0x1 {5B 06 00 00 00 01}
+0xD6D28 				End {29 02}
+0xD6D2A 			End If {29 02}
+0xD6D2C 		End If {29 02}
+0xD6D2E 		Suppress If {0A 82}
+0xD6D30 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0xD6D3A 			Gray Out If {19 82}
+0xD6D3C 				QuestionId: 0xC equals value 0x2 {12 86 0C 00 02 00}
+0xD6D42 					QuestionId: 0xB equals value 0x1 {12 06 0B 00 01 00}
+0xD6D48 					And {15 02}
+0xD6D4A 				End {29 02}
+0xD6D4C 				One Of: Acpi3.0, VarStoreInfo (VarOffset/VarName): 0x17A, VarStore: 0x1234, QuestionId: 0xA, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 71 00 72 00 0A 00 34 12 7A 01 00 10 00 01 00}
+0xD6D5D 					One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD6D64 					One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD6D6B 				End One Of {29 02}
+0xD6D6D 			End If {29 02}
+0xD6D6F 		End If {29 02}
+0xD6D71 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD6D78 		End {29 02}
+0xD6D7A 		Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 94 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 07 00}
+0xD6D8E 		End {29 02}
+0xD6D90 		Disable If {1E 82}
+0xD6D92 			True {46 02}
+0xD6D94 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0x1234, QuestionId: 0xB, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0B 00 34 12 81 00 00 10 00 FF 00}
+0xD6DA5 			End {29 02}
+0xD6DA7 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x80, VarStore: 0x1234, QuestionId: 0xC, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0C 00 34 12 80 00 00 10 00 FF 00}
+0xD6DB8 			End {29 02}
+0xD6DBA 		End If {29 02}
+0xD6DBC 	End Form {29 02}
+0xD6DBE End Form Set {29 02}
+0xD7DEC Form Set:   [C6D4769E-7F48-4D2A-98E9-87ADCCF35CCC], ClassGuid0 [9F85453E-2F03-4989-AD3B-4A840791AF3A] {0E A7 9E 76 D4 C6 48 7F 2A 4D 98 E9 87 AD CC F3 5C CC 0F 00 06 00 01 3E 45 85 9F 03 2F 89 49 AD 3B 4A 84 07 91 AF 3A}
+0xD7E13 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0xD7E28 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 05 00}
+0xD7E3D 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0xD7E43 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0xD7E49 	Image: Id: 0x1 {04 04 01 00}
+0xD7E4D 	VarStore: VarStoreId: 0x1234 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0x2BC, Name: SystemConfig {24 23 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 34 12 BC 02 53 79 73 74 65 6D 43 6F 6E 66 69 67 00}
+0xD7E70 	Form:  , FormId: 0x1 {01 86 01 00 0F 00}
+0xD7E76 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD7E7D 		End {29 02}
+0xD7E7F 		Ref: Save Custom Defaults, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1, FormId: 0x20 {0F 0F 9F 00 A0 00 01 00 00 00 FF FF 00 20 00}
+0xD7E8E 		Ref: System Bus Speed, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x2, FormId: 0x21 {0F 0F 10 00 11 00 02 00 00 00 FF FF 00 21 00}
+0xD7E9D 		Ref: System Memory Speed, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x3, FormId: 0x22 {0F 8F 12 00 13 00 03 00 00 00 FF FF 00 22 00}
+0xD7EAC 			Image: Id: 0x3 {04 04 03 00}
+0xD7EB0 		End {29 02}
+0xD7EB2 		Ref: Error Status, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x4, FormId: 0x23 {0F 8F 2A 00 2B 00 04 00 00 00 FF FF 00 23 00}
+0xD7EC1 			Image: Id: 0x4 {04 04 04 00}
+0xD7EC5 		End {29 02}
+0xD7EC7 		Ref: Boot, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x5, FormId: 0x24 {0F 0F 4D 00 4F 00 05 00 00 00 FF FF 00 24 00}
+0xD7ED6 		Ref: MHz, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x6, FormId: 0x25 {0F 8F 14 00 15 00 06 00 00 00 FF FF 00 25 00}
+0xD7EE5 			Image: Id: 0x5 {04 04 05 00}
+0xD7EE9 		End {29 02}
+0xD7EEB 		Ref: Cache RAM, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x7, FormId: 0x26 {0F 0F 16 00 17 00 07 00 00 00 FF FF 00 26 00}
+0xD7EFA 		Ref: Total Memory, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x8, FormId: 0x27 {0F 8F 18 00 19 00 08 00 00 00 FF FF 00 27 00}
+0xD7F09 			Image: Id: 0x6 {04 04 06 00}
+0xD7F0D 		End {29 02}
+0xD7F0F 		Ref: Language, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x9, FormId: 0x28 {0F 8F 1A 00 1B 00 09 00 00 00 FF FF 00 28 00}
+0xD7F1E 			Image: Id: 0x7 {04 04 07 00}
+0xD7F22 		End {29 02}
+0xD7F24 		Ref: Load Custom Defaults., VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xA, FormId: 0x29 {0F 8F 9D 00 9E 00 0A 00 00 00 FF FF 00 29 00}
+0xD7F33 			Image: Id: 0x8 {04 04 08 00}
+0xD7F37 		End {29 02}
+0xD7F39 		One Of: SetPPRequiredForClear_True, VarStoreInfo (VarOffset/VarName): 0x1FE, VarStore: 0x1234, QuestionId: 0xB, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 DD 00 DE 00 0B 00 34 12 FE 01 10 10 00 01 00}
+0xD7F4A 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD7F51 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 30 00 01}
+0xD7F58 		End One Of {29 02}
+0xD7F5A 		One Of: PPRequiredForEnableBlockSID_True, VarStoreInfo (VarOffset/VarName): 0x202, VarStore: 0x1234, QuestionId: 0x5000, Size: 1, Min: 0x0, Max 0xB, Step: 0x0 {05 91 ED 00 EE 00 00 50 34 12 02 02 14 10 00 0B 00}
+0xD7F6B 			One Of Option: PPRequiredForDisableBlockSID_True, Value (8 bit): 0x0 (default) {09 07 EF 00 10 00 00}
+0xD7F72 			One Of Option: PPRequiredForDisableBlockSID_False, Value (8 bit): 0x1 {09 07 F0 00 00 00 01}
+0xD7F79 			One Of Option: TPM Active PCR Hash Algorithm, Value (8 bit): 0x2 {09 07 F1 00 00 00 02}
+0xD7F80 			One Of Option: TPM Active PCR Hash Algorithm: SHA1, SHA256, SHA384, SHA512, SM3_256, Value (8 bit): 0x3 {09 07 F2 00 00 00 03}
+0xD7F87 			One Of Option: , Value (8 bit): 0xA {09 07 F3 00 00 00 0A}
+0xD7F8E 			One Of Option: TPM Hardware Supported Hash Algorithm, Value (8 bit): 0xB {09 07 F4 00 00 00 0B}
+0xD7F95 		End One Of {29 02}
+0xD7F97 		Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 94 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 07 00}
+0xD7FAB 		End {29 02}
+0xD7FAD 	End Form {29 02}
+0xD7FAF 	Form: Save Custom Defaults, FormId: 0x20 {01 86 20 00 9F 00}
+0xD7FB5 		Subtitle: Statement.Prompt: Save Custom Defaults, Flags: 0x0 {02 87 9F 00 00 00 00}
+0xD7FBC 		End {29 02}
+0xD7FBE 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD7FC5 		End {29 02}
+0xD7FC7 		Gray Out If {19 82}
+0xD7FC9 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD7FCF 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD7FD5 				And {15 02}
+0xD7FD7 			End {29 02}
+0xD7FD9 			One Of: Discard Changes, VarStoreInfo (VarOffset/VarName): 0x15A, VarStore: 0x1234, QuestionId: 0xC, Size: 1, Min: 0x0, Max 0x5, Step: 0x0 {05 91 A1 00 A2 00 0C 00 34 12 5A 01 00 10 00 05 00}
+0xD7FEA 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD7FF1 				One Of Option: Invalid password, Value (8 bit): 0x1 {09 07 A3 00 00 00 01}
+0xD7FF8 				One Of Option: Position in Boot Order for Shell,Network and Removables, Value (8 bit): 0x2 {09 07 A4 00 00 00 02}
+0xD7FFF 				One Of Option: First, Value (8 bit): 0x3 (default) {09 07 A5 00 10 00 03}
+0xD8006 				One Of Option: Last, Value (8 bit): 0x4 {09 07 A6 00 00 00 04}
+0xD800D 				One Of Option: [Not Detected], Value (8 bit): 0x5 {09 07 09 00 00 00 05}
+0xD8014 			End One Of {29 02}
+0xD8016 		End If {29 02}
+0xD8018 		Ref: Auto, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xD, FormId: 0x201 {0F 0F A7 00 A8 00 0D 00 00 00 FF FF 00 01 02}
+0xD8027 		Ref: If enabled the system firmware does not initialize keyboard and check for firmware menu key., VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xE, FormId: 0x202 {0F 0F A9 00 AA 00 0E 00 00 00 FF FF 00 02 02}
+0xD8036 		Ref: Enable/Disable to support USB hot key while booting. This will decrease the time needed to boot the system., VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xF, FormId: 0x203 {0F 0F AB 00 AC 00 0F 00 00 00 FF FF 00 03 02}
+0xD8045 		Ref: The number of seconds that the firmware will wait before booting the original default boot selection., VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x10, FormId: 0x204 {0F 0F AD 00 AE 00 10 00 00 00 FF FF 00 04 02}
+0xD8054 		Ref: Enable: if boot to default device fail, it will directly try to boot next device. 
+Disable: if boot to default device fail, it will pop warning message then go into firmware UI., VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x11, FormId: 0x205 {0F 0F AF 00 B0 00 11 00 00 00 FF FF 00 05 02}
+0xD8063 		Ref: TPM 1.2, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x12, FormId: 0x206 {0F 0F B1 00 B2 00 12 00 00 00 FF FF 00 06 02}
+0xD8072 		Ref: Current TPM Device: TPM1.2, or TPM2.0., VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x13, FormId: 0x207 {0F 0F B3 00 B4 00 13 00 00 00 FF FF 00 07 02}
+0xD8081 	End Form {29 02}
+0xD8083 	Form: Auto, FormId: 0x201 {01 86 01 02 A7 00}
+0xD8089 		Subtitle: Statement.Prompt: Auto, Flags: 0x0 {02 87 A7 00 00 00 00}
+0xD8090 		End {29 02}
+0xD8092 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8099 		End {29 02}
+0xD809B 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x15B, VarStore: 0x1234, QuestionId: 0x14, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 14 00 34 12 5B 01 00 10 00 01 00}
+0xD80AC 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD80B3 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD80BA 		End One Of {29 02}
+0xD80BC 	End Form {29 02}
+0xD80BE 	Form: If enabled the system firmware does not initialize keyboard and check for firmware menu key., FormId: 0x202 {01 86 02 02 A9 00}
+0xD80C4 		Subtitle: Statement.Prompt: If enabled the system firmware does not initialize keyboard and check for firmware menu key., Flags: 0x0 {02 87 A9 00 00 00 00}
+0xD80CB 		End {29 02}
+0xD80CD 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD80D4 		End {29 02}
+0xD80D6 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x15F, VarStore: 0x1234, QuestionId: 0x15, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 15 00 34 12 5F 01 00 10 00 01 00}
+0xD80E7 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD80EE 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD80F5 		End One Of {29 02}
+0xD80F7 	End Form {29 02}
+0xD80F9 	Form: Enable/Disable to support USB hot key while booting. This will decrease the time needed to boot the system., FormId: 0x203 {01 86 03 02 AB 00}
+0xD80FF 		Subtitle: Statement.Prompt: Enable/Disable to support USB hot key while booting. This will decrease the time needed to boot the system., Flags: 0x0 {02 87 AB 00 00 00 00}
+0xD8106 		End {29 02}
+0xD8108 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD810F 		End {29 02}
+0xD8111 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x163, VarStore: 0x1234, QuestionId: 0x16, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 16 00 34 12 63 01 00 10 00 01 00}
+0xD8122 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8129 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8130 		End One Of {29 02}
+0xD8132 	End Form {29 02}
+0xD8134 	Form: The number of seconds that the firmware will wait before booting the original default boot selection., FormId: 0x204 {01 86 04 02 AD 00}
+0xD813A 		Subtitle: Statement.Prompt: The number of seconds that the firmware will wait before booting the original default boot selection., Flags: 0x0 {02 87 AD 00 00 00 00}
+0xD8141 		End {29 02}
+0xD8143 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD814A 		End {29 02}
+0xD814C 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x167, VarStore: 0x1234, QuestionId: 0x17, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 17 00 34 12 67 01 00 10 00 01 00}
+0xD815D 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8164 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD816B 		End One Of {29 02}
+0xD816D 	End Form {29 02}
+0xD816F 	Form: Enable: if boot to default device fail, it will directly try to boot next device. 
+Disable: if boot to default device fail, it will pop warning message then go into firmware UI., FormId: 0x205 {01 86 05 02 AF 00}
+0xD8175 		Subtitle: Statement.Prompt: Enable: if boot to default device fail, it will directly try to boot next device. 
+Disable: if boot to default device fail, it will pop warning message then go into firmware UI., Flags: 0x0 {02 87 AF 00 00 00 00}
+0xD817C 		End {29 02}
+0xD817E 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8185 		End {29 02}
+0xD8187 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x16B, VarStore: 0x1234, QuestionId: 0x18, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 18 00 34 12 6B 01 00 10 00 01 00}
+0xD8198 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD819F 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD81A6 		End One Of {29 02}
+0xD81A8 	End Form {29 02}
+0xD81AA 	Form: TPM 1.2, FormId: 0x206 {01 86 06 02 B1 00}
+0xD81B0 		Subtitle: Statement.Prompt: TPM 1.2, Flags: 0x0 {02 87 B1 00 00 00 00}
+0xD81B7 		End {29 02}
+0xD81B9 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD81C0 		End {29 02}
+0xD81C2 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x16F, VarStore: 0x1234, QuestionId: 0x19, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 19 00 34 12 6F 01 00 10 00 01 00}
+0xD81D3 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD81DA 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD81E1 		End One Of {29 02}
+0xD81E3 	End Form {29 02}
+0xD81E5 	Form: Current TPM Device: TPM1.2, or TPM2.0., FormId: 0x207 {01 86 07 02 B3 00}
+0xD81EB 		Subtitle: Statement.Prompt: Current TPM Device: TPM1.2, or TPM2.0., Flags: 0x0 {02 87 B3 00 00 00 00}
+0xD81F2 		End {29 02}
+0xD81F4 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD81FB 		End {29 02}
+0xD81FD 		One Of: UserPassword, VarStoreInfo (VarOffset/VarName): 0x170, VarStore: 0x1234, QuestionId: 0x1A, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B5 00 B6 00 1A 00 34 12 70 01 00 10 00 01 00}
+0xD820E 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8215 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD821C 		End One Of {29 02}
+0xD821E 	End Form {29 02}
+0xD8220 	Form: System Bus Speed, FormId: 0x21 {01 86 21 00 10 00}
+0xD8226 		Subtitle: Statement.Prompt: System Bus Speed, Flags: 0x0 {02 87 10 00 00 00 00}
+0xD822D 		End {29 02}
+0xD822F 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8236 		End {29 02}
+0xD8238 		Gray Out If {19 82}
+0xD823A 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8240 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8246 				And {15 02}
+0xD8248 			End {29 02}
+0xD824A 			One Of: This is the help for the hour, minute, second field. Valid range is from 0 to 23, 0 to 59, 0 to 59. INCREASE/REDUCE : +/-., VarStoreInfo (VarOffset/VarName): 0x8, VarStore: 0x1234, QuestionId: 0x1B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 1E 00 1F 00 1B 00 34 12 08 00 00 10 00 01 00}
+0xD825B 				One Of Option: [Not Detected], Value (8 bit): 0x0 (default) {09 07 0B 00 10 00 00}
+0xD8262 				One Of Option: Build Time, Value (8 bit): 0x1 {09 07 0A 00 00 00 01}
+0xD8269 			End One Of {29 02}
+0xD826B 		End If {29 02}
+0xD826D 	End Form {29 02}
+0xD826F 	Form: System Memory Speed, FormId: 0x22 {01 86 22 00 12 00}
+0xD8275 		Subtitle: Statement.Prompt: System Memory Speed, Flags: 0x0 {02 87 12 00 00 00 00}
+0xD827C 		End {29 02}
+0xD827E 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8285 		End {29 02}
+0xD8287 		Gray Out If {19 82}
+0xD8289 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD828F 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8295 				And {15 02}
+0xD8297 			End {29 02}
+0xD8299 			One Of: Uninstall, VarStoreInfo (VarOffset/VarName): 0x100, VarStore: 0x1234, QuestionId: 0x1C, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 CD 00 CE 00 1C 00 34 12 00 01 00 10 00 02 00}
+0xD82AA 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD82B1 				One Of Option: Unlock HDD Security, Value (8 bit): 0x1 {09 07 D2 00 00 00 01}
+0xD82B8 				One Of Option: SetHddPassword, Value (8 bit): 0x2 (default) {09 07 D6 00 10 00 02}
+0xD82BF 			End One Of {29 02}
+0xD82C1 		End If {29 02}
+0xD82C3 		Suppress If {0A 82}
+0xD82C5 			QuestionId: 0x1C equals value 0x0 {12 86 1C 00 00 00}
+0xD82CB 				QuestionId: 0x1C equals value 0x2 {12 06 1C 00 02 00}
+0xD82D1 				Or {16 02}
+0xD82D3 				QuestionId: 0x1C equals value 0x3 {12 06 1C 00 03 00}
+0xD82D9 				Or {16 02}
+0xD82DB 			End {29 02}
+0xD82DD 			One Of: Input HDD password to unlock HDD., VarStoreInfo (VarOffset/VarName): 0x102, VarStore: 0x1234, QuestionId: 0x1D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 D3 00 D3 00 1D 00 34 12 02 01 00 10 00 01 00}
+0xD82EE 				One Of Option: Set Master Hdd Password, Value (8 bit): 0x0 {09 07 D4 00 00 00 00}
+0xD82F5 				One Of Option: Set master HDD password and suggest the length of password greater than one character. 
+ 
+When seciruty mode is Lock, input master HDD password to unlock HDD. 
+ 
+Master HDD password is valid when HDD password is set. 
+ 
+Only pressing "Enter" would clear HDD password and make HDD security disable when set new master HDD password., Value (8 bit): 0x1 (default) {09 07 D5 00 10 00 01}
+0xD82FC 			End One Of {29 02}
+0xD82FE 		End If {29 02}
+0xD8300 		Gray Out If {19 82}
+0xD8302 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8308 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD830E 				And {15 02}
+0xD8310 			End {29 02}
+0xD8312 			One Of: [Not Installed], VarStoreInfo (VarOffset/VarName): 0x107, VarStore: 0x1234, QuestionId: 0x1E, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 CF 00 D0 00 1E 00 34 12 07 01 00 10 00 01 00}
+0xD8323 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD832A 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8331 			End One Of {29 02}
+0xD8333 		End If {29 02}
+0xD8335 		Gray Out If {19 82}
+0xD8337 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD833D 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8343 				And {15 02}
+0xD8345 			End {29 02}
+0xD8347 			One Of: Not Installed, VarStoreInfo (VarOffset/VarName): 0x33, VarStore: 0x1234, QuestionId: 0x1F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 24 00 25 00 1F 00 34 12 33 00 00 10 00 01 00}
+0xD8358 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD835F 				One Of Option: [Not Detected], Value (8 bit): 0x1 (default) {09 07 09 00 10 00 01}
+0xD8366 			End One Of {29 02}
+0xD8368 		End If {29 02}
+0xD836A 	End Form {29 02}
+0xD836C 	Form: Error Status, FormId: 0x23 {01 86 23 00 2A 00}
+0xD8372 		Subtitle: Statement.Prompt: Error Status, Flags: 0x0 {02 87 2A 00 00 00 00}
+0xD8379 		End {29 02}
+0xD837B 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8382 		End {29 02}
+0xD8384 		Gray Out If {19 82}
+0xD8386 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD838C 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8392 				And {15 02}
+0xD8394 			End {29 02}
+0xD8396 			One Of: Load Optimal Defaults., VarStoreInfo (VarOffset/VarName): 0x145, VarStore: 0x1234, QuestionId: 0x20, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 9B 00 9C 00 20 00 34 12 45 01 00 10 00 01 00}
+0xD83A7 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD83AE 				One Of Option: [Not Detected], Value (8 bit): 0x1 (default) {09 07 09 00 10 00 01}
+0xD83B5 			End One Of {29 02}
+0xD83B7 			Suppress If {0A 82}
+0xD83B9 				QuestionId: 0x20 equals value 0x0 {12 06 20 00 00 00}
+0xD83BF 				One Of: Set Supervisor Password, VarStoreInfo (VarOffset/VarName): 0x39, VarStore: 0x1234, QuestionId: 0x21, Size: 1, Min: 0x2, Max 0x2, Step: 0x0 {05 91 30 00 36 00 21 00 34 12 39 00 00 10 02 02 00}
+0xD83D0 					One Of Option: Limited:Only limited fields can be changed. No Access:Prevent User access to InsydeH2O Setup.View Only:Access to InsydeH2O Setup allowed but the fields cannot be changed.Full:Any field can be changed except the Supervisor password., Value (8 bit): 0x2 (default) {09 07 32 00 10 00 02}
+0xD83D7 				End One Of {29 02}
+0xD83D9 			End If {29 02}
+0xD83DB 		End If {29 02}
+0xD83DD 		Gray Out If {19 82}
+0xD83DF 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD83E5 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD83EB 				And {15 02}
+0xD83ED 			End {29 02}
+0xD83EF 			Suppress If {0A 82}
+0xD83F1 				QuestionId: 0x21 equals value in list (0x0, 0x1, 0x2, 0x3, 0x4, 0x5, 0x6) {14 14 21 00 07 00 00 00 01 00 02 00 03 00 04 00 05 00 06 00}
+0xD8405 				One Of: Please restart system, VarStoreInfo (VarOffset/VarName): 0xFA, VarStore: 0x1234, QuestionId: 0x22, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 2C 00 2D 00 22 00 34 12 FA 00 00 10 00 01 00}
+0xD8416 					One Of Option: Supervisor Password, Value (8 bit): 0x0 (default) {09 07 2E 00 10 00 00}
+0xD841D 					One Of Option: User Password   , Value (8 bit): 0x1 {09 07 2F 00 00 00 01}
+0xD8424 				End One Of {29 02}
+0xD8426 			End If {29 02}
+0xD8428 		End If {29 02}
+0xD842A 		Gray Out If {19 82}
+0xD842C 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8432 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8438 				And {15 02}
+0xD843A 			End {29 02}
+0xD843C 			Suppress If {0A 82}
+0xD843E 				QuestionId: 0x21 equals value in list (0x0, 0x2, 0x3, 0x4, 0x5, 0x6) {14 12 21 00 06 00 00 00 02 00 03 00 04 00 05 00 06 00}
+0xD8450 				One Of: Enable:System will ask input password on post time. Disable:System will ask input password when go to Setup Utility, VarStoreInfo (VarOffset/VarName): 0x147, VarStore: 0x1234, QuestionId: 0x23, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 37 00 38 00 23 00 34 12 47 01 00 10 00 01 00}
+0xD8461 					One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD8468 					One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD846F 				End One Of {29 02}
+0xD8471 			End If {29 02}
+0xD8473 		End If {29 02}
+0xD8475 		Ref: Set All Hdd Password, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x24, FormId: 0x260 {0F 0F 39 00 3A 00 24 00 00 00 FF FF 00 60 02}
+0xD8484 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD848B 		End {29 02}
+0xD848D 		Gray Out If {19 82}
+0xD848F 			True {46 02}
+0xD8491 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 05 10}
+0xD84A6 		End If {29 02}
+0xD84A8 	End Form {29 02}
+0xD84AA 	Form: Set All Hdd Password, FormId: 0x260 {01 86 60 02 39 00}
+0xD84B0 		Subtitle: Statement.Prompt: Install or Change the password and the length of password must be greater than one character., Flags: 0x0 {02 87 3B 00 00 00 00}
+0xD84B7 		End {29 02}
+0xD84B9 		One Of: Set all HDD password and suggest the length of password greater than one character.  
+ 
+This item can be displayed when any security mode of HDD is not Lock. 
+ 
+This item can be used for ATA Password Security; TCG Opal Security is not supported by design., VarStoreInfo (VarOffset/VarName): 0x12A, VarStore: 0x1234, QuestionId: 0x25, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 3D 00 3E 00 25 00 34 12 2A 01 00 10 00 01 00}
+0xD84CA 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD84D1 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD84D8 		End One Of {29 02}
+0xD84DA 		One Of: Disable , VarStoreInfo (VarOffset/VarName): 0x12B, VarStore: 0x1234, QuestionId: 0x26, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 3F 00 40 00 26 00 34 12 2B 01 00 10 00 01 00}
+0xD84EB 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD84F2 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD84F9 		End One Of {29 02}
+0xD84FB 		One Of: Unlock , VarStoreInfo (VarOffset/VarName): 0x12C, VarStore: 0x1234, QuestionId: 0x27, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 41 00 42 00 27 00 34 12 2C 01 00 10 00 01 00}
+0xD850C 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8513 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD851A 		End One Of {29 02}
+0xD851C 		One Of: No Accessed , VarStoreInfo (VarOffset/VarName): 0x12D, VarStore: 0x1234, QuestionId: 0x28, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 43 00 44 00 28 00 34 12 2D 01 00 10 00 01 00}
+0xD852D 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8534 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD853B 		End One Of {29 02}
+0xD853D 		One Of: Not Installed, VarStoreInfo (VarOffset/VarName): 0x12E, VarStore: 0x1234, QuestionId: 0x29, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 45 00 46 00 29 00 34 12 2E 01 00 10 00 01 00}
+0xD854E 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8555 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD855C 		End One Of {29 02}
+0xD855E 		One Of: Enable/Disable TPM Function. This option will automatically return to No-Operation., VarStoreInfo (VarOffset/VarName): 0x12F, VarStore: 0x1234, QuestionId: 0x2A, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 47 00 48 00 2A 00 34 12 2F 01 00 10 00 01 00}
+0xD856F 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8576 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD857D 		End One Of {29 02}
+0xD857F 		One Of: Enable and Activate, VarStoreInfo (VarOffset/VarName): 0x130, VarStore: 0x1234, QuestionId: 0x2B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 49 00 4A 00 2B 00 34 12 30 01 00 10 00 01 00}
+0xD8590 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8597 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD859E 		End One Of {29 02}
+0xD85A0 		One Of: Clear TPM, VarStoreInfo (VarOffset/VarName): 0x131, VarStore: 0x1234, QuestionId: 0x2C, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 4B 00 4C 00 2C 00 34 12 31 01 00 10 00 01 00}
+0xD85B1 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD85B8 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD85BF 		End One Of {29 02}
+0xD85C1 		Subtitle: Statement.Prompt: Clear User Password, Flags: 0x0 {02 87 3C 00 00 00 00}
+0xD85C8 		End {29 02}
+0xD85CA 		One Of: Set all HDD password and suggest the length of password greater than one character.  
+ 
+This item can be displayed when any security mode of HDD is not Lock. 
+ 
+This item can be used for ATA Password Security; TCG Opal Security is not supported by design., VarStoreInfo (VarOffset/VarName): 0x132, VarStore: 0x1234, QuestionId: 0x2D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 3D 00 3E 00 2D 00 34 12 32 01 00 10 00 01 00}
+0xD85DB 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD85E2 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD85E9 		End One Of {29 02}
+0xD85EB 		One Of: Disable , VarStoreInfo (VarOffset/VarName): 0x133, VarStore: 0x1234, QuestionId: 0x2E, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 3F 00 40 00 2E 00 34 12 33 01 00 10 00 01 00}
+0xD85FC 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8603 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD860A 		End One Of {29 02}
+0xD860C 		One Of: Unlock , VarStoreInfo (VarOffset/VarName): 0x134, VarStore: 0x1234, QuestionId: 0x2F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 41 00 42 00 2F 00 34 12 34 01 00 10 00 01 00}
+0xD861D 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8624 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD862B 		End One Of {29 02}
+0xD862D 		One Of: No Accessed , VarStoreInfo (VarOffset/VarName): 0x135, VarStore: 0x1234, QuestionId: 0x30, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 43 00 44 00 30 00 34 12 35 01 00 10 00 01 00}
+0xD863E 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8645 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD864C 		End One Of {29 02}
+0xD864E 		One Of: Not Installed, VarStoreInfo (VarOffset/VarName): 0x136, VarStore: 0x1234, QuestionId: 0x31, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 45 00 46 00 31 00 34 12 36 01 00 10 00 01 00}
+0xD865F 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8666 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD866D 		End One Of {29 02}
+0xD866F 		One Of: Enable/Disable TPM Function. This option will automatically return to No-Operation., VarStoreInfo (VarOffset/VarName): 0x137, VarStore: 0x1234, QuestionId: 0x32, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 47 00 48 00 32 00 34 12 37 01 00 10 00 01 00}
+0xD8680 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8687 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD868E 		End One Of {29 02}
+0xD8690 		One Of: Enable and Activate, VarStoreInfo (VarOffset/VarName): 0x138, VarStore: 0x1234, QuestionId: 0x33, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 49 00 4A 00 33 00 34 12 38 01 00 10 00 01 00}
+0xD86A1 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD86A8 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD86AF 		End One Of {29 02}
+0xD86B1 		One Of: Clear TPM, VarStoreInfo (VarOffset/VarName): 0x13B, VarStore: 0x1234, QuestionId: 0x34, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 4B 00 4C 00 34 00 34 12 3B 01 00 10 00 01 00}
+0xD86C2 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD86C9 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD86D0 		End One Of {29 02}
+0xD86D2 	End Form {29 02}
+0xD86D4 	Form: Boot, FormId: 0x24 {01 86 24 00 4D 00}
+0xD86DA 		Subtitle: Statement.Prompt: Quick Boot, Flags: 0x0 {02 87 4E 00 00 00 00}
+0xD86E1 		End {29 02}
+0xD86E3 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD86EA 		End {29 02}
+0xD86EC 		Gray Out If {19 82}
+0xD86EE 			True {46 02}
+0xD86F0 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 06 1D}
+0xD8705 		End If {29 02}
+0xD8707 	End Form {29 02}
+0xD8709 	Form: MHz, FormId: 0x25 {01 86 25 00 14 00}
+0xD870F 		Subtitle: Statement.Prompt: MHz, Flags: 0x0 {02 87 14 00 00 00 00}
+0xD8716 		End {29 02}
+0xD8718 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD871F 		End {29 02}
+0xD8721 		Gray Out If {19 82}
+0xD8723 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8729 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD872F 				And {15 02}
+0xD8731 			End {29 02}
+0xD8733 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 1D}
+0xD8748 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 1D}
+0xD875D 		End If {29 02}
+0xD875F 		Gray Out If {19 82}
+0xD8761 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8767 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD876D 				And {15 02}
+0xD876F 			End {29 02}
+0xD8771 			One Of: Enabled and Deactivated, VarStoreInfo (VarOffset/VarName): 0x101, VarStore: 0x1234, QuestionId: 0x35, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 BE 00 BF 00 35 00 34 12 01 01 00 10 00 01 00}
+0xD8782 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8789 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8790 			End One Of {29 02}
+0xD8792 		End If {29 02}
+0xD8794 		Gray Out If {19 82}
+0xD8796 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD879C 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD87A2 				And {15 02}
+0xD87A4 			End {29 02}
+0xD87A6 			One Of: TPM Availability, VarStoreInfo (VarOffset/VarName): 0x17E, VarStore: 0x1234, QuestionId: 0x36, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 C0 00 C1 00 36 00 34 12 7E 01 00 10 00 01 00}
+0xD87B7 				One Of Option: Available, Value (8 bit): 0x0 {09 07 C2 00 00 00 00}
+0xD87BE 				One Of Option: Hidden, Value (8 bit): 0x1 (default) {09 07 C3 00 10 00 01}
+0xD87C5 			End One Of {29 02}
+0xD87C7 		End If {29 02}
+0xD87C9 		One Of: Quiet Boot, VarStoreInfo (VarOffset/VarName): 0xDF, VarStore: 0x1234, QuestionId: 0x37, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 50 00 51 00 37 00 34 12 DF 00 00 10 00 01 00}
+0xD87DA 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD87E1 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD87E8 		End One Of {29 02}
+0xD87EA 	End Form {29 02}
+0xD87EC 	Form: Cache RAM, FormId: 0x26 {01 86 26 00 16 00}
+0xD87F2 		Subtitle: Statement.Prompt: Cache RAM, Flags: 0x0 {02 87 16 00 00 00 00}
+0xD87F9 		End {29 02}
+0xD87FB 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8802 		End {29 02}
+0xD8804 		Gray Out If {19 82}
+0xD8806 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD880C 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8812 				And {15 02}
+0xD8814 			End {29 02}
+0xD8816 			Suppress If {0A 82}
+0xD8818 				QuestionId: 0x58 equals value in list (0x0, 0x1) {14 0A 58 00 02 00 00 00 01 00}
+0xD8822 				One Of: Power Up In Standby Support, VarStoreInfo (VarOffset/VarName): 0x48, VarStore: 0x1234, QuestionId: 0x38, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 54 00 55 00 38 00 34 12 48 00 00 10 00 01 00}
+0xD8833 					One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD883A 					One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8841 				End One Of {29 02}
+0xD8843 			End If {29 02}
+0xD8845 			Suppress If {0A 82}
+0xD8847 				QuestionId: 0x58 equals value 0x2 {12 06 58 00 02 00}
+0xD884D 				One Of: Power Up In Standby Support, VarStoreInfo (VarOffset/VarName): 0x48, VarStore: 0x1234, QuestionId: 0x39, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 54 00 56 00 39 00 34 12 48 00 00 10 00 02 00}
+0xD885E 					One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8865 					One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD886C 					One Of Option: Disable or enable storage PCI option rom acceess right. 
+ This feature will enable or disable storage PCI option rom being load and dispatched., Value (8 bit): 0x2 {09 07 57 00 00 00 02}
+0xD8873 				End One Of {29 02}
+0xD8875 			End If {29 02}
+0xD8877 			One Of: PXE Boot to LAN, VarStoreInfo (VarOffset/VarName): 0x47, VarStore: 0x1234, QuestionId: 0x3A, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 52 00 53 00 3A 00 34 12 47 00 00 10 00 01 00}
+0xD8888 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD888F 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8896 			End One Of {29 02}
+0xD8898 		End If {29 02}
+0xD889A 		Ref: EMBED NETWORK, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x3B, FormId: 0x261 {0F 0F 8D 00 8E 00 3B 00 00 00 FF FF 00 61 02}
+0xD88A9 	End Form {29 02}
+0xD88AB 	Form: EMBED NETWORK, FormId: 0x261 {01 86 61 02 8D 00}
+0xD88B1 		Subtitle: Statement.Prompt: PCMCIA, Flags: 0x0 {02 87 8B 00 00 00 00}
+0xD88B8 		End {29 02}
+0xD88BA 		Gray Out If {19 82}
+0xD88BC 			True {46 02}
+0xD88BE 			One Of: BEV, VarStoreInfo (VarOffset/VarName): 0x13C, VarStore: 0x1234, QuestionId: 0x4000, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 8F 00 90 00 00 40 34 12 3C 01 04 10 00 01 00}
+0xD88CF 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD88D6 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD88DD 			End One Of {29 02}
+0xD88DF 		End If {29 02}
+0xD88E1 		One Of: Others, VarStoreInfo (VarOffset/VarName): 0x13D, VarStore: 0x1234, QuestionId: 0x3C, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 91 00 92 00 3C 00 34 12 3D 01 00 10 00 01 00}
+0xD88F2 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD88F9 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8900 		End One Of {29 02}
+0xD8902 		One Of: Exit, VarStoreInfo (VarOffset/VarName): 0x13E, VarStore: 0x1234, QuestionId: 0x3D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 93 00 94 00 3D 00 34 12 3E 01 00 10 00 01 00}
+0xD8913 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD891A 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8921 		End One Of {29 02}
+0xD8923 		One Of: Exit system setup and save your changes., VarStoreInfo (VarOffset/VarName): 0x13F, VarStore: 0x1234, QuestionId: 0x3E, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 95 00 96 00 3E 00 34 12 3F 01 00 10 00 01 00}
+0xD8934 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD893B 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8942 		End One Of {29 02}
+0xD8944 		Gray Out If {19 82}
+0xD8946 			True {46 02}
+0xD8948 			One Of: Save your changes and without exiting system., VarStoreInfo (VarOffset/VarName): 0x120, VarStore: 0x1234, QuestionId: 0x3F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 97 00 98 00 3F 00 34 12 20 01 00 10 00 01 00}
+0xD8959 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8960 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8967 			End One Of {29 02}
+0xD8969 		End If {29 02}
+0xD896B 		One Of: Exit system setup and without saving your changes., VarStoreInfo (VarOffset/VarName): 0x121, VarStore: 0x1234, QuestionId: 0x40, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 99 00 9A 00 40 00 34 12 21 01 00 10 00 01 00}
+0xD897C 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8983 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD898A 		End One Of {29 02}
+0xD898C 		Subtitle: Statement.Prompt: Change PCMCIA Boot Order, Flags: 0x0 {02 87 8C 00 00 00 00}
+0xD8993 		End {29 02}
+0xD8995 		Gray Out If {19 82}
+0xD8997 			True {46 02}
+0xD8999 			One Of: BEV, VarStoreInfo (VarOffset/VarName): 0x140, VarStore: 0x1234, QuestionId: 0x4001, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 8F 00 90 00 01 40 34 12 40 01 04 10 00 01 00}
+0xD89AA 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD89B1 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD89B8 			End One Of {29 02}
+0xD89BA 		End If {29 02}
+0xD89BC 		One Of: Others, VarStoreInfo (VarOffset/VarName): 0x141, VarStore: 0x1234, QuestionId: 0x41, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 91 00 92 00 41 00 34 12 41 01 00 10 00 01 00}
+0xD89CD 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD89D4 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD89DB 		End One Of {29 02}
+0xD89DD 		One Of: Exit, VarStoreInfo (VarOffset/VarName): 0x142, VarStore: 0x1234, QuestionId: 0x42, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 93 00 94 00 42 00 34 12 42 01 00 10 00 01 00}
+0xD89EE 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD89F5 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD89FC 		End One Of {29 02}
+0xD89FE 		One Of: Exit system setup and save your changes., VarStoreInfo (VarOffset/VarName): 0x143, VarStore: 0x1234, QuestionId: 0x43, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 95 00 96 00 43 00 34 12 43 01 00 10 00 01 00}
+0xD8A0F 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8A16 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8A1D 		End One Of {29 02}
+0xD8A1F 		Gray Out If {19 82}
+0xD8A21 			True {46 02}
+0xD8A23 			One Of: Save your changes and without exiting system., VarStoreInfo (VarOffset/VarName): 0x122, VarStore: 0x1234, QuestionId: 0x44, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 97 00 98 00 44 00 34 12 22 01 00 10 00 01 00}
+0xD8A34 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8A3B 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8A42 			End One Of {29 02}
+0xD8A44 		End If {29 02}
+0xD8A46 		One Of: Exit system setup and without saving your changes., VarStoreInfo (VarOffset/VarName): 0x123, VarStore: 0x1234, QuestionId: 0x45, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 99 00 9A 00 45 00 34 12 23 01 00 10 00 01 00}
+0xD8A57 			One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8A5E 			One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8A65 		End One Of {29 02}
+0xD8A67 	End Form {29 02}
+0xD8A69 	Form: Total Memory, FormId: 0x27 {01 86 27 00 18 00}
+0xD8A6F 		Subtitle: Statement.Prompt: Total Memory, Flags: 0x0 {02 87 18 00 00 00 00}
+0xD8A76 		End {29 02}
+0xD8A78 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8A7F 		End {29 02}
+0xD8A81 		Gray Out If {19 82}
+0xD8A83 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8A89 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8A8F 				And {15 02}
+0xD8A91 			End {29 02}
+0xD8A93 			One Of: ESATA drive boot access right Support, VarStoreInfo (VarOffset/VarName): 0x49, VarStore: 0x1234, QuestionId: 0x46, Size: 1, Min: 0x0, Max 0x7, Step: 0x0 {05 91 58 00 59 00 46 00 34 12 49 00 00 10 00 07 00}
+0xD8AA4 				One Of Option: PXE Boot capability, Value (8 bit): 0x0 {09 07 5A 00 00 00 00}
+0xD8AAB 				One Of Option: Disabled : Support Network Stack 
+UEFI PXE : IPv4/IPv6 
+Legacy  : Legacy PXE OPROM only, Value (8 bit): 0x1 (default) {09 07 5B 00 10 00 01}
+0xD8AB2 				One Of Option: PXE/ HTTP Boot Retry Policy, Value (8 bit): 0x2 {09 07 5C 00 00 00 02}
+0xD8AB9 				One Of Option: PXE/ HTTP boot retry setting. 
+ The max value is 255, if you Enter 255, the retry will go INFINITELY., Value (8 bit): 0x3 {09 07 5D 00 00 00 03}
+0xD8AC0 				One Of Option: UEFI:IPv4, Value (8 bit): 0x4 {09 07 5E 00 00 00 04}
+0xD8AC7 				One Of Option: UEFI:IPv6, Value (8 bit): 0x5 {09 07 5F 00 00 00 05}
+0xD8ACE 				One Of Option: UEFI:IPv4/IPv6, Value (8 bit): 0x6 {09 07 60 00 00 00 06}
+0xD8AD5 				One Of Option: HTTP:IPv4, Value (8 bit): 0x7 {09 07 61 00 00 00 07}
+0xD8ADC 			End One Of {29 02}
+0xD8ADE 		End If {29 02}
+0xD8AE0 		Checkbox: System Time, VarStoreInfo (VarOffset/VarName): 0xED, VarStore: 0x1234, QuestionId: 0x47 {06 8E 1C 00 1D 00 47 00 34 12 ED 00 04 00}
+0xD8AEE 			Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0xD8AF4 		End {29 02}
+0xD8AF6 	End Form {29 02}
+0xD8AF8 	Form: Language, FormId: 0x28 {01 86 28 00 1A 00}
+0xD8AFE 		Subtitle: Statement.Prompt: Language, Flags: 0x0 {02 87 1A 00 00 00 00}
+0xD8B05 		End {29 02}
+0xD8B07 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8B0E 		End {29 02}
+0xD8B10 		Gray Out If {19 82}
+0xD8B12 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8B18 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8B1E 				And {15 02}
+0xD8B20 			End {29 02}
+0xD8B22 			One Of: HTTP:IPv6, VarStoreInfo (VarOffset/VarName): 0x51, VarStore: 0x1234, QuestionId: 0x48, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 62 00 63 00 48 00 34 12 51 00 00 10 00 01 00}
+0xD8B33 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8B3A 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8B41 			End One Of {29 02}
+0xD8B43 			One Of: HTTP and PXE:IPv4, VarStoreInfo (VarOffset/VarName): 0x52, VarStore: 0x1234, QuestionId: 0x49, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 64 00 65 00 49 00 34 12 52 00 00 10 00 01 00}
+0xD8B54 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8B5B 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8B62 			End One Of {29 02}
+0xD8B64 			One Of: HTTP and PXE:IPv4/IPv6, VarStoreInfo (VarOffset/VarName): 0x53, VarStore: 0x1234, QuestionId: 0x4A, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 66 00 67 00 4A 00 34 12 53 00 00 10 00 01 00}
+0xD8B75 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8B7C 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8B83 			End One Of {29 02}
+0xD8B85 			One Of: Network Stack Support: 
+ Windows 8 BitLocker Unlock 
+ UEFI IPv4/IPv6 PXE 
+ Legacy PXE OPROM, VarStoreInfo (VarOffset/VarName): 0x54, VarStore: 0x1234, QuestionId: 0x4B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 68 00 69 00 4B 00 34 12 54 00 00 10 00 01 00}
+0xD8B96 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8B9D 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8BA4 			End One Of {29 02}
+0xD8BA6 			One Of: Disables or enables booting to USB boot devices., VarStoreInfo (VarOffset/VarName): 0x55, VarStore: 0x1234, QuestionId: 0x4C, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 6A 00 6B 00 4C 00 34 12 55 00 00 10 00 01 00}
+0xD8BB7 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8BBE 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8BC5 			End One Of {29 02}
+0xD8BC7 			One Of: Config Name, VarStoreInfo (VarOffset/VarName): 0x13A, VarStore: 0x1234, QuestionId: 0x4D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 BA 00 BB 00 4D 00 34 12 3A 01 00 10 00 01 00}
+0xD8BD8 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8BDF 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8BE6 			End One Of {29 02}
+0xD8BE8 		End If {29 02}
+0xD8BEA 	End Form {29 02}
+0xD8BEC 	Form: Load Custom Defaults., FormId: 0x29 {01 86 29 00 9D 00}
+0xD8BF2 		Subtitle: Statement.Prompt: Load Custom Defaults., Flags: 0x0 {02 87 9D 00 00 00 00}
+0xD8BF9 		End {29 02}
+0xD8BFB 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8C02 		End {29 02}
+0xD8C04 		Gray Out If {19 82}
+0xD8C06 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8C0C 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8C12 				And {15 02}
+0xD8C14 			End {29 02}
+0xD8C16 			One Of: SetAllMasterHddPassword, VarStoreInfo (VarOffset/VarName): 0xF3, VarStore: 0x1234, QuestionId: 0x4E, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 B7 00 B8 00 4E 00 34 12 F3 00 00 10 00 01 00}
+0xD8C27 				One Of Option: [Not Detected], Value (8 bit): 0x0 (default) {09 07 09 00 10 00 00}
+0xD8C2E 				One Of Option: [Not Detected], Value (8 bit): 0x1 {09 07 B9 00 00 00 01}
+0xD8C35 			End One Of {29 02}
+0xD8C37 			One Of: Normal, VarStoreInfo (VarOffset/VarName): 0xEE, VarStore: 0x1234, QuestionId: 0x4F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 79 00 7A 00 4F 00 34 12 EE 00 00 10 00 01 00}
+0xD8C48 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8C4F 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8C56 			End One Of {29 02}
+0xD8C58 			One Of: Legacy Boot Order Settings, VarStoreInfo (VarOffset/VarName): 0xEF, VarStore: 0x1234, QuestionId: 0x50, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 7B 00 7C 00 50 00 34 12 EF 00 00 10 00 01 00}
+0xD8C69 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8C70 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8C77 			End One Of {29 02}
+0xD8C79 			One Of: EFI Boot Order Settings, VarStoreInfo (VarOffset/VarName): 0x14D, VarStore: 0x1234, QuestionId: 0x51, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 7D 00 7E 00 51 00 34 12 4D 01 00 10 00 01 00}
+0xD8C8A 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8C91 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8C98 			End One Of {29 02}
+0xD8C9A 			One Of: Select Normal Boot Option Priority or Advance Boot Option Priority, VarStoreInfo (VarOffset/VarName): 0x200, VarStore: 0x1234, QuestionId: 0x52, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 7F 00 80 00 52 00 34 12 00 02 00 10 00 01 00}
+0xD8CAB 				One Of Option: BIOS Version, Value (8 bit): 0x0 {09 07 07 00 00 00 00}
+0xD8CB2 				One Of Option: Build Date, Value (8 bit): 0x1 (default) {09 07 08 00 10 00 01}
+0xD8CB9 			End One Of {29 02}
+0xD8CBB 			One Of: Change Boot Type Order, VarStoreInfo (VarOffset/VarName): 0x201, VarStore: 0x1234, QuestionId: 0x53, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 81 00 82 00 53 00 34 12 01 02 00 10 00 01 00}
+0xD8CCC 				One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD8CD3 				One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD8CDA 			End One Of {29 02}
+0xD8CDC 		End If {29 02}
+0xD8CDE 	End Form {29 02}
+0xD8CE0 	Form: MRID6_23_V35, FormId: 0x35 {01 86 35 00 04 00}
+0xD8CE6 		Subtitle: Statement.Prompt: ChangeEPS, Flags: 0x0 {02 87 DF 00 00 00 00}
+0xD8CED 		End {29 02}
+0xD8CEF 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0xD8CF6 		End {29 02}
+0xD8CF8 		Gray Out If {19 82}
+0xD8CFA 			QuestionId: 0x57 equals value 0x2 {12 86 57 00 02 00}
+0xD8D00 				QuestionId: 0x56 equals value 0x1 {12 06 56 00 01 00}
+0xD8D06 				And {15 02}
+0xD8D08 			End {29 02}
+0xD8D0A 			One Of: SetPPRequiredForTurnOn_True, VarStoreInfo (VarOffset/VarName): 0x1A9, VarStore: 0x1234, QuestionId: 0x54, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 E1 00 E2 00 54 00 34 12 A9 01 00 10 00 01 00}
+0xD8D1B 				One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD8D22 				One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD8D29 			End One Of {29 02}
+0xD8D2B 			One Of: SetPPRequiredForTurnOff_True, VarStoreInfo (VarOffset/VarName): 0x1A7, VarStore: 0x1234, QuestionId: 0x55, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 E3 00 E4 00 55 00 34 12 A7 01 14 10 00 01 00}
+0xD8D3C 				One Of Option: BIOS Version, Value (8 bit): 0x0 (default) {09 07 07 00 10 00 00}
+0xD8D43 				One Of Option: Build Date, Value (8 bit): 0x1 {09 07 08 00 00 00 01}
+0xD8D4A 			End One Of {29 02}
+0xD8D4C 		End If {29 02}
+0xD8D4E 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 80 10}
+0xD8D63 		Disable If {1E 82}
+0xD8D65 			True {46 02}
+0xD8D67 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0x1234, QuestionId: 0x56, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 56 00 34 12 81 00 00 10 00 FF 00}
+0xD8D78 			End {29 02}
+0xD8D7A 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x80, VarStore: 0x1234, QuestionId: 0x57, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 57 00 34 12 80 00 00 10 00 FF 00}
+0xD8D8B 			End {29 02}
+0xD8D8D 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x79, VarStore: 0x1234, QuestionId: 0x58, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 58 00 34 12 79 00 00 10 00 FF 00}
+0xD8D9E 			End {29 02}
+0xD8DA0 		End If {29 02}
+0xD8DA2 	End Form {29 02}
+0xD8DA4 End Form Set {29 02}
+0x25956C Form Set: Main [C1E0B01A-607E-4B75-B8BB-0631ECFAACF2], ClassGuid0 [9F85453E-2F03-4989-AD3B-4A840791AF3A] {0E A7 1A B0 E0 C1 7E 60 75 4B B8 BB 06 31 EC FA AC F2 05 00 06 00 01 3E 45 85 9F 03 2F 89 49 AD 3B 4A 84 07 91 AF 3A}
+0x259593 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0x2595A8 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 00 00}
+0x2595BD 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0x2595C3 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0x2595C9 	Image: Id: 0x11 {04 04 11 00}
+0x2595CD 	VarStore: VarStoreId: 0x1234 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0xE6, Name: SystemConfig {24 23 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 34 12 E6 00 53 79 73 74 65 6D 43 6F 6E 66 69 67 00}
+0x2595F0 	Form: Main, FormId: 0x1 {01 86 01 00 05 00}
+0x2595F6 		Gray Out If {19 82}
+0x2595F8 			True {46 02}
+0x2595FA 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 13 10}
+0x25960F 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 14 10}
+0x259624 			Gray Out If {19 82}
+0x259626 				True {46 02}
+0x259628 				Text: Statement.Prompt: Release BIOS DATE, TextTwo: 01/10/2024 {03 08 22 01 06 00 26 01}
+0x259630 			End If {29 02}
+0x259632 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 15 10}
+0x259647 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 16 10}
+0x25965C 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 19 10}
+0x259671 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 12 10}
+0x259686 		End If {29 02}
+0x259688 		Gray Out If {19 82}
+0x25968A 			True {46 02}
+0x25968C 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 09 10}
+0x2596A1 			Text: Statement.Prompt: System Memory Speed, TextTwo: [Not Detected] {03 08 12 00 06 00 13 00}
+0x2596A9 		End If {29 02}
+0x2596AB 		Gray Out If {19 82}
+0x2596AD 			True {46 02}
+0x2596AF 		End If {29 02}
+0x2596B1 		Gray Out If {19 82}
+0x2596B3 			True {46 02}
+0x2596B5 			Text: Statement.Prompt: Total Memory, TextTwo: [Not Detected] {03 08 18 00 06 00 19 00}
+0x2596BD 		End If {29 02}
+0x2596BF 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 10}
+0x2596D4 		Gray Out If {19 82}
+0x2596D6 			QuestionId: 0x4 equals value 0x2 {12 86 04 00 02 00}
+0x2596DC 				QuestionId: 0x3 equals value 0x1 {12 06 03 00 01 00}
+0x2596E2 				And {15 02}
+0x2596E4 			End {29 02}
+0x2596E6 			Time: System Time, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1 {1B 8E 1C 00 1E 00 01 00 00 00 FF FF 00 10}
+0x2596F4 			End {29 02}
+0x2596F6 			Date: System Date, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x2 {1A 8E 1D 00 1F 00 02 00 00 00 FF FF 00 10}
+0x259704 			End {29 02}
+0x259706 		End If {29 02}
+0x259708 		Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 94 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 07 00}
+0x25971C 		End {29 02}
+0x25971E 		Disable If {1E 82}
+0x259720 			True {46 02}
+0x259722 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0x1234, QuestionId: 0x3, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 03 00 34 12 81 00 00 10 00 FF 00}
+0x259733 			End {29 02}
+0x259735 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x80, VarStore: 0x1234, QuestionId: 0x4, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 04 00 34 12 80 00 00 10 00 FF 00}
+0x259746 			End {29 02}
+0x259748 		End If {29 02}
+0x25974A 	End Form {29 02}
+0x25974C End Form Set {29 02}
+0x25A77C Form Set: Boot [2D068309-12AC-45AB-9600-9187513CCDD8], ClassGuid0 [9F85453E-2F03-4989-AD3B-4A840791AF3A] {0E A7 09 83 06 2D AC 12 AB 45 96 00 91 87 51 3C CD D8 4D 00 06 00 01 3E 45 85 9F 03 2F 89 49 AD 3B 4A 84 07 91 AF 3A}
+0x25A7A3 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0x25A7B8 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 00 00}
+0x25A7CD 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0x25A7D3 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0x25A7D9 	Image: Id: 0x13 {04 04 13 00}
+0x25A7DD 	VarStore: VarStoreId: 0x1234 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0xE6, Name: SystemConfig {24 23 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 34 12 E6 00 53 79 73 74 65 6D 43 6F 6E 66 69 67 00}
+0x25A800 	VarStore: VarStoreId: 0x1489 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0x407, Name: BootConfig {24 21 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 89 14 07 04 42 6F 6F 74 43 6F 6E 66 69 67 00}
+0x25A821 	VarStore: VarStoreId: 0x148A [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0x1, Name: NetworkConfig {24 24 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 8A 14 01 00 4E 65 74 77 6F 72 6B 43 6F 6E 66 69 67 00}
+0x25A845 	Form: Boot, FormId: 0x1 {01 86 01 00 4D 00}
+0x25A84B 		Gray Out If {19 82}
+0x25A84D 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25A857 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25A85D 				And {15 02}
+0x25A85F 			End {29 02}
+0x25A861 			One Of: Boot Type, VarStoreInfo (VarOffset/VarName): 0x79, VarStore: 0x1234, QuestionId: 0x105E, Size: 1, Min: 0x2, Max 0x2, Step: 0x0 {05 91 23 01 24 01 5E 10 34 12 79 00 04 10 02 02 00}
+0x25A872 				One Of Option: UEFI Boot Type, Value (8 bit): 0x2 (default) {09 07 26 00 10 00 02}
+0x25A879 			End One Of {29 02}
+0x25A87B 			Suppress If {0A 82}
+0x25A87D 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25A887 				One Of: Quick Boot, VarStoreInfo (VarOffset/VarName): 0x6D, VarStore: 0x1234, QuestionId: 0x1063, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 4E 00 4F 00 63 10 34 12 6D 00 00 10 00 01 00}
+0x25A898 					One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25A89F 					One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25A8A6 				End One Of {29 02}
+0x25A8A8 				One Of: Quiet Boot, VarStoreInfo (VarOffset/VarName): 0x6E, VarStore: 0x1234, QuestionId: 0x1064, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 50 00 51 00 64 10 34 12 6E 00 00 10 00 01 00}
+0x25A8B9 					One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25A8C0 					One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25A8C7 				End One Of {29 02}
+0x25A8C9 			End If {29 02}
+0x25A8CB 			Suppress If {0A 82}
+0x25A8CD 				QuestionId: 0x105E equals value in list (0x1) {14 08 5E 10 01 00 01 00}
+0x25A8D5 				One Of: Network Stack, VarStoreInfo (VarOffset/VarName): 0x6F, VarStore: 0x1234, QuestionId: 0x105F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 67 00 68 00 5F 10 34 12 6F 00 04 10 00 01 00}
+0x25A8E6 					One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25A8ED 					One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25A8F4 				End One Of {29 02}
+0x25A8F6 			End If {29 02}
+0x25A8F8 			Suppress If {0A 82}
+0x25A8FA 				QuestionId: 0x105E equals value in list (0x0, 0x2) {14 0A 5E 10 02 00 00 00 02 00}
+0x25A904 				One Of: PXE Boot to LAN, VarStoreInfo (VarOffset/VarName): 0x6F, VarStore: 0x1234, QuestionId: 0x1062, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 52 00 53 00 62 10 34 12 6F 00 00 10 00 01 00}
+0x25A915 					One Of Option: Disabled, Value (8 bit): 0x0 (default) {09 07 21 00 10 00 00}
+0x25A91C 					One Of Option: Enabled, Value (8 bit): 0x1 {09 07 20 01 00 00 01}
+0x25A923 				End One Of {29 02}
+0x25A925 			End If {29 02}
+0x25A927 			Suppress If {0A 82}
+0x25A929 				QuestionId: 0x105E equals value in list (0x1) {14 08 5E 10 01 00 01 00}
+0x25A931 				Gray Out If {19 82}
+0x25A933 					QuestionId: 0x1062 equals value in list (0x0) {14 08 62 10 01 00 00 00}
+0x25A93B 					One Of: PXE Boot capability, VarStoreInfo (VarOffset/VarName): 0x64, VarStore: 0x1234, QuestionId: 0x1065, Size: 1, Min: 0x0, Max 0x4, Step: 0x0 {05 91 5A 00 5B 00 65 10 34 12 64 00 00 10 00 04 00}
+0x25A94C 						One Of Option: Disabled, Value (8 bit): 0x4 {09 07 21 00 00 00 04}
+0x25A953 						Suppress If {0A 82}
+0x25A955 							QuestionId: 0x105E equals value in list (0x1) {14 88 5E 10 01 00 01 00}
+0x25A95D 								QuestionId: 0x1062 equals value in list (0x0) {14 08 62 10 01 00 00 00}
+0x25A965 								Or {16 02}
+0x25A967 							End {29 02}
+0x25A969 							One Of Option: UEFI:IPv4, Value (8 bit): 0x0 {09 07 5E 00 00 00 00}
+0x25A970 							One Of Option: UEFI:IPv6, Value (8 bit): 0x1 {09 07 5F 00 00 00 01}
+0x25A977 							One Of Option: UEFI:IPv4/IPv6, Value (8 bit): 0x2 (default) {09 07 60 00 10 00 02}
+0x25A97E 						End If {29 02}
+0x25A980 						Suppress If {0A 82}
+0x25A982 							QuestionId: 0x105E equals value in list (0x2) {14 08 5E 10 01 00 02 00}
+0x25A98A 							One Of Option: Legacy, Value (8 bit): 0x3 {09 07 7A 00 00 00 03}
+0x25A991 						End If {29 02}
+0x25A993 					End One Of {29 02}
+0x25A995 				End If {29 02}
+0x25A997 			End If {29 02}
+0x25A999 			Suppress If {0A 82}
+0x25A99B 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25A9A5 				Suppress If {0A 82}
+0x25A9A7 					QuestionId: 0x1065 equals value in list (0x4) {14 08 65 10 01 00 04 00}
+0x25A9AF 					Numeric: PXE/ HTTP Boot Retry Policy, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0x148A, QuestionId: 0x1083, Size: 1, Min: 0x0, Max 0xFF, Step: 0x1 {07 91 5C 00 5D 00 83 10 8A 14 00 00 00 10 00 FF 01}
+0x25A9C0 					End {29 02}
+0x25A9C2 				End If {29 02}
+0x25A9C4 			End If {29 02}
+0x25A9C6 			Suppress If {0A 82}
+0x25A9C8 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25A9D2 				One Of: Power Up In Standby Support, VarStoreInfo (VarOffset/VarName): 0xE2, VarStore: 0x1234, QuestionId: 0x1066, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 54 00 55 00 66 10 34 12 E2 00 00 10 00 01 00}
+0x25A9E3 					One Of Option: Enabled, Value (8 bit): 0x1 {09 07 20 01 00 00 01}
+0x25A9EA 					One Of Option: Disabled, Value (8 bit): 0x0 (default) {09 07 21 00 10 00 00}
+0x25A9F1 				End One Of {29 02}
+0x25A9F3 				One Of: Storage PCI Option Rom access right Support, VarStoreInfo (VarOffset/VarName): 0xE4, VarStore: 0x1234, QuestionId: 0x1081, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 56 00 57 00 81 10 34 12 E4 00 00 10 00 01 00}
+0x25AA04 					One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25AA0B 					One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25AA12 				End One Of {29 02}
+0x25AA14 				One Of: ESATA drive boot access right Support, VarStoreInfo (VarOffset/VarName): 0xCF, VarStore: 0x1234, QuestionId: 0x1082, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 58 00 59 00 82 10 34 12 CF 00 00 10 00 01 00}
+0x25AA25 					One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25AA2C 					One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25AA33 				End One Of {29 02}
+0x25AA35 				One Of: Add Boot Options, VarStoreInfo (VarOffset/VarName): 0x7D, VarStore: 0x1234, QuestionId: 0x105D, Size: 2, Min: 0x0, Max 0x2, Step: 0x0 {05 94 A2 00 A4 00 5D 10 34 12 7D 00 04 11 00 00 02 00 00 00}
+0x25AA49 					One Of Option: First, Value (16 bit): 0x0 {09 08 A5 00 01 01 00 00}
+0x25AA51 					One Of Option: Last, Value (16 bit): 0x1 {09 08 A6 00 01 01 01 00}
+0x25AA59 					One Of Option: Auto, Value (16 bit): 0x2 (default) {09 08 A7 00 11 01 02 00}
+0x25AA61 				End One Of {29 02}
+0x25AA63 			End If {29 02}
+0x25AA65 		End If {29 02}
+0x25AA67 		Suppress If {0A 82}
+0x25AA69 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25AA73 			Gray Out If {19 82}
+0x25AA75 				QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AA7F 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AA85 					And {15 02}
+0x25AA87 				End {29 02}
+0x25AA89 				One Of: ACPI Selection, VarStoreInfo (VarOffset/VarName): 0x60, VarStore: 0x1234, QuestionId: 0x1067, Size: 1, Min: 0x2, Max 0x7, Step: 0x0 {05 91 6F 00 70 00 67 10 34 12 60 00 00 10 02 07 00}
+0x25AA9A 					One Of Option: Acpi4.0, Value (8 bit): 0x2 {09 07 72 00 00 00 02}
+0x25AAA1 					One Of Option: Acpi5.0, Value (8 bit): 0x3 (default) {09 07 73 00 10 00 03}
+0x25AAA8 					One Of Option: Acpi6.0, Value (8 bit): 0x4 {09 07 74 00 00 00 04}
+0x25AAAF 					One Of Option: Acpi6.1, Value (8 bit): 0x5 {09 07 75 00 00 00 05}
+0x25AAB6 					One Of Option: Acpi6.2, Value (8 bit): 0x6 {09 07 76 00 00 00 06}
+0x25AABD 					One Of Option: Acpi6.3, Value (8 bit): 0x7 {09 07 77 00 00 00 07}
+0x25AAC4 				End One Of {29 02}
+0x25AAC6 			End If {29 02}
+0x25AAC8 		End If {29 02}
+0x25AACA 		Gray Out If {19 82}
+0x25AACC 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AAD6 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AADC 				And {15 02}
+0x25AADE 			End {29 02}
+0x25AAE0 			One Of: USB Boot, VarStoreInfo (VarOffset/VarName): 0x5C, VarStore: 0x1234, QuestionId: 0x1061, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 69 00 6A 00 61 10 34 12 5C 00 00 10 00 01 00}
+0x25AAF1 				One Of Option: Enabled, Value (8 bit): 0x0 (default) {09 07 20 01 10 00 00}
+0x25AAF8 				One Of Option: Disabled, Value (8 bit): 0x1 {09 07 21 00 00 00 01}
+0x25AAFF 			End One Of {29 02}
+0x25AB01 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0D 10}
+0x25AB16 		End If {29 02}
+0x25AB18 		Suppress If {0A 82}
+0x25AB1A 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25AB24 			Suppress If {0A 82}
+0x25AB26 				True {46 02}
+0x25AB28 				One Of: EFI Device First, VarStoreInfo (VarOffset/VarName): 0x75, VarStore: 0x1234, QuestionId: 0x105C, Size: 1, Min: 0x0, Max 0x0, Step: 0x0 {05 91 6B 00 6C 00 5C 10 34 12 75 00 04 10 00 00 00}
+0x25AB39 					One Of Option: Enabled, Value (8 bit): 0x0 (default) {09 07 20 01 10 00 00}
+0x25AB40 				End One Of {29 02}
+0x25AB42 			End If {29 02}
+0x25AB44 			Suppress If {0A 82}
+0x25AB46 				QuestionId: 0x105E equals value in list (0x0, 0x1) {14 0A 5E 10 02 00 00 00 01 00}
+0x25AB50 				Gray Out If {19 82}
+0x25AB52 					QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AB5C 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AB62 						And {15 02}
+0x25AB64 					End {29 02}
+0x25AB66 					One Of: UEFI OS Fast Boot, VarStoreInfo (VarOffset/VarName): 0x65, VarStore: 0x1234, QuestionId: 0x1068, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 A8 00 A9 00 68 10 34 12 65 00 00 10 00 01 00}
+0x25AB77 						One Of Option: Enabled, Value (8 bit): 0x0 (default) {09 07 20 01 10 00 00}
+0x25AB7E 						One Of Option: Disabled, Value (8 bit): 0x1 {09 07 21 00 00 00 01}
+0x25AB85 					End One Of {29 02}
+0x25AB87 				End If {29 02}
+0x25AB89 			End If {29 02}
+0x25AB8B 			Suppress If {0A 82}
+0x25AB8D 				QuestionId: 0x105E equals value in list (0x0, 0x1) {14 8A 5E 10 02 00 00 00 01 00}
+0x25AB97 					QuestionId: 0x1068 equals value 0x1 {12 06 68 10 01 00}
+0x25AB9D 					Or {16 02}
+0x25AB9F 				End {29 02}
+0x25ABA1 				Gray Out If {19 82}
+0x25ABA3 					QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25ABAD 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25ABB3 						And {15 02}
+0x25ABB5 					End {29 02}
+0x25ABB7 					One Of: USB Hot Key Support, VarStoreInfo (VarOffset/VarName): 0xE1, VarStore: 0x1234, QuestionId: 0x1069, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 AA 00 AB 00 69 10 34 12 E1 00 00 10 00 01 00}
+0x25ABC8 						One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25ABCF 						One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25ABD6 					End One Of {29 02}
+0x25ABD8 				End If {29 02}
+0x25ABDA 			End If {29 02}
+0x25ABDC 			Gray Out If {19 82}
+0x25ABDE 				QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25ABE8 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25ABEE 					And {15 02}
+0x25ABF0 				End {29 02}
+0x25ABF2 				Numeric: Timeout, VarStoreInfo (VarOffset/VarName): 0x69, VarStore: 0x1234, QuestionId: 0x106A, Size: 2, Min: 0x0, Max 0xA, Step: 0x1 {07 94 AC 00 AD 00 6A 10 34 12 69 00 00 11 00 00 0A 00 01 00}
+0x25AC06 					Default: DefaultId: 0x0, Value (16 bit): 0x0 {5B 07 00 00 01 00 00}
+0x25AC0D 				End {29 02}
+0x25AC0F 			End If {29 02}
+0x25AC11 			Gray Out If {19 82}
+0x25AC13 				QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AC1D 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AC23 					And {15 02}
+0x25AC25 				End {29 02}
+0x25AC27 				One Of: Automatic Failover, VarStoreInfo (VarOffset/VarName): 0xDE, VarStore: 0x1234, QuestionId: 0x106B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 AE 00 AF 00 6B 10 34 12 DE 00 00 10 00 01 00}
+0x25AC38 					One Of Option: Disabled, Value (8 bit): 0x0 {09 07 21 00 00 00 00}
+0x25AC3F 					One Of Option: Enabled, Value (8 bit): 0x1 (default) {09 07 20 01 10 00 01}
+0x25AC46 				End One Of {29 02}
+0x25AC48 			End If {29 02}
+0x25AC4A 		End If {29 02}
+0x25AC4C 		Suppress If {0A 82}
+0x25AC4E 			QuestionId: 0x105E equals value 0x1 {12 86 5E 10 01 00}
+0x25AC54 				QuestionId: 0xD equals value 0x0 {12 06 0D 00 00 00}
+0x25AC5A 				Or {16 02}
+0x25AC5C 			End {29 02}
+0x25AC5E 			Ref: EFI, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1076, FormId: 0x53A {0F 0F 7C 00 7D 00 76 10 00 00 FF FF 00 3A 05}
+0x25AC6D 		End If {29 02}
+0x25AC6F 		Suppress If {0A 82}
+0x25AC71 			QuestionId: 0x105E equals value 0x2 {12 86 5E 10 02 00}
+0x25AC77 				QuestionId: 0x3 equals value 0x0 {12 06 03 00 00 00}
+0x25AC7D 				Or {16 02}
+0x25AC7F 			End {29 02}
+0x25AC81 			Ref: Legacy, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x106C, FormId: 0x530 {0F 0F 7A 00 7B 00 6C 10 00 00 FF FF 00 30 05}
+0x25AC90 		End If {29 02}
+0x25AC92 		Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 94 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 07 00}
+0x25ACA6 		End {29 02}
+0x25ACA8 	End Form {29 02}
+0x25ACAA 	Form: EFI, FormId: 0x53A {01 86 3A 05 7C 00}
+0x25ACB0 		Subtitle: Statement.Prompt: EFI, Flags: 0x0 {02 87 7C 00 00 00 00}
+0x25ACB7 		End {29 02}
+0x25ACB9 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25ACC0 		End {29 02}
+0x25ACC2 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 09 30}
+0x25ACD7 	End Form {29 02}
+0x25ACD9 	Form: Boot Type Order, FormId: 0x53D {01 86 3D 05 80 00}
+0x25ACDF 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0B 30}
+0x25ACF4 	End Form {29 02}
+0x25ACF6 	Form: Legacy, FormId: 0x530 {01 86 30 05 7A 00}
+0x25ACFC 		Subtitle: Statement.Prompt: Boot Device Priority, Flags: 0x0 {02 87 82 00 00 00 00}
+0x25AD03 		End {29 02}
+0x25AD05 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AD0C 		End {29 02}
+0x25AD0E 		Gray Out If {19 82}
+0x25AD10 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AD1A 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AD20 				And {15 02}
+0x25AD22 			End {29 02}
+0x25AD24 			One Of: Normal Boot Menu, VarStoreInfo (VarOffset/VarName): 0x76, VarStore: 0x1234, QuestionId: 0x105B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 7E 00 7F 00 5B 10 34 12 76 00 04 10 00 01 00}
+0x25AD35 				One Of Option: Normal, Value (8 bit): 0x0 (default) {09 07 79 00 10 00 00}
+0x25AD3C 				One Of Option: Advance, Value (8 bit): 0x1 {09 07 78 00 00 00 01}
+0x25AD43 			End One Of {29 02}
+0x25AD45 		End If {29 02}
+0x25AD47 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AD4E 		End {29 02}
+0x25AD50 		Suppress If {0A 82}
+0x25AD52 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AD58 				QuestionId: 0xC equals value 0x0 {12 06 0C 00 00 00}
+0x25AD5E 				Or {16 02}
+0x25AD60 			End {29 02}
+0x25AD62 			Ref: Boot Type Order, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1077, FormId: 0x53B {0F 0F 80 00 81 00 77 10 00 00 FF FF 00 3B 05}
+0x25AD71 		End If {29 02}
+0x25AD73 		Suppress If {0A 82}
+0x25AD75 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AD7B 				QuestionId: 0xB equals value 0x0 {12 06 0B 00 00 00}
+0x25AD81 				Or {16 02}
+0x25AD83 			End {29 02}
+0x25AD85 			Ref: Floppy Drive, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x106D, FormId: 0x531 {0F 0F 87 00 88 00 6D 10 00 00 FF FF 00 31 05}
+0x25AD94 		End If {29 02}
+0x25AD96 		Suppress If {0A 82}
+0x25AD98 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AD9E 				QuestionId: 0xA equals value 0x0 {12 06 0A 00 00 00}
+0x25ADA4 				Or {16 02}
+0x25ADA6 			End {29 02}
+0x25ADA8 			Ref: Hard Disk Drive, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x106E, FormId: 0x532 {0F 0F 83 00 84 00 6E 10 00 00 FF FF 00 32 05}
+0x25ADB7 		End If {29 02}
+0x25ADB9 		Suppress If {0A 82}
+0x25ADBB 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25ADC1 				QuestionId: 0x9 equals value 0x0 {12 06 09 00 00 00}
+0x25ADC7 				Or {16 02}
+0x25ADC9 			End {29 02}
+0x25ADCB 			Ref: CD/DVD-ROM Drive, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x106F, FormId: 0x533 {0F 0F 85 00 86 00 6F 10 00 00 FF FF 00 33 05}
+0x25ADDA 		End If {29 02}
+0x25ADDC 		Suppress If {0A 82}
+0x25ADDE 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25ADE4 				QuestionId: 0x8 equals value 0x0 {12 06 08 00 00 00}
+0x25ADEA 				Or {16 02}
+0x25ADEC 			End {29 02}
+0x25ADEE 			Ref: PCMCIA, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1070, FormId: 0x534 {0F 0F 8B 00 8C 00 70 10 00 00 FF FF 00 34 05}
+0x25ADFD 		End If {29 02}
+0x25ADFF 		Suppress If {0A 82}
+0x25AE01 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AE07 				QuestionId: 0x7 equals value 0x0 {12 06 07 00 00 00}
+0x25AE0D 				Or {16 02}
+0x25AE0F 			End {29 02}
+0x25AE11 			Ref: USB, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1071, FormId: 0x535 {0F 0F 89 00 8A 00 71 10 00 00 FF FF 00 35 05}
+0x25AE20 		End If {29 02}
+0x25AE22 		Suppress If {0A 82}
+0x25AE24 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AE2A 				QuestionId: 0x6 equals value 0x0 {12 06 06 00 00 00}
+0x25AE30 				Or {16 02}
+0x25AE32 			End {29 02}
+0x25AE34 			Ref: EMBED NETWORK, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1072, FormId: 0x536 {0F 0F 8D 00 8E 00 72 10 00 00 FF FF 00 36 05}
+0x25AE43 		End If {29 02}
+0x25AE45 		Suppress If {0A 82}
+0x25AE47 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AE4D 				QuestionId: 0x5 equals value 0x0 {12 06 05 00 00 00}
+0x25AE53 				Or {16 02}
+0x25AE55 			End {29 02}
+0x25AE57 			Ref: BEV, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1073, FormId: 0x537 {0F 0F 8F 00 90 00 73 10 00 00 FF FF 00 37 05}
+0x25AE66 		End If {29 02}
+0x25AE68 		Suppress If {0A 82}
+0x25AE6A 			QuestionId: 0x105B equals value 0x1 {12 86 5B 10 01 00}
+0x25AE70 				QuestionId: 0x4 equals value 0x0 {12 06 04 00 00 00}
+0x25AE76 				Or {16 02}
+0x25AE78 			End {29 02}
+0x25AE7A 			Ref: Others, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1074, FormId: 0x538 {0F 0F 91 00 92 00 74 10 00 00 FF FF 00 38 05}
+0x25AE89 		End If {29 02}
+0x25AE8B 		Suppress If {0A 82}
+0x25AE8D 			QuestionId: 0x105B equals value 0x0 {12 86 5B 10 00 00}
+0x25AE93 				QuestionId: 0x3 equals value 0x0 {12 06 03 00 00 00}
+0x25AE99 				Or {16 02}
+0x25AE9B 			End {29 02}
+0x25AE9D 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0A 30}
+0x25AEB2 		End If {29 02}
+0x25AEB4 	End Form {29 02}
+0x25AEB6 	Form: Boot Type Order, FormId: 0x53B {01 86 3B 05 80 00}
+0x25AEBC 		Subtitle: Statement.Prompt: Boot Type Order, Flags: 0x0 {02 87 80 00 00 00 00}
+0x25AEC3 		End {29 02}
+0x25AEC5 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AECC 		End {29 02}
+0x25AECE 		Gray Out If {19 82}
+0x25AED0 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AEDA 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AEE0 				And {15 02}
+0x25AEE2 			End {29 02}
+0x25AEE4 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 30}
+0x25AEF9 		End If {29 02}
+0x25AEFB 	End Form {29 02}
+0x25AEFD 	Form: Hard Disk Drive, FormId: 0x532 {01 86 32 05 83 00}
+0x25AF03 		Subtitle: Statement.Prompt: Hard Disk Drive, Flags: 0x0 {02 87 83 00 00 00 00}
+0x25AF0A 		End {29 02}
+0x25AF0C 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AF13 		End {29 02}
+0x25AF15 		Gray Out If {19 82}
+0x25AF17 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AF21 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AF27 				And {15 02}
+0x25AF29 			End {29 02}
+0x25AF2B 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 02 30}
+0x25AF40 		End If {29 02}
+0x25AF42 	End Form {29 02}
+0x25AF44 	Form: CD/DVD-ROM Drive, FormId: 0x533 {01 86 33 05 85 00}
+0x25AF4A 		Subtitle: Statement.Prompt: CD/DVD-ROM Drive, Flags: 0x0 {02 87 85 00 00 00 00}
+0x25AF51 		End {29 02}
+0x25AF53 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AF5A 		End {29 02}
+0x25AF5C 		Gray Out If {19 82}
+0x25AF5E 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AF68 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AF6E 				And {15 02}
+0x25AF70 			End {29 02}
+0x25AF72 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 03 30}
+0x25AF87 		End If {29 02}
+0x25AF89 	End Form {29 02}
+0x25AF8B 	Form: Floppy Drive, FormId: 0x531 {01 86 31 05 87 00}
+0x25AF91 		Subtitle: Statement.Prompt: Floppy Drive, Flags: 0x0 {02 87 87 00 00 00 00}
+0x25AF98 		End {29 02}
+0x25AF9A 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AFA1 		End {29 02}
+0x25AFA3 		Gray Out If {19 82}
+0x25AFA5 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AFAF 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AFB5 				And {15 02}
+0x25AFB7 			End {29 02}
+0x25AFB9 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 30}
+0x25AFCE 		End If {29 02}
+0x25AFD0 	End Form {29 02}
+0x25AFD2 	Form: Others, FormId: 0x538 {01 86 38 05 91 00}
+0x25AFD8 		Subtitle: Statement.Prompt: Others, Flags: 0x0 {02 87 91 00 00 00 00}
+0x25AFDF 		End {29 02}
+0x25AFE1 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25AFE8 		End {29 02}
+0x25AFEA 		Gray Out If {19 82}
+0x25AFEC 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25AFF6 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25AFFC 				And {15 02}
+0x25AFFE 			End {29 02}
+0x25B000 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 08 30}
+0x25B015 		End If {29 02}
+0x25B017 	End Form {29 02}
+0x25B019 	Form: PCMCIA, FormId: 0x534 {01 86 34 05 8B 00}
+0x25B01F 		Subtitle: Statement.Prompt: PCMCIA, Flags: 0x0 {02 87 8B 00 00 00 00}
+0x25B026 		End {29 02}
+0x25B028 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25B02F 		End {29 02}
+0x25B031 		Gray Out If {19 82}
+0x25B033 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25B03D 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25B043 				And {15 02}
+0x25B045 			End {29 02}
+0x25B047 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 04 30}
+0x25B05C 		End If {29 02}
+0x25B05E 	End Form {29 02}
+0x25B060 	Form: USB, FormId: 0x535 {01 86 35 05 89 00}
+0x25B066 		Subtitle: Statement.Prompt: USB, Flags: 0x0 {02 87 89 00 00 00 00}
+0x25B06D 		End {29 02}
+0x25B06F 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25B076 		End {29 02}
+0x25B078 		Gray Out If {19 82}
+0x25B07A 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25B084 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25B08A 				And {15 02}
+0x25B08C 			End {29 02}
+0x25B08E 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 05 30}
+0x25B0A3 		End If {29 02}
+0x25B0A5 	End Form {29 02}
+0x25B0A7 	Form: EMBED NETWORK, FormId: 0x536 {01 86 36 05 8D 00}
+0x25B0AD 		Subtitle: Statement.Prompt: EMBED NETWORK, Flags: 0x0 {02 87 8D 00 00 00 00}
+0x25B0B4 		End {29 02}
+0x25B0B6 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25B0BD 		End {29 02}
+0x25B0BF 		Gray Out If {19 82}
+0x25B0C1 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25B0CB 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25B0D1 				And {15 02}
+0x25B0D3 			End {29 02}
+0x25B0D5 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 06 30}
+0x25B0EA 		End If {29 02}
+0x25B0EC 	End Form {29 02}
+0x25B0EE 	Form: BEV, FormId: 0x537 {01 86 37 05 8F 00}
+0x25B0F4 		Subtitle: Statement.Prompt: BEV, Flags: 0x0 {02 87 8F 00 00 00 00}
+0x25B0FB 		End {29 02}
+0x25B0FD 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25B104 		End {29 02}
+0x25B106 		Gray Out If {19 82}
+0x25B108 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25B112 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25B118 				And {15 02}
+0x25B11A 			End {29 02}
+0x25B11C 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 07 30}
+0x25B131 		End If {29 02}
+0x25B133 		Disable If {1E 82}
+0x25B135 			True {46 02}
+0x25B137 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0x1234, QuestionId: 0x1, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 01 00 34 12 81 00 00 10 00 FF 00}
+0x25B148 			End {29 02}
+0x25B14A 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x80, VarStore: 0x1234, QuestionId: 0x2, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 02 00 34 12 80 00 00 10 00 FF 00}
+0x25B15B 			End {29 02}
+0x25B15D 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x405, VarStore: 0x1489, QuestionId: 0x3, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 03 00 89 14 05 04 00 10 00 FF 00}
+0x25B16E 			End {29 02}
+0x25B170 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x7, VarStore: 0x1489, QuestionId: 0x4, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 04 00 89 14 07 00 00 10 00 FF 00}
+0x25B181 			End {29 02}
+0x25B183 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x6, VarStore: 0x1489, QuestionId: 0x5, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 05 00 89 14 06 00 00 10 00 FF 00}
+0x25B194 			End {29 02}
+0x25B196 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x5, VarStore: 0x1489, QuestionId: 0x6, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 06 00 89 14 05 00 00 10 00 FF 00}
+0x25B1A7 			End {29 02}
+0x25B1A9 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x4, VarStore: 0x1489, QuestionId: 0x7, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 07 00 89 14 04 00 00 10 00 FF 00}
+0x25B1BA 			End {29 02}
+0x25B1BC 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x3, VarStore: 0x1489, QuestionId: 0x8, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 08 00 89 14 03 00 00 10 00 FF 00}
+0x25B1CD 			End {29 02}
+0x25B1CF 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x2, VarStore: 0x1489, QuestionId: 0x9, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 09 00 89 14 02 00 00 10 00 FF 00}
+0x25B1E0 			End {29 02}
+0x25B1E2 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x1, VarStore: 0x1489, QuestionId: 0xA, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0A 00 89 14 01 00 00 10 00 FF 00}
+0x25B1F3 			End {29 02}
+0x25B1F5 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0x1489, QuestionId: 0xB, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0B 00 89 14 00 00 00 10 00 FF 00}
+0x25B206 			End {29 02}
+0x25B208 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x404, VarStore: 0x1489, QuestionId: 0xC, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0C 00 89 14 04 04 00 10 00 FF 00}
+0x25B219 			End {29 02}
+0x25B21B 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x406, VarStore: 0x1489, QuestionId: 0xD, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0D 00 89 14 06 04 00 10 00 FF 00}
+0x25B22C 			End {29 02}
+0x25B22E 		End If {29 02}
+0x25B230 	End Form {29 02}
+0x25B232 End Form Set {29 02}
+0x25C26C Form Set: Security [5204F764-DF25-48A2-B337-9EC122B85E0D], ClassGuid0 [9F85453E-2F03-4989-AD3B-4A840791AF3A] {0E A7 64 F7 04 52 25 DF A2 48 B3 37 9E C1 22 B8 5E 0D 2D 00 06 00 01 3E 45 85 9F 03 2F 89 49 AD 3B 4A 84 07 91 AF 3A}
+0x25C293 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0x25C2A8 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 04 00}
+0x25C2BD 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0x25C2C3 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0x25C2C9 	Image: Id: 0x12 {04 04 12 00}
+0x25C2CD 	VarStore: VarStoreId: 0x1234 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0xE6, Name: SystemConfig {24 23 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 34 12 E6 00 53 79 73 74 65 6D 43 6F 6E 66 69 67 00}
+0x25C2F0 	VarStore: VarStoreId: 0x1235 [F72DEEF6-13EF-4958-B027-0E45CE7FA45E], Size: 0x53, Name: PasswordConfig {24 25 F6 EE 2D F7 EF 13 58 49 B0 27 0E 45 CE 7F A4 5E 35 12 53 00 50 61 73 73 77 6F 72 64 43 6F 6E 66 69 67 00}
+0x25C315 	VarStore: VarStoreId: 0x1237 [07A66697-D400-4903-B3DA-67A61D2B7058], Size: 0xA, Name: Tcg2ConfigInfo {24 25 97 66 A6 07 00 D4 03 49 B3 DA 67 A6 1D 2B 70 58 37 12 0A 00 54 63 67 32 43 6F 6E 66 69 67 49 6E 66 6F 00}
+0x25C33A 	VarStoreNameValue: VarStoreId: 0x1236 [F72DEEF6-13EF-4958-B027-0E45CE7FA45E] {25 14 36 12 F6 EE 2D F7 EF 13 58 49 B0 27 0E 45 CE 7F A4 5E}
+0x25C34E 	Form: Security, FormId: 0x1 {01 86 01 00 2D 00}
+0x25C354 		Gray Out If {19 82}
+0x25C356 			True {46 02}
+0x25C358 			One Of: Current TPM Device, VarStoreInfo (VarOffset/VarName): 0xE3, VarStore: 0x1234, QuestionId: 0x11B9, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 B2 00 B3 00 B9 11 34 12 E3 00 04 10 00 02 00}
+0x25C369 				One Of Option: Not Detected, Value (8 bit): 0x0 {09 07 29 00 00 00 00}
+0x25C370 				One Of Option: TPM 1.2, Value (8 bit): 0x1 {09 07 B1 00 00 00 01}
+0x25C377 				One Of Option: TPM 2.0, Value (8 bit): 0x2 (default) {09 07 B0 00 10 00 02}
+0x25C37E 			End One Of {29 02}
+0x25C380 		End If {29 02}
+0x25C382 		Gray Out If {19 82}
+0x25C384 			True {46 02}
+0x25C386 		End If {29 02}
+0x25C388 		Suppress If {0A 82}
+0x25C38A 			QuestionId: 0x11B9 equals value 0x1 {12 86 B9 11 01 00}
+0x25C390 				Not {17 02}
+0x25C392 			End {29 02}
+0x25C394 			Gray Out If {19 82}
+0x25C396 				QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C39C 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C3A2 					And {15 02}
+0x25C3A4 				End {29 02}
+0x25C3A6 				One Of: TPM Availability, VarStoreInfo (VarOffset/VarName): 0x9D, VarStore: 0x1234, QuestionId: 0x11BA, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 C0 00 C1 00 BA 11 34 12 9D 00 04 10 00 01 00}
+0x25C3B7 					One Of Option: Available, Value (8 bit): 0x0 (default) {09 07 C2 00 10 00 00}
+0x25C3BE 					One Of Option: Hidden, Value (8 bit): 0x1 {09 07 C3 00 00 00 01}
+0x25C3C5 				End One Of {29 02}
+0x25C3C7 			End If {29 02}
+0x25C3C9 		End If {29 02}
+0x25C3CB 		Suppress If {0A 82}
+0x25C3CD 			QuestionId: 0x11B9 equals value 0x1 {12 86 B9 11 01 00}
+0x25C3D3 				Not {17 02}
+0x25C3D5 				QuestionId: 0x11 equals value 0xFF {12 06 11 00 FF 00}
+0x25C3DB 				Or {16 02}
+0x25C3DD 			End {29 02}
+0x25C3DF 			Gray Out If {19 82}
+0x25C3E1 				QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C3E7 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C3ED 					And {15 02}
+0x25C3EF 				End {29 02}
+0x25C3F1 				One Of: TPM Operation, VarStoreInfo (VarOffset/VarName): 0x62, VarStore: 0x1234, QuestionId: 0x11C3, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 46 00 47 00 C3 11 34 12 62 00 00 10 00 02 00}
+0x25C402 					One Of Option: No Operation, Value (8 bit): 0x0 (default) {09 07 48 00 10 00 00}
+0x25C409 					One Of Option: Disable and Deactivate, Value (8 bit): 0x1 {09 07 4A 00 00 00 01}
+0x25C410 					One Of Option: Enable and Activate, Value (8 bit): 0x2 {09 07 49 00 00 00 02}
+0x25C417 				End One Of {29 02}
+0x25C419 			End If {29 02}
+0x25C41B 		End If {29 02}
+0x25C41D 		Suppress If {0A 82}
+0x25C41F 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25C429 			Suppress If {0A 82}
+0x25C42B 				QuestionId: 0x11B9 equals value 0x1 {12 86 B9 11 01 00}
+0x25C431 					Not {17 02}
+0x25C433 					QuestionId: 0x11 equals value 0xFF {12 06 11 00 FF 00}
+0x25C439 					Or {16 02}
+0x25C43B 				End {29 02}
+0x25C43D 				Gray Out If {19 82}
+0x25C43F 					QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C445 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C44B 						And {15 02}
+0x25C44D 						QuestionId: 0x10 equals value 0x1 {12 06 10 00 01 00}
+0x25C453 						Or {16 02}
+0x25C455 					End {29 02}
+0x25C457 					Checkbox: Clear TPM, VarStoreInfo (VarOffset/VarName): 0x63, VarStore: 0x1234, QuestionId: 0x11B5 {06 8E 4B 00 4C 00 B5 11 34 12 63 00 04 00}
+0x25C465 						Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x25C46B 					End {29 02}
+0x25C46D 				End If {29 02}
+0x25C46F 			End If {29 02}
+0x25C471 			Suppress If {0A 82}
+0x25C473 				QuestionId: 0x11B9 equals value 0x2 {12 86 B9 11 02 00}
+0x25C479 					Not {17 02}
+0x25C47B 					QuestionId: 0xA equals value 0xFF {12 06 0A 00 FF 00}
+0x25C481 					Or {16 02}
+0x25C483 				End {29 02}
+0x25C485 				Gray Out If {19 82}
+0x25C487 					True {46 02}
+0x25C489 					Text: Statement.Prompt: TPM Active PCR Hash Algorithm, TextTwo:  {03 08 F1 00 F2 00 F3 00}
+0x25C491 					Text: Statement.Prompt: TPM Hardware Supported Hash Algorithm, TextTwo:  {03 08 F4 00 F5 00 F6 00}
+0x25C499 					Text: Statement.Prompt: BIOS Supported Hash Algorithm, TextTwo:  {03 08 F7 00 F8 00 F9 00}
+0x25C4A1 				End If {29 02}
+0x25C4A3 			End If {29 02}
+0x25C4A5 			Suppress If {0A 82}
+0x25C4A7 				QuestionId: 0x11B9 equals value 0x2 {12 86 B9 11 02 00}
+0x25C4AD 					Not {17 02}
+0x25C4AF 					QuestionId: 0xA equals value 0xFF {12 06 0A 00 FF 00}
+0x25C4B5 					Or {16 02}
+0x25C4B7 				End {29 02}
+0x25C4B9 				Gray Out If {19 82}
+0x25C4BB 					QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C4C1 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C4C7 						And {15 02}
+0x25C4C9 					End {29 02}
+0x25C4CB 					One Of: TrEE Protocol Version, VarStoreInfo (VarOffset/VarName): 0x9E, VarStore: 0x1234, QuestionId: 0x11C0, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 04 01 05 01 C0 11 34 12 9E 00 04 10 00 01 00}
+0x25C4DC 						One Of Option: 1.0, Value (8 bit): 0x0 {09 07 06 01 00 00 00}
+0x25C4E3 						One Of Option: 1.1, Value (8 bit): 0x1 (default) {09 07 07 01 10 00 01}
+0x25C4EA 					End One Of {29 02}
+0x25C4EC 				End If {29 02}
+0x25C4EE 			End If {29 02}
+0x25C4F0 		End If {29 02}
+0x25C4F2 		Suppress If {0A 82}
+0x25C4F4 			QuestionId: 0x11B9 equals value 0x2 {12 86 B9 11 02 00}
+0x25C4FA 				Not {17 02}
+0x25C4FC 			End {29 02}
+0x25C4FE 			Gray Out If {19 82}
+0x25C500 				QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C506 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C50C 					And {15 02}
+0x25C50E 				End {29 02}
+0x25C510 				One Of: TPM Availability, VarStoreInfo (VarOffset/VarName): 0x9D, VarStore: 0x1234, QuestionId: 0x11BB, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 C0 00 C1 00 BB 11 34 12 9D 00 04 10 00 01 00}
+0x25C521 					One Of Option: Available, Value (8 bit): 0x0 (default) {09 07 C2 00 10 00 00}
+0x25C528 					One Of Option: Hidden, Value (8 bit): 0x1 {09 07 C3 00 00 00 01}
+0x25C52F 				End One Of {29 02}
+0x25C531 			End If {29 02}
+0x25C533 		End If {29 02}
+0x25C535 		Suppress If {0A 82}
+0x25C537 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25C541 			Suppress If {0A 82}
+0x25C543 				QuestionId: 0x11B9 equals value 0x2 {12 86 B9 11 02 00}
+0x25C549 					Not {17 02}
+0x25C54B 					QuestionId: 0xA equals value 0xFF {12 06 0A 00 FF 00}
+0x25C551 					Or {16 02}
+0x25C553 				End {29 02}
+0x25C555 				Gray Out If {19 82}
+0x25C557 					QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C55D 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C563 						And {15 02}
+0x25C565 					End {29 02}
+0x25C567 					Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 BD 11}
+0x25C57C 					Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 BE 11}
+0x25C591 				End If {29 02}
+0x25C593 			End If {29 02}
+0x25C595 			Suppress If {0A 82}
+0x25C597 				QuestionId: 0x11C3 equals value 0x17 {12 86 C3 11 17 00}
+0x25C59D 					Not {17 02}
+0x25C59F 					QuestionId: 0xA equals value 0xFF {12 06 0A 00 FF 00}
+0x25C5A5 					Or {16 02}
+0x25C5A7 				End {29 02}
+0x25C5A9 				Suppress If {0A 82}
+0x25C5AB 					QuestionId: 0xF equals value 0x0 {12 06 0F 00 00 00}
+0x25C5B1 					Checkbox: PCR Bank: SHA1, VarStoreInfo (VarOffset/VarName): 0x5, VarStore: 0x1237, QuestionId: 0x1200 {06 8E FA 00 FB 00 00 12 37 12 05 00 04 00}
+0x25C5BF 						Default: DefaultId: 0x0, Value (8 bit): 0x1 {5B 06 00 00 00 01}
+0x25C5C5 					End {29 02}
+0x25C5C7 				End If {29 02}
+0x25C5C9 				Suppress If {0A 82}
+0x25C5CB 					QuestionId: 0xE equals value 0x0 {12 06 0E 00 00 00}
+0x25C5D1 					Checkbox: PCR Bank: SHA256, VarStoreInfo (VarOffset/VarName): 0x6, VarStore: 0x1237, QuestionId: 0x1201 {06 8E FC 00 FD 00 01 12 37 12 06 00 04 00}
+0x25C5DF 						Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x25C5E5 					End {29 02}
+0x25C5E7 				End If {29 02}
+0x25C5E9 				Suppress If {0A 82}
+0x25C5EB 					QuestionId: 0xD equals value 0x0 {12 06 0D 00 00 00}
+0x25C5F1 					Checkbox: PCR Bank: SHA384, VarStoreInfo (VarOffset/VarName): 0x7, VarStore: 0x1237, QuestionId: 0x1202 {06 8E FE 00 FF 00 02 12 37 12 07 00 04 00}
+0x25C5FF 						Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x25C605 					End {29 02}
+0x25C607 				End If {29 02}
+0x25C609 				Suppress If {0A 82}
+0x25C60B 					QuestionId: 0xC equals value 0x0 {12 06 0C 00 00 00}
+0x25C611 					Checkbox: PCR Bank: SHA512, VarStoreInfo (VarOffset/VarName): 0x8, VarStore: 0x1237, QuestionId: 0x1203 {06 8E 00 01 01 01 03 12 37 12 08 00 04 00}
+0x25C61F 						Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x25C625 					End {29 02}
+0x25C627 				End If {29 02}
+0x25C629 				Suppress If {0A 82}
+0x25C62B 					QuestionId: 0xB equals value 0x0 {12 06 0B 00 00 00}
+0x25C631 					Checkbox: PCR Bank: SM3_256, VarStoreInfo (VarOffset/VarName): 0x9, VarStore: 0x1237, QuestionId: 0x1204 {06 8E 02 01 03 01 04 12 37 12 09 00 04 00}
+0x25C63F 						Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x25C645 					End {29 02}
+0x25C647 				End If {29 02}
+0x25C649 			End If {29 02}
+0x25C64B 			Suppress If {0A 82}
+0x25C64D 				QuestionId: 0x11B9 equals value 0x2 {12 86 B9 11 02 00}
+0x25C653 					Not {17 02}
+0x25C655 					QuestionId: 0xA equals value 0xFF {12 06 0A 00 FF 00}
+0x25C65B 					Or {16 02}
+0x25C65D 				End {29 02}
+0x25C65F 				Gray Out If {19 82}
+0x25C661 					QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C667 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C66D 						And {15 02}
+0x25C66F 					End {29 02}
+0x25C671 					Checkbox: Clear TPM, VarStoreInfo (VarOffset/VarName): 0x68, VarStore: 0x1234, QuestionId: 0x11B8 {06 8E 4B 00 4C 00 B8 11 34 12 68 00 04 00}
+0x25C67F 						Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x25C685 					End {29 02}
+0x25C687 				End If {29 02}
+0x25C689 			End If {29 02}
+0x25C68B 			Suppress If {0A 82}
+0x25C68D 				True {46 02}
+0x25C68F 				Checkbox:  , VarStoreInfo (VarOffset/VarName): 0x67, VarStore: 0x1234, QuestionId: 0x11B7 {06 8E 06 00 06 00 B7 11 34 12 67 00 00 00}
+0x25C69D 					Default: DefaultId: 0x0, Value (8 bit): 0x1 {5B 06 00 00 00 01}
+0x25C6A3 				End {29 02}
+0x25C6A5 			End If {29 02}
+0x25C6A7 			Suppress If {0A 82}
+0x25C6A9 				True {46 02}
+0x25C6AB 				One Of:  , VarStoreInfo (VarOffset/VarName): 0x6B, VarStore: 0x1234, QuestionId: 0x11C4, Size: 1, Min: 0x2, Max 0x2, Step: 0x0 {05 91 06 00 06 00 C4 11 34 12 6B 00 00 10 02 02 00}
+0x25C6BC 					One Of Option:  , Value (8 bit): 0x2 (default) {09 07 06 00 10 00 02}
+0x25C6C3 				End One Of {29 02}
+0x25C6C5 			End If {29 02}
+0x25C6C7 			Gray Out If {19 82}
+0x25C6C9 				True {46 02}
+0x25C6CB 				Text: Statement.Prompt: Supervisor Password, TextTwo: Not Installed {03 08 2E 00 06 00 23 00}
+0x25C6D3 				Text: Statement.Prompt: User Password   , TextTwo: Not Installed {03 08 2F 00 06 00 24 00}
+0x25C6DB 			End If {29 02}
+0x25C6DD 		End If {29 02}
+0x25C6DF 		Suppress If {0A 82}
+0x25C6E1 			QuestionId: 0x1927 equals value in list (0x1, 0x3, 0x4) {14 8C 27 19 03 00 01 00 03 00 04 00}
+0x25C6ED 				QuestionId: 0x1 equals value 0x0 {12 06 01 00 00 00}
+0x25C6F3 				Or {16 02}
+0x25C6F5 			End {29 02}
+0x25C6F7 			Text: Statement.Prompt:  , TextTwo:   {03 08 06 00 06 00 06 00}
+0x25C6FF 		End If {29 02}
+0x25C701 		Gray Out If {19 82}
+0x25C703 			QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25C709 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C70F 				And {15 02}
+0x25C711 			End {29 02}
+0x25C713 			Suppress If {0A 82}
+0x25C715 				QuestionId: 0x1927 equals value in list (0x3, 0x4) {14 8A 27 19 02 00 03 00 04 00}
+0x25C71F 					QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C725 					And {15 02}
+0x25C727 				End {29 02}
+0x25C729 				Password: Set Supervisor Password, VarStoreInfo (VarOffset/VarName): 0xB4, VarStore: 0x1236, QuestionId: 0x1037, MinSize: 0x0, MaxSize 0xA {08 91 30 00 3B 00 37 10 36 12 B4 00 04 00 00 0A 00}
+0x25C73A 				End {29 02}
+0x25C73C 			End If {29 02}
+0x25C73E 		End If {29 02}
+0x25C740 		Suppress If {0A 82}
+0x25C742 			QuestionId: 0x1 equals value 0x1 {12 86 01 00 01 00}
+0x25C748 				QuestionId: 0x9 equals value 0x0 {12 06 09 00 00 00}
+0x25C74E 				Or {16 02}
+0x25C750 			End {29 02}
+0x25C752 			One Of: Power on Password, VarStoreInfo (VarOffset/VarName): 0x9F, VarStore: 0x1234, QuestionId: 0x1925, Size: 1, Min: 0x1, Max 0x2, Step: 0x0 {05 91 36 00 37 00 25 19 34 12 9F 00 00 10 01 02 00}
+0x25C763 				One Of Option: Enabled, Value (8 bit): 0x2 {09 07 20 01 00 00 02}
+0x25C76A 				One Of Option: Disabled, Value (8 bit): 0x1 (default) {09 07 21 00 10 00 01}
+0x25C771 			End One Of {29 02}
+0x25C773 		End If {29 02}
+0x25C775 		Suppress If {0A 82}
+0x25C777 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25C781 			One Of: User Access Level, VarStoreInfo (VarOffset/VarName): 0x80, VarStore: 0x1234, QuestionId: 0x1927, Size: 1, Min: 0x2, Max 0x4, Step: 0x0 {05 91 31 00 32 00 27 19 34 12 80 00 00 10 02 04 00}
+0x25C792 				One Of Option: View Only, Value (8 bit): 0x2 (default) {09 07 33 00 10 00 02}
+0x25C799 				One Of Option: Limited, Value (8 bit): 0x3 {09 07 34 00 00 00 03}
+0x25C7A0 				One Of Option: Full, Value (8 bit): 0x4 {09 07 35 00 00 00 04}
+0x25C7A7 			End One Of {29 02}
+0x25C7A9 		End If {29 02}
+0x25C7AB 		Suppress If {0A 82}
+0x25C7AD 			QuestionId: 0x9 equals value 0x0 {12 06 09 00 00 00}
+0x25C7B3 			Password: Set User Password, VarStoreInfo (VarOffset/VarName): 0xB5, VarStore: 0x1236, QuestionId: 0x1038, MinSize: 0x0, MaxSize 0xA {08 91 38 00 3B 00 38 10 36 12 B5 00 04 00 00 0A 00}
+0x25C7C4 			End {29 02}
+0x25C7C6 		End If {29 02}
+0x25C7C8 		Suppress If {0A 82}
+0x25C7CA 			QuestionId: 0x8 equals value 0x0 {12 06 08 00 00 00}
+0x25C7D0 			Action: Clear User Password, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1039, QuestionConfig: en-US {0C 8F 3C 00 06 00 39 10 00 00 FF FF 04 00 00}
+0x25C7DF 				Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25C7F5 			End {29 02}
+0x25C7F7 		End If {29 02}
+0x25C7F9 		Suppress If {0A 82}
+0x25C7FB 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25C805 			Suppress If {0A 82}
+0x25C807 				QuestionId: 0x5 equals value 0x0 {12 06 05 00 00 00}
+0x25C80D 				Gray Out If {19 82}
+0x25C80F 					QuestionId: 0x7 equals value 0x0 {12 86 07 00 00 00}
+0x25C815 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C81B 						QuestionId: 0x1927 equals value 0x3 {12 06 27 19 03 00}
+0x25C821 						And {15 02}
+0x25C823 						Or {16 02}
+0x25C825 					End {29 02}
+0x25C827 					Password: Set All Hdd Password, VarStoreInfo (VarOffset/VarName): 0xB6, VarStore: 0x1236, QuestionId: 0x1043, MinSize: 0x0, MaxSize 0x20 {08 91 39 00 3D 00 43 10 36 12 B6 00 04 00 00 20 00}
+0x25C838 					End {29 02}
+0x25C83A 				End If {29 02}
+0x25C83C 			End If {29 02}
+0x25C83E 			Suppress If {0A 82}
+0x25C840 				QuestionId: 0x5 equals value 0x0 {12 06 05 00 00 00}
+0x25C846 				Gray Out If {19 82}
+0x25C848 					QuestionId: 0x7 equals value 0x0 {12 86 07 00 00 00}
+0x25C84E 						QuestionId: 0x6 equals value 0x0 {12 06 06 00 00 00}
+0x25C854 						Or {16 02}
+0x25C856 						QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25C85C 						QuestionId: 0x1927 equals value 0x3 {12 06 27 19 03 00}
+0x25C862 						And {15 02}
+0x25C864 						Or {16 02}
+0x25C866 					End {29 02}
+0x25C868 					Password: Set All Master Hdd Password, VarStoreInfo (VarOffset/VarName): 0xB7, VarStore: 0x1236, QuestionId: 0x1042, MinSize: 0x0, MaxSize 0x20 {08 91 3A 00 3E 00 42 10 36 12 B7 00 04 00 00 20 00}
+0x25C879 					End {29 02}
+0x25C87B 				End If {29 02}
+0x25C87D 			End If {29 02}
+0x25C87F 		End If {29 02}
+0x25C881 		Suppress If {0A 82}
+0x25C883 			64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25C88D 			Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25C894 			End {29 02}
+0x25C896 			Suppress If {0A 82}
+0x25C898 				QuestionId: 0x5 equals value 0x0 {12 06 05 00 00 00}
+0x25C89E 				Ref: Storage Password Setup Page, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1926, FormId: 0x1901 {0F 0F C7 00 C7 00 26 19 00 00 FF FF 00 01 19}
+0x25C8AD 			End If {29 02}
+0x25C8AF 			Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25C8B6 			End {29 02}
+0x25C8B8 			Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 94 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 07 00}
+0x25C8CC 			End {29 02}
+0x25C8CE 		End If {29 02}
+0x25C8D0 	End Form {29 02}
+0x25C8D2 	Form: Storage Password Setup Page, FormId: 0x1901 {01 86 01 19 C7 00}
+0x25C8D8 		Subtitle: Statement.Prompt: Current BlockSID Status:, Flags: 0x0 {02 87 0E 01 00 00 00}
+0x25C8DF 		End {29 02}
+0x25C8E1 		Gray Out If {19 82}
+0x25C8E3 			True {46 02}
+0x25C8E5 			Suppress If {0A 82}
+0x25C8E7 				QuestionId: 0x4 equals value 0x0 {12 06 04 00 00 00}
+0x25C8ED 				Text: Statement.Prompt: BlockSID is enabled, TextTwo: en-US {03 08 0F 01 06 00 00 00}
+0x25C8F5 			End If {29 02}
+0x25C8F7 			Suppress If {0A 82}
+0x25C8F9 				QuestionId: 0x4 equals value 0x1 {12 06 04 00 01 00}
+0x25C8FF 				Text: Statement.Prompt: BlockSID is disabled, TextTwo: en-US {03 08 10 01 06 00 00 00}
+0x25C907 			End If {29 02}
+0x25C909 			Suppress If {0A 82}
+0x25C90B 				QuestionId: 0x3 equals value 0x0 {12 06 03 00 00 00}
+0x25C911 				Text: Statement.Prompt: Require physical presence when enable BlockSID, TextTwo: en-US {03 08 11 01 06 00 00 00}
+0x25C919 			End If {29 02}
+0x25C91B 			Suppress If {0A 82}
+0x25C91D 				QuestionId: 0x3 equals value 0x1 {12 06 03 00 01 00}
+0x25C923 				Text: Statement.Prompt: Not require physical presence when enable BlockSID, TextTwo: en-US {03 08 12 01 06 00 00 00}
+0x25C92B 			End If {29 02}
+0x25C92D 			Suppress If {0A 82}
+0x25C92F 				QuestionId: 0x2 equals value 0x0 {12 06 02 00 00 00}
+0x25C935 				Text: Statement.Prompt: Require physical presence when disable BlockSID, TextTwo: en-US {03 08 13 01 06 00 00 00}
+0x25C93D 			End If {29 02}
+0x25C93F 			Suppress If {0A 82}
+0x25C941 				QuestionId: 0x2 equals value 0x1 {12 06 02 00 01 00}
+0x25C947 				Text: Statement.Prompt: Not require physical presence when disable BlockSID, TextTwo: en-US {03 08 14 01 06 00 00 00}
+0x25C94F 			End If {29 02}
+0x25C951 		End If {29 02}
+0x25C953 		One Of: TCG Storage Action, VarStoreInfo (VarOffset/VarName): 0x4C, VarStore: 0x1235, QuestionId: 0x11C5, Size: 4, Min: 0x0, Max 0x65, Step: 0x0 {05 9A 0C 01 0D 01 C5 11 35 12 4C 00 10 12 00 00 00 00 65 00 00 00 00 00 00 00}
+0x25C96D 			One Of Option: No Operation, Value (32 bit): 0x0 (default) {09 0A DA 00 32 02 00 00 00 00}
+0x25C977 			One Of Option: Enable_BlockSIDFunc, Value (32 bit): 0x60 {09 0A EB 00 02 02 60 00 00 00}
+0x25C981 			One Of Option: Disable_BlockSIDFunc, Value (32 bit): 0x61 {09 0A EC 00 02 02 61 00 00 00}
+0x25C98B 			One Of Option: PPRequiredForEnableBlockSID_True, Value (32 bit): 0x62 {09 0A ED 00 02 02 62 00 00 00}
+0x25C995 			One Of Option: PPRequiredForEnableBlockSID_False, Value (32 bit): 0x63 {09 0A EE 00 02 02 63 00 00 00}
+0x25C99F 			One Of Option: PPRequiredForDisableBlockSID_True, Value (32 bit): 0x64 {09 0A EF 00 02 02 64 00 00 00}
+0x25C9A9 			One Of Option: PPRequiredForDisableBlockSID_False, Value (32 bit): 0x65 {09 0A F0 00 02 02 65 00 00 00}
+0x25C9B3 		End One Of {29 02}
+0x25C9B5 		Subtitle: Statement.Prompt: Device List, Flags: 0x0 {02 87 15 01 00 00 00}
+0x25C9BC 		End {29 02}
+0x25C9BE 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 19}
+0x25C9D3 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF 19}
+0x25C9E8 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 C9 00 00 00 00}
+0x25C9EF 		End {29 02}
+0x25C9F1 		Subtitle: Statement.Prompt: ‘ and “ to change option, ENTER to select an option, ESC to exit, Flags: 0x0 {02 87 C8 00 00 00 00}
+0x25C9F8 		End {29 02}
+0x25C9FA 	End Form {29 02}
+0x25C9FC 	Form: Storage Password Device Setup Page, FormId: 0x1902 {01 86 02 19 CA 00}
+0x25CA02 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25CA09 		End {29 02}
+0x25CA0B 		Text: Statement.Prompt: Device Name:    , TextTwo: [Not Installed] {03 08 CE 00 06 00 CF 00}
+0x25CA13 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25CA1A 		End {29 02}
+0x25CA1C 		Text: Statement.Prompt: Security Mode: , TextTwo: Uninstall {03 08 CC 00 06 00 CD 00}
+0x25CA24 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25CA2B 		End {29 02}
+0x25CA2D 		Gray Out If {19 82}
+0x25CA2F 			QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25CA35 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25CA3B 				And {15 02}
+0x25CA3D 			End {29 02}
+0x25CA3F 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 10 19}
+0x25CA54 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 11 19}
+0x25CA69 		End If {29 02}
+0x25CA6B 		Gray Out If {19 82}
+0x25CA6D 			QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25CA73 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25CA79 				And {15 02}
+0x25CA7B 			End {29 02}
+0x25CA7D 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 12 19}
+0x25CA92 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 13 19}
+0x25CAA7 		End If {29 02}
+0x25CAA9 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 06 00 00 00 00}
+0x25CAB0 		End {29 02}
+0x25CAB2 		Gray Out If {19 82}
+0x25CAB4 			QuestionId: 0x1927 equals value 0x2 {12 86 27 19 02 00}
+0x25CABA 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25CAC0 				And {15 02}
+0x25CAC2 			End {29 02}
+0x25CAC4 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 16 19}
+0x25CAD9 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 17 19}
+0x25CAEE 		End If {29 02}
+0x25CAF0 		Disable If {1E 82}
+0x25CAF2 			True {46 02}
+0x25CAF4 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0x1234, QuestionId: 0x1, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 01 00 34 12 81 00 00 10 00 FF 00}
+0x25CB05 			End {29 02}
+0x25CB07 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x52, VarStore: 0x1235, QuestionId: 0x2, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 02 00 35 12 52 00 00 10 00 FF 00}
+0x25CB18 			End {29 02}
+0x25CB1A 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x51, VarStore: 0x1235, QuestionId: 0x3, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 03 00 35 12 51 00 00 10 00 FF 00}
+0x25CB2B 			End {29 02}
+0x25CB2D 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x50, VarStore: 0x1235, QuestionId: 0x4, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 04 00 35 12 50 00 00 10 00 FF 00}
+0x25CB3E 			End {29 02}
+0x25CB40 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0x1235, QuestionId: 0x5, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 05 00 35 12 00 00 00 10 00 FF 00}
+0x25CB51 			End {29 02}
+0x25CB53 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x8, VarStore: 0x1235, QuestionId: 0x6, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 06 00 35 12 08 00 00 10 00 FF 00}
+0x25CB64 			End {29 02}
+0x25CB66 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x7, VarStore: 0x1235, QuestionId: 0x7, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 07 00 35 12 07 00 00 10 00 FF 00}
+0x25CB77 			End {29 02}
+0x25CB79 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0xA9, VarStore: 0x1234, QuestionId: 0x8, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 08 00 34 12 A9 00 00 10 00 FF 00}
+0x25CB8A 			End {29 02}
+0x25CB8C 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0xA8, VarStore: 0x1234, QuestionId: 0x9, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 09 00 34 12 A8 00 00 10 00 FF 00}
+0x25CB9D 			End {29 02}
+0x25CB9F 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x66, VarStore: 0x1234, QuestionId: 0xA, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0A 00 34 12 66 00 00 10 00 FF 00}
+0x25CBB0 			End {29 02}
+0x25CBB2 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x4, VarStore: 0x1237, QuestionId: 0xB, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0B 00 37 12 04 00 00 10 00 FF 00}
+0x25CBC3 			End {29 02}
+0x25CBC5 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x3, VarStore: 0x1237, QuestionId: 0xC, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0C 00 37 12 03 00 00 10 00 FF 00}
+0x25CBD6 			End {29 02}
+0x25CBD8 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x2, VarStore: 0x1237, QuestionId: 0xD, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0D 00 37 12 02 00 00 10 00 FF 00}
+0x25CBE9 			End {29 02}
+0x25CBEB 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x1, VarStore: 0x1237, QuestionId: 0xE, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0E 00 37 12 01 00 00 10 00 FF 00}
+0x25CBFC 			End {29 02}
+0x25CBFE 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0x1237, QuestionId: 0xF, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 0F 00 37 12 00 00 00 10 00 FF 00}
+0x25CC0F 			End {29 02}
+0x25CC11 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x6C, VarStore: 0x1234, QuestionId: 0x10, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 10 00 34 12 6C 00 00 10 00 FF 00}
+0x25CC22 			End {29 02}
+0x25CC24 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x61, VarStore: 0x1234, QuestionId: 0x11, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 11 00 34 12 61 00 00 10 00 FF 00}
+0x25CC35 			End {29 02}
+0x25CC37 		End If {29 02}
+0x25CC39 	End Form {29 02}
+0x25CC3B End Form Set {29 02}
+0x25DC9C Form Set: Exit [B6936426-FB04-4A7B-AA51-FD49397CDC01], ClassGuid0 [9F85453E-2F03-4989-AD3B-4A840791AF3A] {0E A7 26 64 93 B6 04 FB 7B 4A AA 51 FD 49 39 7C DC 01 93 00 06 00 01 3E 45 85 9F 03 2F 89 49 AD 3B 4A 84 07 91 AF 3A}
+0x25DCC3 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0x25DCD8 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 00 00}
+0x25DCED 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0x25DCF3 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0x25DCF9 	Image: Id: 0x14 {04 04 14 00}
+0x25DCFD 	VarStore: VarStoreId: 0x1234 [A04A27F4-DF00-4D42-B552-39511302113D], Size: 0xE6, Name: SystemConfig {24 23 F4 27 4A A0 00 DF 42 4D B5 52 39 51 13 02 11 3D 34 12 E6 00 53 79 73 74 65 6D 43 6F 6E 66 69 67 00}
+0x25DD20 	Form: Exit, FormId: 0x1 {01 86 01 00 93 00}
+0x25DD26 		Gray Out If {19 82}
+0x25DD28 			QuestionId: 0x2 equals value 0x2 {12 86 02 00 02 00}
+0x25DD2E 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25DD34 				And {15 02}
+0x25DD36 			End {29 02}
+0x25DD38 			Action: Exit Saving Changes, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1031, QuestionConfig: en-US {0C 8F 94 00 95 00 31 10 00 00 FF FF 04 00 00}
+0x25DD47 				Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DD5D 			End {29 02}
+0x25DD5F 		End If {29 02}
+0x25DD61 		Gray Out If {19 82}
+0x25DD63 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25DD6D 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25DD73 				And {15 02}
+0x25DD75 			End {29 02}
+0x25DD77 			Action: Save Change Without Exit, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1047, QuestionConfig: en-US {0C 8F 96 00 97 00 47 10 00 00 FF FF 04 00 00}
+0x25DD86 				Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DD9C 			End {29 02}
+0x25DD9E 		End If {29 02}
+0x25DDA0 		Action: Exit Discarding Changes, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1032, QuestionConfig: en-US {0C 8F 98 00 99 00 32 10 00 00 FF FF 04 00 00}
+0x25DDAF 			Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DDC5 		End {29 02}
+0x25DDC7 		Gray Out If {19 82}
+0x25DDC9 			QuestionId: 0x2 equals value in list (0x2, 0x3) {14 8A 02 00 02 00 02 00 03 00}
+0x25DDD3 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25DDD9 				And {15 02}
+0x25DDDB 			End {29 02}
+0x25DDDD 			Action: Load Optimal Defaults, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1033, QuestionConfig: en-US {0C 8F 9A 00 9B 00 33 10 00 00 FF FF 04 00 00}
+0x25DDEC 				Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DE02 			End {29 02}
+0x25DE04 			Suppress If {0A 82}
+0x25DE06 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25DE10 				Action: Load Custom Defaults, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1034, QuestionConfig: en-US {0C 8F 9C 00 9D 00 34 10 00 00 FF FF 04 00 00}
+0x25DE1F 					Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DE35 				End {29 02}
+0x25DE37 			End If {29 02}
+0x25DE39 		End If {29 02}
+0x25DE3B 		Gray Out If {19 82}
+0x25DE3D 			QuestionId: 0x2 equals value 0x2 {12 86 02 00 02 00}
+0x25DE43 				QuestionId: 0x1 equals value 0x1 {12 06 01 00 01 00}
+0x25DE49 				And {15 02}
+0x25DE4B 			End {29 02}
+0x25DE4D 			Suppress If {0A 82}
+0x25DE4F 				64 Bit Unsigned Int: 0x1 {45 0A 01 00 00 00 00 00 00 00}
+0x25DE59 				Action: Save Custom Defaults, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1035, QuestionConfig: en-US {0C 8F 9E 00 9F 00 35 10 00 00 FF FF 04 00 00}
+0x25DE68 					Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DE7E 				End {29 02}
+0x25DE80 			End If {29 02}
+0x25DE82 		End If {29 02}
+0x25DE84 		Action: Discard Changes, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1036, QuestionConfig: en-US {0C 8F A0 00 A1 00 36 10 00 00 FF FF 04 00 00}
+0x25DE93 			Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 16 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 06 00 06 00}
+0x25DEA9 		End {29 02}
+0x25DEAB 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 11 10}
+0x25DEC0 		Guid: [38237648-09CC-47C4-8B5F-B09F06890DF7] {5F 94 48 76 23 38 CC 09 C4 47 8B 5F B0 9F 06 89 0D F7 07 00}
+0x25DED4 		End {29 02}
+0x25DED6 		Disable If {1E 82}
+0x25DED8 			True {46 02}
+0x25DEDA 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0x1234, QuestionId: 0x1, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 01 00 34 12 81 00 00 10 00 FF 00}
+0x25DEEB 			End {29 02}
+0x25DEED 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x80, VarStore: 0x1234, QuestionId: 0x2, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 02 00 34 12 80 00 00 10 00 FF 00}
+0x25DEFE 			End {29 02}
+0x25DF00 		End If {29 02}
+0x25DF02 	End Form {29 02}
+0x25DF04 End Form Set {29 02}

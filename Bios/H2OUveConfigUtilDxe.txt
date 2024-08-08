@@ -1,0 +1,38 @@
+                                UEFI Protocol Detected
+--------------------------------------------------------------------------------
+
+
+                                String Packages
+--------------------------------------------------------------------------------
+Offset:		Language:
+--------------------------------------------------------------------------------
+0x5148		en-US (0x0)
+0x534C		zh-CN (0x1)
+
+
+                                   Form Sets
+--------------------------------------------------------------------------------
+Offset:		Title:
+--------------------------------------------------------------------------------
+0x5568		H2OUve Configuration (0x5 from string package 0x0)
+
+
+                         Internal Forms Representation
+--------------------------------------------------------------------------------
+Offset:		Instruction:
+--------------------------------------------------------------------------------
+0x556C Form Set: H2OUve Configuration [D1D7208F-84EC-411A-9BED-98E000BA7495], ClassGuid0 [C6D4769E-7F48-4D2A-98E9-87ADCCF35CCC] {0E A7 8F 20 D7 D1 EC 84 1A 41 9B ED 98 E0 00 BA 74 95 05 00 06 00 01 9E 76 D4 C6 48 7F 2A 4D 98 E9 87 AD CC F3 5C CC}
+0x5593 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0x5599 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0x559F 	VarStore: VarStoreId: 0x46F [EF0849B6-FAD0-40E9-9107-974AEB8787A2], Size: 0x4, Name: VarEditFunDis {24 24 B6 49 08 EF D0 FA E9 40 91 07 97 4A EB 87 87 A2 6F 04 04 00 56 61 72 45 64 69 74 46 75 6E 44 69 73 00}
+0x55C3 	Form: H2OUve Setup, FormId: 0x470 {01 86 70 04 07 00}
+0x55C9 		Subtitle: Statement.Prompt: H2OUve Setup, Flags: 0x0 {02 87 07 00 00 00 00}
+0x55D0 		End {29 02}
+0x55D2 		Subtitle: Statement.Prompt:  , Flags: 0x0 {02 87 02 00 00 00 00}
+0x55D9 		End {29 02}
+0x55DB 		One Of: H2OUVE Support, VarStoreInfo (VarOffset/VarName): 0x0, VarStore: 0x46F, QuestionId: 0x1, Size: 4, Min: 0x0, Max 0x1, Step: 0x0 {05 9A 08 00 09 00 01 00 6F 04 00 00 00 12 00 00 00 00 01 00 00 00 00 00 00 00}
+0x55F5 			One Of Option: Disabled, Value (32 bit): 0x1 {09 0A 03 00 02 02 01 00 00 00}
+0x55FF 			One Of Option: Enabled, Value (32 bit): 0x0 (default) {09 0A 04 00 12 02 00 00 00 00}
+0x5609 		End One Of {29 02}
+0x560B 	End Form {29 02}
+0x560D End Form Set {29 02}

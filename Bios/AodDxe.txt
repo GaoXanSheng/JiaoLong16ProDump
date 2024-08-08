@@ -1,0 +1,1444 @@
+                                UEFI Protocol Detected
+--------------------------------------------------------------------------------
+
+
+                                String Packages
+--------------------------------------------------------------------------------
+Offset:		Language:
+--------------------------------------------------------------------------------
+0x1B990		en-US (0x0)
+0x241FA		zh-CN (0x1)
+
+
+                                   Form Sets
+--------------------------------------------------------------------------------
+Offset:		Title:
+--------------------------------------------------------------------------------
+0x19990		AMD Overclocking (0x8 from string package 0x0)
+
+
+                         Internal Forms Representation
+--------------------------------------------------------------------------------
+Offset:		Instruction:
+--------------------------------------------------------------------------------
+0x19994 Form Set: AMD Overclocking [E39AC631-48ED-445E-9042-55B34F405841], ClassGuid0 [93039971-8545-4B04-B45E-32EB8326040E] {0E A7 31 C6 9A E3 ED 48 5E 44 90 42 55 B3 4F 40 58 41 08 00 09 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E}
+0x199BB 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 01 00}
+0x199D0 	Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 00 00}
+0x199E5 	Default Store: en-US, DefaultId: 0x0 {5C 06 00 00 00 00}
+0x199EB 	Default Store: en-US, DefaultId: 0x1 {5C 06 00 00 01 00}
+0x199F1 	VarStore: VarStoreId: 0xF001 [5ED15DC0-EDEF-4161-9151-6014C4CC630C], Size: 0x1AC, Name: AodSetupRpl {24 22 C0 5D D1 5E EF ED 61 41 91 51 60 14 C4 CC 63 0C 01 F0 AC 01 41 6F 64 53 65 74 75 70 52 70 6C 00}
+0x19A13 	Form: AMD Overclocking Option, FormId: 0x98 {01 86 98 00 02 00}
+0x19A19 		Subtitle: Statement.Prompt: WARNING - DAMAGE CAUSED BY USE OF YOUR AMD PROCESSOR OUTSIDE OF SPECIFICATION OR IN EXCESS OF FACTORY SETTINGS ARE NOT COVERED UNDER YOUR AMD PRODUCT WARRANTY AND MAY NOT BE COVERED BY YOUR SYSTEM MANUFACTURER'S WARRANTY. 
+Operating your AMD processor outside of specification or in excess of factory settings, including but not limited to overclocking, and undervolting, may damage or shorten the life of your processor or other system components, create system instabilities (e.g., data loss and corrupted images) and in extreme cases may result in total system failure. AMD does not provide support or service for issues or damages related to use of an AMD processor outside of processor specifications or in excess of factory settings. 
+, Flags: 0x0 {02 87 03 00 00 00 00}
+0x19A20 		End {29 02}
+0x19A22 		Ref: Accept, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1, FormId: 0x100 {0F 0F 05 00 07 00 01 00 00 00 FF FF 00 00 01}
+0x19A31 		Ref: Decline, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x2, FormId: 0x99 {0F 0F 04 00 07 00 02 00 00 00 FF FF 00 99 00}
+0x19A40 	End Form {29 02}
+0x19A42 	Form: Decline, FormId: 0x99 {01 86 99 00 04 00}
+0x19A48 		Subtitle: Statement.Prompt: Decline, Flags: 0x0 {02 87 04 00 00 00 00}
+0x19A4F 		End {29 02}
+0x19A51 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 07 00 00 00 00}
+0x19A58 		End {29 02}
+0x19A5A 	End Form {29 02}
+0x19A5C 	Form: AMD Overclocking, FormId: 0x100 {01 86 00 01 08 00}
+0x19A62 		Subtitle: Statement.Prompt: AMD Overclocking, Flags: 0x0 {02 87 08 00 00 00 00}
+0x19A69 		End {29 02}
+0x19A6B 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19A72 		End {29 02}
+0x19A74 		Ref: Manual CPU Overclocking, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x3, FormId: 0x101 {0F 0F 0A 00 0A 00 03 00 00 00 FF FF 00 01 01}
+0x19A83 		Suppress If {0A 82}
+0x19A85 			QuestionId: 0x8E equals value 0x1 {12 86 8E 00 01 00}
+0x19A8B 				Not {17 02}
+0x19A8D 				QuestionId: 0x88 equals value 0x1 {12 06 88 00 01 00}
+0x19A93 				Not {17 02}
+0x19A95 				Or {16 02}
+0x19A97 			End {29 02}
+0x19A99 			Ref: Manual iGPU Overclocking, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x4, FormId: 0x102 {0F 0F 0B 00 0B 00 04 00 00 00 FF FF 00 02 01}
+0x19AA8 		End If {29 02}
+0x19AAA 		Suppress If {0A 82}
+0x19AAC 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19AB2 				Not {17 02}
+0x19AB4 			End {29 02}
+0x19AB6 			Ref: DDR and Infinity Fabric Frequency/Timings, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x5, FormId: 0x103 {0F 0F 0C 00 0C 00 05 00 00 00 FF FF 00 03 01}
+0x19AC5 		End If {29 02}
+0x19AC7 		Suppress If {0A 82}
+0x19AC9 			QuestionId: 0x8F equals value 0x1 {12 86 8F 00 01 00}
+0x19ACF 				Not {17 02}
+0x19AD1 			End {29 02}
+0x19AD3 			Ref: Precision Boost Overdrive, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x6, FormId: 0x104 {0F 0F 0D 00 0D 00 06 00 00 00 FF FF 00 04 01}
+0x19AE2 		End If {29 02}
+0x19AE4 		Suppress If {0A 82}
+0x19AE6 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19AEC 				Not {17 02}
+0x19AEE 			End {29 02}
+0x19AF0 			Ref: VDDG Voltage Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x7, FormId: 0x105 {0F 0F 0E 00 0E 00 07 00 00 00 FF FF 00 05 01}
+0x19AFF 		End If {29 02}
+0x19B01 		Suppress If {0A 82}
+0x19B03 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19B09 				Not {17 02}
+0x19B0B 			End {29 02}
+0x19B0D 			Ref: VDDP Voltage Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x8, FormId: 0x106 {0F 0F 0F 00 0F 00 08 00 00 00 FF FF 00 06 01}
+0x19B1C 		End If {29 02}
+0x19B1E 		Suppress If {0A 82}
+0x19B20 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19B26 				Not {17 02}
+0x19B28 				QuestionId: 0x8E equals value 0x1 {12 06 8E 00 01 00}
+0x19B2E 				Not {17 02}
+0x19B30 				And {15 02}
+0x19B32 			End {29 02}
+0x19B34 			Ref: SoC/Uncore OC Mode, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x9, FormId: 0x107 {0F 0F 10 00 10 00 09 00 00 00 FF FF 00 07 01}
+0x19B43 		End If {29 02}
+0x19B45 		Suppress If {0A 82}
+0x19B47 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19B4D 				Not {17 02}
+0x19B4F 				QuestionId: 0x8E equals value 0x1 {12 06 8E 00 01 00}
+0x19B55 				Not {17 02}
+0x19B57 				And {15 02}
+0x19B59 			End {29 02}
+0x19B5B 			Ref: SoC Voltage, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xA, FormId: 0x108 {0F 0F 11 00 11 00 0A 00 00 00 FF FF 00 08 01}
+0x19B6A 		End If {29 02}
+0x19B6C 		Suppress If {0A 82}
+0x19B6E 			QuestionId: 0x88 equals value 0x1 {12 86 88 00 01 00}
+0x19B74 				Not {17 02}
+0x19B76 				QuestionId: 0x8D equals value 0x1 {12 06 8D 00 01 00}
+0x19B7C 				Not {17 02}
+0x19B7E 				Or {16 02}
+0x19B80 			End {29 02}
+0x19B82 			Ref: LN2 Mode, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xB, FormId: 0x109 {0F 0F 12 00 12 00 0B 00 00 00 FF FF 00 09 01}
+0x19B91 		End If {29 02}
+0x19B93 		Suppress If {0A 82}
+0x19B95 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19B9B 				Not {17 02}
+0x19B9D 			End {29 02}
+0x19B9F 			Ref: VDD Misc, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xC, FormId: 0x10A {0F 0F 13 00 13 00 0C 00 00 00 FF FF 00 0A 01}
+0x19BAE 		End If {29 02}
+0x19BB0 		Suppress If {0A 82}
+0x19BB2 			QuestionId: 0x8C equals value 0x1 {12 86 8C 00 01 00}
+0x19BB8 				Not {17 02}
+0x19BBA 			End {29 02}
+0x19BBC 			Ref: LCLK Frequency Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xD, FormId: 0x10B {0F 0F 14 00 14 00 0D 00 00 00 FF FF 00 0B 01}
+0x19BCB 		End If {29 02}
+0x19BCD 		Suppress If {0A 82}
+0x19BCF 			QuestionId: 0x8B equals value 0x1 {12 86 8B 00 01 00}
+0x19BD5 				Not {17 02}
+0x19BD7 			End {29 02}
+0x19BD9 			Ref: Onboard Voltage Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0xE, FormId: 0x10C {0F 0F 15 00 15 00 0E 00 00 00 FF FF 00 0C 01}
+0x19BE8 		End If {29 02}
+0x19BEA 	End Form {29 02}
+0x19BEC 	Form: Manual CPU Overclocking, FormId: 0x101 {01 86 01 01 0A 00}
+0x19BF2 		Subtitle: Statement.Prompt: Manual CPU Overclocking, Flags: 0x0 {02 87 0A 00 00 00 00}
+0x19BF9 		End {29 02}
+0x19BFB 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19C02 		End {29 02}
+0x19C04 		Suppress If {0A 82}
+0x19C06 			QuestionId: 0x88 equals value 0x1 {12 86 88 00 01 00}
+0x19C0C 				Not {17 02}
+0x19C0E 				QuestionId: 0x89 equals value 0x1 {12 06 89 00 01 00}
+0x19C14 				Not {17 02}
+0x19C16 				Or {16 02}
+0x19C18 			End {29 02}
+0x19C1A 			Numeric: CPU Frequency, VarStoreInfo (VarOffset/VarName): 0x2C, VarStore: 0xF001, QuestionId: 0xF, Size: 4, Min: 0x0, Max 0xFFFFFFFF, Step: 0x0 {07 9A 16 00 17 00 0F 00 01 F0 2C 00 10 12 00 00 00 00 FF FF FF FF 00 00 00 00}
+0x19C34 				Default: DefaultId: 0x0, Value (32 bit): 0x0 {5B 09 00 00 02 00 00 00 00}
+0x19C3D 			End {29 02}
+0x19C3F 		End If {29 02}
+0x19C41 		Suppress If {0A 82}
+0x19C43 			QuestionId: 0x88 equals value 0x1 {12 86 88 00 01 00}
+0x19C49 				Not {17 02}
+0x19C4B 				QuestionId: 0x89 equals value 0x1 {12 06 89 00 01 00}
+0x19C51 				Not {17 02}
+0x19C53 				Or {16 02}
+0x19C55 			End {29 02}
+0x19C57 			Numeric: CPU Voltage, VarStoreInfo (VarOffset/VarName): 0x30, VarStore: 0xF001, QuestionId: 0x10, Size: 2, Min: 0x0, Max 0x9C4, Step: 0x5 {07 94 18 00 19 00 10 00 01 F0 30 00 10 11 00 00 C4 09 05 00}
+0x19C6B 				Default: DefaultId: 0x0, Value (16 bit): 0x0 {5B 07 00 00 01 00 00}
+0x19C72 			End {29 02}
+0x19C74 		End If {29 02}
+0x19C76 		Suppress If {0A 82}
+0x19C78 			QuestionId: 0x8A equals value 0x1 {12 86 8A 00 01 00}
+0x19C7E 				Not {17 02}
+0x19C80 			End {29 02}
+0x19C82 			Ref: CPU Core Count Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x11, FormId: 0x10D {0F 0F 1A 00 1A 00 11 00 00 00 FF FF 00 0D 01}
+0x19C91 		End If {29 02}
+0x19C93 		Suppress If {0A 82}
+0x19C95 			QuestionId: 0x89 equals value 0x1 {12 86 89 00 01 00}
+0x19C9B 				Not {17 02}
+0x19C9D 			End {29 02}
+0x19C9F 			One Of: Prochot VRM Throttling, VarStoreInfo (VarOffset/VarName): 0x1A8, VarStore: 0xF001, QuestionId: 0x12, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 7E 01 7F 01 12 00 01 F0 A8 01 10 10 00 FF 00}
+0x19CB0 				One Of Option: Auto, Value (8 bit): 0xFF {09 07 1F 00 00 00 FF}
+0x19CB7 				One Of Option: Disable, Value (8 bit): 0x1 {09 07 20 00 00 00 01}
+0x19CBE 				One Of Option: Enable, Value (8 bit): 0x0 (default) {09 07 2C 00 10 00 00}
+0x19CC5 			End One Of {29 02}
+0x19CC7 		End If {29 02}
+0x19CC9 		Suppress If {0A 82}
+0x19CCB 			QuestionId: 0x89 equals value 0x1 {12 86 89 00 01 00}
+0x19CD1 				Not {17 02}
+0x19CD3 			End {29 02}
+0x19CD5 			One Of: Peak Current Control, VarStoreInfo (VarOffset/VarName): 0x1AA, VarStore: 0xF001, QuestionId: 0x13, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 82 01 83 01 13 00 01 F0 AA 01 10 10 00 FF 00}
+0x19CE6 				One Of Option: Auto, Value (8 bit): 0xFF {09 07 1F 00 00 00 FF}
+0x19CED 				One Of Option: Disable, Value (8 bit): 0x1 {09 07 20 00 00 00 01}
+0x19CF4 				One Of Option: Enable, Value (8 bit): 0x0 (default) {09 07 2C 00 10 00 00}
+0x19CFB 			End One Of {29 02}
+0x19CFD 		End If {29 02}
+0x19CFF 	End Form {29 02}
+0x19D01 	Form: CPU Core Count Control, FormId: 0x10D {01 86 0D 01 1A 00}
+0x19D07 		Subtitle: Statement.Prompt: CPU Core Count Control, Flags: 0x0 {02 87 1A 00 00 00 00}
+0x19D0E 		End {29 02}
+0x19D10 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19D17 		End {29 02}
+0x19D19 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0B 21}
+0x19D2E 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0C 21}
+0x19D43 		Suppress If {0A 82}
+0x19D45 			QuestionId: 0x88 equals value 0x1 {12 86 88 00 01 00}
+0x19D4B 				Not {17 02}
+0x19D4D 			End {29 02}
+0x19D4F 			One Of: SMT Control, VarStoreInfo (VarOffset/VarName): 0x32, VarStore: 0xF001, QuestionId: 0x14, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 1D 00 1E 00 14 00 01 F0 32 00 10 10 00 01 00}
+0x19D60 				One Of Option: Auto, Value (8 bit): 0x1 (default) {09 07 1F 00 10 00 01}
+0x19D67 				One Of Option: Disable, Value (8 bit): 0x0 {09 07 20 00 00 00 00}
+0x19D6E 			End One Of {29 02}
+0x19D70 		End If {29 02}
+0x19D72 		Suppress If {0A 82}
+0x19D74 			QuestionId: 0x88 equals value 0xFF {12 86 88 00 FF 00}
+0x19D7A 				Not {17 02}
+0x19D7C 			End {29 02}
+0x19D7E 			One Of: Down Core Mode, VarStoreInfo (VarOffset/VarName): 0x33, VarStore: 0xF001, QuestionId: 0x15, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 1B 00 1C 00 15 00 01 F0 33 00 10 10 00 01 00}
+0x19D8F 				One Of Option: Enable, Value (8 bit): 0x1 {09 07 2C 00 00 00 01}
+0x19D96 				One Of Option: Disable, Value (8 bit): 0x0 (default) {09 07 20 00 10 00 00}
+0x19D9D 			End One Of {29 02}
+0x19D9F 		End If {29 02}
+0x19DA1 	End Form {29 02}
+0x19DA3 	Form: Manual iGPU Overclocking, FormId: 0x102 {01 86 02 01 0B 00}
+0x19DA9 		Subtitle: Statement.Prompt: Manual iGPU Overclocking, Flags: 0x0 {02 87 0B 00 00 00 00}
+0x19DB0 		End {29 02}
+0x19DB2 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19DB9 		End {29 02}
+0x19DBB 		Numeric: GFX Clock Frequency, VarStoreInfo (VarOffset/VarName): 0x36, VarStore: 0xF001, QuestionId: 0x16, Size: 2, Min: 0x0, Max 0xFFFF, Step: 0x0 {07 94 21 00 22 00 16 00 01 F0 36 00 10 11 00 00 FF FF 00 00}
+0x19DCF 			Default: DefaultId: 0x0, Value (16 bit): 0x0 {5B 07 00 00 01 00 00}
+0x19DD6 		End {29 02}
+0x19DD8 		Numeric: GFX Voltage, VarStoreInfo (VarOffset/VarName): 0x38, VarStore: 0xF001, QuestionId: 0x17, Size: 2, Min: 0x0, Max 0xAF0, Step: 0x0 {07 94 23 00 24 00 17 00 01 F0 38 00 10 11 00 00 F0 0A 00 00}
+0x19DEC 			Default: DefaultId: 0x0, Value (16 bit): 0x0 {5B 07 00 00 01 00 00}
+0x19DF3 		End {29 02}
+0x19DF5 	End Form {29 02}
+0x19DF7 	Form: DDR and Infinity Fabric Frequency/Timings, FormId: 0x103 {01 86 03 01 0C 00}
+0x19DFD 		Subtitle: Statement.Prompt: DDR and Infinity Fabric Frequency/Timings, Flags: 0x0 {02 87 0C 00 00 00 00}
+0x19E04 		End {29 02}
+0x19E06 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19E0D 		End {29 02}
+0x19E0F 		Ref: DDR Options, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x18, FormId: 0x111 {0F 0F 25 00 25 00 18 00 00 00 FF FF 00 11 01}
+0x19E1E 		Ref: Infinity Fabric Frequency and Dividers, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x19, FormId: 0x112 {0F 0F 26 00 26 00 19 00 00 00 FF FF 00 12 01}
+0x19E2D 	End Form {29 02}
+0x19E2F 	Form: DDR Options, FormId: 0x111 {01 86 11 01 25 00}
+0x19E35 		Subtitle: Statement.Prompt: DDR Options, Flags: 0x0 {02 87 25 00 00 00 00}
+0x19E3C 		End {29 02}
+0x19E3E 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19E45 		End {29 02}
+0x19E47 		Ref: DDR Timing Configuration, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1A, FormId: 0x113 {0F 0F 27 00 27 00 1A 00 00 00 FF FF 00 13 01}
+0x19E56 		Ref: DDR Bus Configuration, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1B, FormId: 0x114 {0F 0F 28 00 28 00 1B 00 00 00 FF FF 00 14 01}
+0x19E65 		Ref: DDR Controller Configuration, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1C, FormId: 0x115 {0F 0F 29 00 29 00 1C 00 00 00 FF FF 00 15 01}
+0x19E74 	End Form {29 02}
+0x19E76 	Form: DDR Timing Configuration, FormId: 0x113 {01 86 13 01 27 00}
+0x19E7C 		Subtitle: Statement.Prompt: DDR Timing Configuration, Flags: 0x0 {02 87 27 00 00 00 00}
+0x19E83 		End {29 02}
+0x19E85 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19E8C 		End {29 02}
+0x19E8E 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 23 21}
+0x19EA3 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 24 21}
+0x19EB8 		One Of: Active Memory Timing Settings, VarStoreInfo (VarOffset/VarName): 0x3C, VarStore: 0xF001, QuestionId: 0x1D, Size: 1, Min: 0x1, Max 0xFF, Step: 0x0 {05 91 2D 00 2E 00 1D 00 01 F0 3C 00 10 10 01 FF 00}
+0x19EC9 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x19ED0 			One Of Option: Enabled, Value (8 bit): 0x1 {09 07 2F 00 00 00 01}
+0x19ED7 		End One Of {29 02}
+0x19ED9 		Suppress If {0A 82}
+0x19EDB 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19EE1 				Not {17 02}
+0x19EE3 			End {29 02}
+0x19EE5 			Gray Out If {19 82}
+0x19EE7 				QuestionId: 0x87 equals value 0x1 {12 06 87 00 01 00}
+0x19EED 				Numeric: Memory Target Speed, VarStoreInfo (VarOffset/VarName): 0x3D, VarStore: 0xF001, QuestionId: 0x1E, Size: 2, Min: 0x7D0, Max 0x2EE0, Step: 0xC8 {07 94 30 00 31 00 1E 00 01 F0 3D 00 10 11 D0 07 E0 2E C8 00}
+0x19F01 					Default: DefaultId: 0x0, Value (16 bit): 0xC80 {5B 07 00 00 01 80 0C}
+0x19F08 				End {29 02}
+0x19F0A 			End If {29 02}
+0x19F0C 		End If {29 02}
+0x19F0E 		Gray Out If {19 82}
+0x19F10 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19F16 				Not {17 02}
+0x19F18 			End {29 02}
+0x19F1A 			Ref: DDR SPD Timing, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x1F, FormId: 0x116 {0F 0F 32 00 32 00 1F 00 00 00 FF FF 00 16 01}
+0x19F29 		End If {29 02}
+0x19F2B 		Gray Out If {19 82}
+0x19F2D 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19F33 				Not {17 02}
+0x19F35 			End {29 02}
+0x19F37 			Ref: DDR Non-SPD Timing, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x20, FormId: 0x117 {0F 0F 33 00 33 00 20 00 00 00 FF FF 00 17 01}
+0x19F46 		End If {29 02}
+0x19F48 	End Form {29 02}
+0x19F4A 	Form: DDR SPD Timing, FormId: 0x116 {01 86 16 01 32 00}
+0x19F50 		Subtitle: Statement.Prompt: DDR SPD Timing, Flags: 0x0 {02 87 32 00 00 00 00}
+0x19F57 		End {29 02}
+0x19F59 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x19F60 		End {29 02}
+0x19F62 		Suppress If {0A 82}
+0x19F64 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19F6A 				Not {17 02}
+0x19F6C 			End {29 02}
+0x19F6E 			One Of: Tcl Ctrl, VarStoreInfo (VarOffset/VarName): 0x3F, VarStore: 0xF001, QuestionId: 0x21, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 34 00 35 00 21 00 01 F0 3F 00 10 10 00 01 00}
+0x19F7F 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x19F86 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x19F8D 			End One Of {29 02}
+0x19F8F 		End If {29 02}
+0x19F91 		Suppress If {0A 82}
+0x19F93 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19F99 				Not {17 02}
+0x19F9B 				QuestionId: 0x21 equals value 0x1 {12 06 21 00 01 00}
+0x19FA1 				Not {17 02}
+0x19FA3 				Or {16 02}
+0x19FA5 			End {29 02}
+0x19FA7 			Numeric: Tcl, VarStoreInfo (VarOffset/VarName): 0x40, VarStore: 0xF001, QuestionId: 0x22, Size: 2, Min: 0x16, Max 0x40, Step: 0x2 {07 94 37 00 38 00 22 00 01 F0 40 00 10 21 16 00 40 00 02 00}
+0x19FBB 				Default: DefaultId: 0x0, Value (16 bit): 0x16 {5B 07 00 00 01 16 00}
+0x19FC2 			End {29 02}
+0x19FC4 		End If {29 02}
+0x19FC6 		Suppress If {0A 82}
+0x19FC8 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19FCE 				Not {17 02}
+0x19FD0 			End {29 02}
+0x19FD2 			One Of: Trcd Ctrl, VarStoreInfo (VarOffset/VarName): 0x42, VarStore: 0xF001, QuestionId: 0x23, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 39 00 3A 00 23 00 01 F0 42 00 10 10 00 01 00}
+0x19FE3 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x19FEA 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x19FF1 			End One Of {29 02}
+0x19FF3 		End If {29 02}
+0x19FF5 		Suppress If {0A 82}
+0x19FF7 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x19FFD 				Not {17 02}
+0x19FFF 				QuestionId: 0x23 equals value 0x1 {12 06 23 00 01 00}
+0x1A005 				Not {17 02}
+0x1A007 				Or {16 02}
+0x1A009 			End {29 02}
+0x1A00B 			Numeric: Trcd, VarStoreInfo (VarOffset/VarName): 0x43, VarStore: 0xF001, QuestionId: 0x24, Size: 2, Min: 0x8, Max 0x3E, Step: 0x0 {07 94 3B 00 3C 00 24 00 01 F0 43 00 10 21 08 00 3E 00 00 00}
+0x1A01F 				Default: DefaultId: 0x0, Value (16 bit): 0x8 {5B 07 00 00 01 08 00}
+0x1A026 			End {29 02}
+0x1A028 		End If {29 02}
+0x1A02A 		Suppress If {0A 82}
+0x1A02C 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A032 				Not {17 02}
+0x1A034 			End {29 02}
+0x1A036 			One Of: Trp Ctrl, VarStoreInfo (VarOffset/VarName): 0x45, VarStore: 0xF001, QuestionId: 0x25, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 3D 00 3E 00 25 00 01 F0 45 00 10 10 00 01 00}
+0x1A047 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A04E 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A055 			End One Of {29 02}
+0x1A057 		End If {29 02}
+0x1A059 		Suppress If {0A 82}
+0x1A05B 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A061 				Not {17 02}
+0x1A063 				QuestionId: 0x25 equals value 0x1 {12 06 25 00 01 00}
+0x1A069 				Not {17 02}
+0x1A06B 				Or {16 02}
+0x1A06D 			End {29 02}
+0x1A06F 			Numeric: Trp, VarStoreInfo (VarOffset/VarName): 0x46, VarStore: 0xF001, QuestionId: 0x26, Size: 2, Min: 0x8, Max 0x3E, Step: 0x0 {07 94 3F 00 40 00 26 00 01 F0 46 00 10 21 08 00 3E 00 00 00}
+0x1A083 				Default: DefaultId: 0x0, Value (16 bit): 0x8 {5B 07 00 00 01 08 00}
+0x1A08A 			End {29 02}
+0x1A08C 		End If {29 02}
+0x1A08E 		Suppress If {0A 82}
+0x1A090 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A096 				Not {17 02}
+0x1A098 			End {29 02}
+0x1A09A 			One Of: Tras Ctrl, VarStoreInfo (VarOffset/VarName): 0x48, VarStore: 0xF001, QuestionId: 0x27, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 41 00 42 00 27 00 01 F0 48 00 10 10 00 01 00}
+0x1A0AB 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A0B2 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A0B9 			End One Of {29 02}
+0x1A0BB 		End If {29 02}
+0x1A0BD 		Suppress If {0A 82}
+0x1A0BF 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A0C5 				Not {17 02}
+0x1A0C7 				QuestionId: 0x27 equals value 0x1 {12 06 27 00 01 00}
+0x1A0CD 				Not {17 02}
+0x1A0CF 				Or {16 02}
+0x1A0D1 			End {29 02}
+0x1A0D3 			Numeric: Tras, VarStoreInfo (VarOffset/VarName): 0x49, VarStore: 0xF001, QuestionId: 0x28, Size: 2, Min: 0x1E, Max 0x7E, Step: 0x0 {07 94 43 00 44 00 28 00 01 F0 49 00 10 21 1E 00 7E 00 00 00}
+0x1A0E7 				Default: DefaultId: 0x0, Value (16 bit): 0x1E {5B 07 00 00 01 1E 00}
+0x1A0EE 			End {29 02}
+0x1A0F0 		End If {29 02}
+0x1A0F2 		Suppress If {0A 82}
+0x1A0F4 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A0FA 				Not {17 02}
+0x1A0FC 			End {29 02}
+0x1A0FE 			One Of: Trc Ctrl, VarStoreInfo (VarOffset/VarName): 0x4B, VarStore: 0xF001, QuestionId: 0x29, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 45 00 46 00 29 00 01 F0 4B 00 10 10 00 01 00}
+0x1A10F 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A116 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A11D 			End One Of {29 02}
+0x1A11F 		End If {29 02}
+0x1A121 		Suppress If {0A 82}
+0x1A123 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A129 				Not {17 02}
+0x1A12B 				QuestionId: 0x29 equals value 0x1 {12 06 29 00 01 00}
+0x1A131 				Not {17 02}
+0x1A133 				Or {16 02}
+0x1A135 			End {29 02}
+0x1A137 			Numeric: Trc, VarStoreInfo (VarOffset/VarName): 0x4C, VarStore: 0xF001, QuestionId: 0x2A, Size: 2, Min: 0x20, Max 0xFF, Step: 0x0 {07 94 47 00 48 00 2A 00 01 F0 4C 00 10 21 20 00 FF 00 00 00}
+0x1A14B 				Default: DefaultId: 0x0, Value (16 bit): 0x20 {5B 07 00 00 01 20 00}
+0x1A152 			End {29 02}
+0x1A154 		End If {29 02}
+0x1A156 		Suppress If {0A 82}
+0x1A158 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A15E 				Not {17 02}
+0x1A160 			End {29 02}
+0x1A162 			One Of: Twr Ctrl, VarStoreInfo (VarOffset/VarName): 0x4E, VarStore: 0xF001, QuestionId: 0x2B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 49 00 4A 00 2B 00 01 F0 4E 00 10 10 00 01 00}
+0x1A173 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A17A 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A181 			End One Of {29 02}
+0x1A183 		End If {29 02}
+0x1A185 		Suppress If {0A 82}
+0x1A187 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A18D 				Not {17 02}
+0x1A18F 				QuestionId: 0x2B equals value 0x1 {12 06 2B 00 01 00}
+0x1A195 				Not {17 02}
+0x1A197 				Or {16 02}
+0x1A199 			End {29 02}
+0x1A19B 			Numeric: Twr, VarStoreInfo (VarOffset/VarName): 0x4F, VarStore: 0xF001, QuestionId: 0x2C, Size: 2, Min: 0x30, Max 0x60, Step: 0x6 {07 94 4B 00 4C 00 2C 00 01 F0 4F 00 10 21 30 00 60 00 06 00}
+0x1A1AF 				Default: DefaultId: 0x0, Value (16 bit): 0x30 {5B 07 00 00 01 30 00}
+0x1A1B6 			End {29 02}
+0x1A1B8 		End If {29 02}
+0x1A1BA 		Suppress If {0A 82}
+0x1A1BC 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A1C2 				Not {17 02}
+0x1A1C4 			End {29 02}
+0x1A1C6 			One Of: Trfc1 Ctrl, VarStoreInfo (VarOffset/VarName): 0x51, VarStore: 0xF001, QuestionId: 0x2D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 4D 00 4E 00 2D 00 01 F0 51 00 10 10 00 01 00}
+0x1A1D7 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A1DE 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A1E5 			End One Of {29 02}
+0x1A1E7 		End If {29 02}
+0x1A1E9 		Suppress If {0A 82}
+0x1A1EB 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A1F1 				Not {17 02}
+0x1A1F3 				QuestionId: 0x2D equals value 0x1 {12 06 2D 00 01 00}
+0x1A1F9 				Not {17 02}
+0x1A1FB 				Or {16 02}
+0x1A1FD 			End {29 02}
+0x1A1FF 			Numeric: Trfc1, VarStoreInfo (VarOffset/VarName): 0x52, VarStore: 0xF001, QuestionId: 0x2E, Size: 2, Min: 0x32, Max 0xFFF, Step: 0x0 {07 94 4F 00 50 00 2E 00 01 F0 52 00 10 21 32 00 FF 0F 00 00}
+0x1A213 				Default: DefaultId: 0x0, Value (16 bit): 0x32 {5B 07 00 00 01 32 00}
+0x1A21A 			End {29 02}
+0x1A21C 		End If {29 02}
+0x1A21E 		Suppress If {0A 82}
+0x1A220 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A226 				Not {17 02}
+0x1A228 			End {29 02}
+0x1A22A 			One Of: Trfc2 Ctrl, VarStoreInfo (VarOffset/VarName): 0x54, VarStore: 0xF001, QuestionId: 0x2F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 51 00 52 00 2F 00 01 F0 54 00 10 10 00 01 00}
+0x1A23B 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A242 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A249 			End One Of {29 02}
+0x1A24B 		End If {29 02}
+0x1A24D 		Suppress If {0A 82}
+0x1A24F 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A255 				Not {17 02}
+0x1A257 				QuestionId: 0x2F equals value 0x1 {12 06 2F 00 01 00}
+0x1A25D 				Not {17 02}
+0x1A25F 				Or {16 02}
+0x1A261 			End {29 02}
+0x1A263 			Numeric: Trfc2, VarStoreInfo (VarOffset/VarName): 0x55, VarStore: 0xF001, QuestionId: 0x30, Size: 2, Min: 0x32, Max 0xFFF, Step: 0x0 {07 94 53 00 54 00 30 00 01 F0 55 00 10 21 32 00 FF 0F 00 00}
+0x1A277 				Default: DefaultId: 0x0, Value (16 bit): 0x32 {5B 07 00 00 01 32 00}
+0x1A27E 			End {29 02}
+0x1A280 		End If {29 02}
+0x1A282 		Suppress If {0A 82}
+0x1A284 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A28A 				Not {17 02}
+0x1A28C 			End {29 02}
+0x1A28E 			One Of: TrfcSb Ctrl, VarStoreInfo (VarOffset/VarName): 0x57, VarStore: 0xF001, QuestionId: 0x31, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 55 00 56 00 31 00 01 F0 57 00 10 10 00 01 00}
+0x1A29F 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A2A6 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A2AD 			End One Of {29 02}
+0x1A2AF 		End If {29 02}
+0x1A2B1 		Suppress If {0A 82}
+0x1A2B3 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A2B9 				Not {17 02}
+0x1A2BB 				QuestionId: 0x31 equals value 0x1 {12 06 31 00 01 00}
+0x1A2C1 				Not {17 02}
+0x1A2C3 				Or {16 02}
+0x1A2C5 			End {29 02}
+0x1A2C7 			Numeric: TrfcSb, VarStoreInfo (VarOffset/VarName): 0x58, VarStore: 0xF001, QuestionId: 0x32, Size: 2, Min: 0x32, Max 0x7FF, Step: 0x0 {07 94 57 00 58 00 32 00 01 F0 58 00 10 21 32 00 FF 07 00 00}
+0x1A2DB 				Default: DefaultId: 0x0, Value (16 bit): 0x32 {5B 07 00 00 01 32 00}
+0x1A2E2 			End {29 02}
+0x1A2E4 		End If {29 02}
+0x1A2E6 		Suppress If {0A 82}
+0x1A2E8 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A2EE 				Not {17 02}
+0x1A2F0 			End {29 02}
+0x1A2F2 			One Of: Trtp Ctrl, VarStoreInfo (VarOffset/VarName): 0x5A, VarStore: 0xF001, QuestionId: 0x33, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 59 00 5A 00 33 00 01 F0 5A 00 10 10 00 01 00}
+0x1A303 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A30A 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A311 			End One Of {29 02}
+0x1A313 		End If {29 02}
+0x1A315 		Suppress If {0A 82}
+0x1A317 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A31D 				Not {17 02}
+0x1A31F 				QuestionId: 0x33 equals value 0x1 {12 06 33 00 01 00}
+0x1A325 				Not {17 02}
+0x1A327 				Or {16 02}
+0x1A329 			End {29 02}
+0x1A32B 			Numeric: Trtp, VarStoreInfo (VarOffset/VarName): 0x5B, VarStore: 0xF001, QuestionId: 0x34, Size: 2, Min: 0x5, Max 0x1F, Step: 0x0 {07 94 5B 00 5C 00 34 00 01 F0 5B 00 10 21 05 00 1F 00 00 00}
+0x1A33F 				Default: DefaultId: 0x0, Value (16 bit): 0x9 {5B 07 00 00 01 09 00}
+0x1A346 			End {29 02}
+0x1A348 		End If {29 02}
+0x1A34A 		Suppress If {0A 82}
+0x1A34C 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A352 				Not {17 02}
+0x1A354 			End {29 02}
+0x1A356 			One Of: TrrdL Ctrl, VarStoreInfo (VarOffset/VarName): 0x5D, VarStore: 0xF001, QuestionId: 0x35, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 5D 00 5E 00 35 00 01 F0 5D 00 10 10 00 01 00}
+0x1A367 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A36E 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A375 			End One Of {29 02}
+0x1A377 		End If {29 02}
+0x1A379 		Suppress If {0A 82}
+0x1A37B 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A381 				Not {17 02}
+0x1A383 				QuestionId: 0x35 equals value 0x1 {12 06 35 00 01 00}
+0x1A389 				Not {17 02}
+0x1A38B 				Or {16 02}
+0x1A38D 			End {29 02}
+0x1A38F 			Numeric: TrrdL, VarStoreInfo (VarOffset/VarName): 0x5E, VarStore: 0xF001, QuestionId: 0x36, Size: 2, Min: 0x4, Max 0x20, Step: 0x0 {07 94 5F 00 60 00 36 00 01 F0 5E 00 10 21 04 00 20 00 00 00}
+0x1A3A3 				Default: DefaultId: 0x0, Value (16 bit): 0x4 {5B 07 00 00 01 04 00}
+0x1A3AA 			End {29 02}
+0x1A3AC 		End If {29 02}
+0x1A3AE 		Suppress If {0A 82}
+0x1A3B0 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A3B6 				Not {17 02}
+0x1A3B8 			End {29 02}
+0x1A3BA 			One Of: TrrdS Ctrl, VarStoreInfo (VarOffset/VarName): 0x60, VarStore: 0xF001, QuestionId: 0x37, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 61 00 62 00 37 00 01 F0 60 00 10 10 00 01 00}
+0x1A3CB 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A3D2 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A3D9 			End One Of {29 02}
+0x1A3DB 		End If {29 02}
+0x1A3DD 		Suppress If {0A 82}
+0x1A3DF 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A3E5 				Not {17 02}
+0x1A3E7 				QuestionId: 0x37 equals value 0x1 {12 06 37 00 01 00}
+0x1A3ED 				Not {17 02}
+0x1A3EF 				Or {16 02}
+0x1A3F1 			End {29 02}
+0x1A3F3 			Numeric: TrrdS, VarStoreInfo (VarOffset/VarName): 0x61, VarStore: 0xF001, QuestionId: 0x38, Size: 2, Min: 0x4, Max 0x14, Step: 0x0 {07 94 63 00 64 00 38 00 01 F0 61 00 10 21 04 00 14 00 00 00}
+0x1A407 				Default: DefaultId: 0x0, Value (16 bit): 0x4 {5B 07 00 00 01 04 00}
+0x1A40E 			End {29 02}
+0x1A410 		End If {29 02}
+0x1A412 		Suppress If {0A 82}
+0x1A414 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A41A 				Not {17 02}
+0x1A41C 			End {29 02}
+0x1A41E 			One Of: Tfaw Ctrl, VarStoreInfo (VarOffset/VarName): 0x63, VarStore: 0xF001, QuestionId: 0x39, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 65 00 66 00 39 00 01 F0 63 00 10 10 00 01 00}
+0x1A42F 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A436 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A43D 			End One Of {29 02}
+0x1A43F 		End If {29 02}
+0x1A441 		Suppress If {0A 82}
+0x1A443 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A449 				Not {17 02}
+0x1A44B 				QuestionId: 0x39 equals value 0x1 {12 06 39 00 01 00}
+0x1A451 				Not {17 02}
+0x1A453 				Or {16 02}
+0x1A455 			End {29 02}
+0x1A457 			Numeric: Tfaw, VarStoreInfo (VarOffset/VarName): 0x64, VarStore: 0xF001, QuestionId: 0x3A, Size: 2, Min: 0x14, Max 0x50, Step: 0x0 {07 94 67 00 68 00 3A 00 01 F0 64 00 10 21 14 00 50 00 00 00}
+0x1A46B 				Default: DefaultId: 0x0, Value (16 bit): 0x1A {5B 07 00 00 01 1A 00}
+0x1A472 			End {29 02}
+0x1A474 		End If {29 02}
+0x1A476 		Suppress If {0A 82}
+0x1A478 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A47E 				Not {17 02}
+0x1A480 			End {29 02}
+0x1A482 			One Of: TwtrL Ctrl, VarStoreInfo (VarOffset/VarName): 0x66, VarStore: 0xF001, QuestionId: 0x3B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 69 00 6A 00 3B 00 01 F0 66 00 10 10 00 01 00}
+0x1A493 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A49A 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A4A1 			End One Of {29 02}
+0x1A4A3 		End If {29 02}
+0x1A4A5 		Suppress If {0A 82}
+0x1A4A7 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A4AD 				Not {17 02}
+0x1A4AF 				QuestionId: 0x3B equals value 0x1 {12 06 3B 00 01 00}
+0x1A4B5 				Not {17 02}
+0x1A4B7 				Or {16 02}
+0x1A4B9 			End {29 02}
+0x1A4BB 			Numeric: TwtrL, VarStoreInfo (VarOffset/VarName): 0x67, VarStore: 0xF001, QuestionId: 0x3C, Size: 2, Min: 0x8, Max 0x30, Step: 0x0 {07 94 6B 00 6C 00 3C 00 01 F0 67 00 10 21 08 00 30 00 00 00}
+0x1A4CF 				Default: DefaultId: 0x0, Value (16 bit): 0x8 {5B 07 00 00 01 08 00}
+0x1A4D6 			End {29 02}
+0x1A4D8 		End If {29 02}
+0x1A4DA 		Suppress If {0A 82}
+0x1A4DC 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A4E2 				Not {17 02}
+0x1A4E4 			End {29 02}
+0x1A4E6 			One Of: TwtrS Ctrl, VarStoreInfo (VarOffset/VarName): 0x69, VarStore: 0xF001, QuestionId: 0x3D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 6D 00 6E 00 3D 00 01 F0 69 00 10 10 00 01 00}
+0x1A4F7 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A4FE 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A505 			End One Of {29 02}
+0x1A507 		End If {29 02}
+0x1A509 		Suppress If {0A 82}
+0x1A50B 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A511 				Not {17 02}
+0x1A513 				QuestionId: 0x3D equals value 0x1 {12 06 3D 00 01 00}
+0x1A519 				Not {17 02}
+0x1A51B 				Or {16 02}
+0x1A51D 			End {29 02}
+0x1A51F 			Numeric: TwtrS, VarStoreInfo (VarOffset/VarName): 0x6A, VarStore: 0xF001, QuestionId: 0x3E, Size: 2, Min: 0x2, Max 0x10, Step: 0x0 {07 94 6F 00 70 00 3E 00 01 F0 6A 00 10 21 02 00 10 00 00 00}
+0x1A533 				Default: DefaultId: 0x0, Value (16 bit): 0x3 {5B 07 00 00 01 03 00}
+0x1A53A 			End {29 02}
+0x1A53C 		End If {29 02}
+0x1A53E 	End Form {29 02}
+0x1A540 	Form: DDR Non-SPD Timing, FormId: 0x117 {01 86 17 01 33 00}
+0x1A546 		Subtitle: Statement.Prompt: DDR Non-SPD Timing, Flags: 0x0 {02 87 33 00 00 00 00}
+0x1A54D 		End {29 02}
+0x1A54F 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1A556 		End {29 02}
+0x1A558 		Suppress If {0A 82}
+0x1A55A 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A560 				Not {17 02}
+0x1A562 			End {29 02}
+0x1A564 			One Of: TrdrdScL Ctrl, VarStoreInfo (VarOffset/VarName): 0x6C, VarStore: 0xF001, QuestionId: 0x3F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 71 00 72 00 3F 00 01 F0 6C 00 10 10 00 01 00}
+0x1A575 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A57C 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A583 			End One Of {29 02}
+0x1A585 		End If {29 02}
+0x1A587 		Suppress If {0A 82}
+0x1A589 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A58F 				Not {17 02}
+0x1A591 				QuestionId: 0x3F equals value 0x1 {12 06 3F 00 01 00}
+0x1A597 				Not {17 02}
+0x1A599 				Or {16 02}
+0x1A59B 			End {29 02}
+0x1A59D 			Numeric: TrdrdScL, VarStoreInfo (VarOffset/VarName): 0x6D, VarStore: 0xF001, QuestionId: 0x40, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 73 00 74 00 40 00 01 F0 6D 00 10 21 01 00 0F 00 00 00}
+0x1A5B1 				Default: DefaultId: 0x0, Value (16 bit): 0x1 {5B 07 00 00 01 01 00}
+0x1A5B8 			End {29 02}
+0x1A5BA 		End If {29 02}
+0x1A5BC 		Suppress If {0A 82}
+0x1A5BE 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A5C4 				Not {17 02}
+0x1A5C6 			End {29 02}
+0x1A5C8 			One Of: TrdrdSc Ctrl, VarStoreInfo (VarOffset/VarName): 0x6F, VarStore: 0xF001, QuestionId: 0x41, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 75 00 76 00 41 00 01 F0 6F 00 10 10 00 01 00}
+0x1A5D9 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A5E0 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A5E7 			End One Of {29 02}
+0x1A5E9 		End If {29 02}
+0x1A5EB 		Suppress If {0A 82}
+0x1A5ED 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A5F3 				Not {17 02}
+0x1A5F5 				QuestionId: 0x41 equals value 0x1 {12 06 41 00 01 00}
+0x1A5FB 				Not {17 02}
+0x1A5FD 				Or {16 02}
+0x1A5FF 			End {29 02}
+0x1A601 			Numeric: TrdrdSc, VarStoreInfo (VarOffset/VarName): 0x70, VarStore: 0xF001, QuestionId: 0x42, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 77 00 78 00 42 00 01 F0 70 00 10 21 01 00 0F 00 00 00}
+0x1A615 				Default: DefaultId: 0x0, Value (16 bit): 0x1 {5B 07 00 00 01 01 00}
+0x1A61C 			End {29 02}
+0x1A61E 		End If {29 02}
+0x1A620 		Suppress If {0A 82}
+0x1A622 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A628 				Not {17 02}
+0x1A62A 			End {29 02}
+0x1A62C 			One Of: TrdrdSd Ctrl, VarStoreInfo (VarOffset/VarName): 0x72, VarStore: 0xF001, QuestionId: 0x43, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 79 00 7A 00 43 00 01 F0 72 00 10 10 00 01 00}
+0x1A63D 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A644 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A64B 			End One Of {29 02}
+0x1A64D 		End If {29 02}
+0x1A64F 		Suppress If {0A 82}
+0x1A651 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A657 				Not {17 02}
+0x1A659 				QuestionId: 0x43 equals value 0x1 {12 06 43 00 01 00}
+0x1A65F 				Not {17 02}
+0x1A661 				Or {16 02}
+0x1A663 			End {29 02}
+0x1A665 			Numeric: TrdrdSd, VarStoreInfo (VarOffset/VarName): 0x73, VarStore: 0xF001, QuestionId: 0x44, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 7B 00 7C 00 44 00 01 F0 73 00 10 21 01 00 0F 00 00 00}
+0x1A679 				Default: DefaultId: 0x0, Value (16 bit): 0x3 {5B 07 00 00 01 03 00}
+0x1A680 			End {29 02}
+0x1A682 		End If {29 02}
+0x1A684 		Suppress If {0A 82}
+0x1A686 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A68C 				Not {17 02}
+0x1A68E 			End {29 02}
+0x1A690 			One Of: TrdrdDd Ctrl, VarStoreInfo (VarOffset/VarName): 0x75, VarStore: 0xF001, QuestionId: 0x45, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 7D 00 7E 00 45 00 01 F0 75 00 10 10 00 01 00}
+0x1A6A1 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A6A8 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A6AF 			End One Of {29 02}
+0x1A6B1 		End If {29 02}
+0x1A6B3 		Suppress If {0A 82}
+0x1A6B5 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A6BB 				Not {17 02}
+0x1A6BD 				QuestionId: 0x45 equals value 0x1 {12 06 45 00 01 00}
+0x1A6C3 				Not {17 02}
+0x1A6C5 				Or {16 02}
+0x1A6C7 			End {29 02}
+0x1A6C9 			Numeric: TrdrdDd, VarStoreInfo (VarOffset/VarName): 0x76, VarStore: 0xF001, QuestionId: 0x46, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 7F 00 80 00 46 00 01 F0 76 00 10 21 01 00 0F 00 00 00}
+0x1A6DD 				Default: DefaultId: 0x0, Value (16 bit): 0x3 {5B 07 00 00 01 03 00}
+0x1A6E4 			End {29 02}
+0x1A6E6 		End If {29 02}
+0x1A6E8 		Suppress If {0A 82}
+0x1A6EA 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A6F0 				Not {17 02}
+0x1A6F2 			End {29 02}
+0x1A6F4 			One Of: TwrwrScL Ctrl, VarStoreInfo (VarOffset/VarName): 0x78, VarStore: 0xF001, QuestionId: 0x47, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 81 00 82 00 47 00 01 F0 78 00 10 10 00 01 00}
+0x1A705 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A70C 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A713 			End One Of {29 02}
+0x1A715 		End If {29 02}
+0x1A717 		Suppress If {0A 82}
+0x1A719 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A71F 				Not {17 02}
+0x1A721 				QuestionId: 0x47 equals value 0x1 {12 06 47 00 01 00}
+0x1A727 				Not {17 02}
+0x1A729 				Or {16 02}
+0x1A72B 			End {29 02}
+0x1A72D 			Numeric: TwrwrScL, VarStoreInfo (VarOffset/VarName): 0x79, VarStore: 0xF001, QuestionId: 0x48, Size: 2, Min: 0x1, Max 0x3F, Step: 0x0 {07 94 83 00 84 00 48 00 01 F0 79 00 10 21 01 00 3F 00 00 00}
+0x1A741 				Default: DefaultId: 0x0, Value (16 bit): 0x1 {5B 07 00 00 01 01 00}
+0x1A748 			End {29 02}
+0x1A74A 		End If {29 02}
+0x1A74C 		Suppress If {0A 82}
+0x1A74E 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A754 				Not {17 02}
+0x1A756 			End {29 02}
+0x1A758 			One Of: TwrwrSc Ctrl, VarStoreInfo (VarOffset/VarName): 0x7B, VarStore: 0xF001, QuestionId: 0x49, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 85 00 86 00 49 00 01 F0 7B 00 10 10 00 01 00}
+0x1A769 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A770 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A777 			End One Of {29 02}
+0x1A779 		End If {29 02}
+0x1A77B 		Suppress If {0A 82}
+0x1A77D 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A783 				Not {17 02}
+0x1A785 				QuestionId: 0x49 equals value 0x1 {12 06 49 00 01 00}
+0x1A78B 				Not {17 02}
+0x1A78D 				Or {16 02}
+0x1A78F 			End {29 02}
+0x1A791 			Numeric: TwrwrSc, VarStoreInfo (VarOffset/VarName): 0x7C, VarStore: 0xF001, QuestionId: 0x4A, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 87 00 88 00 4A 00 01 F0 7C 00 10 21 01 00 0F 00 00 00}
+0x1A7A5 				Default: DefaultId: 0x0, Value (16 bit): 0x1 {5B 07 00 00 01 01 00}
+0x1A7AC 			End {29 02}
+0x1A7AE 		End If {29 02}
+0x1A7B0 		Suppress If {0A 82}
+0x1A7B2 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A7B8 				Not {17 02}
+0x1A7BA 			End {29 02}
+0x1A7BC 			One Of: TwrwrSd Ctrl, VarStoreInfo (VarOffset/VarName): 0x7E, VarStore: 0xF001, QuestionId: 0x4B, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 89 00 8A 00 4B 00 01 F0 7E 00 10 10 00 01 00}
+0x1A7CD 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A7D4 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A7DB 			End One Of {29 02}
+0x1A7DD 		End If {29 02}
+0x1A7DF 		Suppress If {0A 82}
+0x1A7E1 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A7E7 				Not {17 02}
+0x1A7E9 				QuestionId: 0x4B equals value 0x1 {12 06 4B 00 01 00}
+0x1A7EF 				Not {17 02}
+0x1A7F1 				Or {16 02}
+0x1A7F3 			End {29 02}
+0x1A7F5 			Numeric: TwrwrSd, VarStoreInfo (VarOffset/VarName): 0x7F, VarStore: 0xF001, QuestionId: 0x4C, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 8B 00 8C 00 4C 00 01 F0 7F 00 10 21 01 00 0F 00 00 00}
+0x1A809 				Default: DefaultId: 0x0, Value (16 bit): 0x3 {5B 07 00 00 01 03 00}
+0x1A810 			End {29 02}
+0x1A812 		End If {29 02}
+0x1A814 		Suppress If {0A 82}
+0x1A816 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A81C 				Not {17 02}
+0x1A81E 			End {29 02}
+0x1A820 			One Of: TwrwrDd Ctrl, VarStoreInfo (VarOffset/VarName): 0x81, VarStore: 0xF001, QuestionId: 0x4D, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 8D 00 8E 00 4D 00 01 F0 81 00 10 10 00 01 00}
+0x1A831 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A838 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A83F 			End One Of {29 02}
+0x1A841 		End If {29 02}
+0x1A843 		Suppress If {0A 82}
+0x1A845 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A84B 				Not {17 02}
+0x1A84D 				QuestionId: 0x4D equals value 0x1 {12 06 4D 00 01 00}
+0x1A853 				Not {17 02}
+0x1A855 				Or {16 02}
+0x1A857 			End {29 02}
+0x1A859 			Numeric: TwrwrDd, VarStoreInfo (VarOffset/VarName): 0x82, VarStore: 0xF001, QuestionId: 0x4E, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 8F 00 90 00 4E 00 01 F0 82 00 10 21 01 00 0F 00 00 00}
+0x1A86D 				Default: DefaultId: 0x0, Value (16 bit): 0x3 {5B 07 00 00 01 03 00}
+0x1A874 			End {29 02}
+0x1A876 		End If {29 02}
+0x1A878 		Suppress If {0A 82}
+0x1A87A 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A880 				Not {17 02}
+0x1A882 			End {29 02}
+0x1A884 			One Of: Twrrd Ctrl, VarStoreInfo (VarOffset/VarName): 0x84, VarStore: 0xF001, QuestionId: 0x4F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 91 00 92 00 4F 00 01 F0 84 00 10 10 00 01 00}
+0x1A895 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A89C 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A8A3 			End One Of {29 02}
+0x1A8A5 		End If {29 02}
+0x1A8A7 		Suppress If {0A 82}
+0x1A8A9 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A8AF 				Not {17 02}
+0x1A8B1 				QuestionId: 0x4F equals value 0x1 {12 06 4F 00 01 00}
+0x1A8B7 				Not {17 02}
+0x1A8B9 				Or {16 02}
+0x1A8BB 			End {29 02}
+0x1A8BD 			Numeric: Twrrd, VarStoreInfo (VarOffset/VarName): 0x85, VarStore: 0xF001, QuestionId: 0x50, Size: 2, Min: 0x1, Max 0xF, Step: 0x0 {07 94 93 00 94 00 50 00 01 F0 85 00 10 21 01 00 0F 00 00 00}
+0x1A8D1 				Default: DefaultId: 0x0, Value (16 bit): 0x5 {5B 07 00 00 01 05 00}
+0x1A8D8 			End {29 02}
+0x1A8DA 		End If {29 02}
+0x1A8DC 		Suppress If {0A 82}
+0x1A8DE 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A8E4 				Not {17 02}
+0x1A8E6 			End {29 02}
+0x1A8E8 			One Of: Trdwr Ctrl, VarStoreInfo (VarOffset/VarName): 0x87, VarStore: 0xF001, QuestionId: 0x51, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 95 00 96 00 51 00 01 F0 87 00 10 10 00 01 00}
+0x1A8F9 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1A900 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1A907 			End One Of {29 02}
+0x1A909 		End If {29 02}
+0x1A90B 		Suppress If {0A 82}
+0x1A90D 			QuestionId: 0x1D equals value 0x1 {12 86 1D 00 01 00}
+0x1A913 				Not {17 02}
+0x1A915 				QuestionId: 0x51 equals value 0x1 {12 06 51 00 01 00}
+0x1A91B 				Not {17 02}
+0x1A91D 				Or {16 02}
+0x1A91F 			End {29 02}
+0x1A921 			Numeric: Trdwr, VarStoreInfo (VarOffset/VarName): 0x88, VarStore: 0xF001, QuestionId: 0x52, Size: 2, Min: 0x1, Max 0x1F, Step: 0x0 {07 94 97 00 98 00 52 00 01 F0 88 00 10 21 01 00 1F 00 00 00}
+0x1A935 				Default: DefaultId: 0x0, Value (16 bit): 0x5 {5B 07 00 00 01 05 00}
+0x1A93C 			End {29 02}
+0x1A93E 		End If {29 02}
+0x1A940 	End Form {29 02}
+0x1A942 	Form: DDR Bus Configuration, FormId: 0x114 {01 86 14 01 28 00}
+0x1A948 		Subtitle: Statement.Prompt: DDR Bus Configuration, Flags: 0x0 {02 87 28 00 00 00 00}
+0x1A94F 		End {29 02}
+0x1A951 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1A958 		End {29 02}
+0x1A95A 		One Of: Processor CA drive strengths, VarStoreInfo (VarOffset/VarName): 0x8A, VarStore: 0xF001, QuestionId: 0x53, Size: 1, Min: 0x1E, Max 0xFF, Step: 0x0 {05 91 99 00 9A 00 53 00 01 F0 8A 00 10 10 1E FF 00}
+0x1A96B 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1A972 			One Of Option: 120.0 Ohm, Value (8 bit): 0x78 {09 07 9B 00 00 00 78}
+0x1A979 			One Of Option: 60.0 Ohm, Value (8 bit): 0x3C {09 07 9C 00 00 00 3C}
+0x1A980 			One Of Option: 40.0 Ohm, Value (8 bit): 0x28 {09 07 9D 00 00 00 28}
+0x1A987 			One Of Option: 30.0 Ohm, Value (8 bit): 0x1E {09 07 9E 00 00 00 1E}
+0x1A98E 		End One Of {29 02}
+0x1A990 		One Of: Processor DQ drive strengths, VarStoreInfo (VarOffset/VarName): 0x8B, VarStore: 0xF001, QuestionId: 0x54, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 9F 00 A0 00 54 00 01 F0 8B 00 10 10 00 FF 00}
+0x1A9A1 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1A9A8 			One Of Option: High Impedance, Value (8 bit): 0x0 {09 07 A1 00 00 00 00}
+0x1A9AF 			One Of Option: 240 ohm, Value (8 bit): 0x2 {09 07 A2 00 00 00 02}
+0x1A9B6 			One Of Option: 120 ohm, Value (8 bit): 0x4 {09 07 A3 00 00 00 04}
+0x1A9BD 			One Of Option: 80 ohm, Value (8 bit): 0x6 {09 07 A4 00 00 00 06}
+0x1A9C4 			One Of Option: 60 ohm, Value (8 bit): 0xC {09 07 A5 00 00 00 0C}
+0x1A9CB 			One Of Option: 48 ohm, Value (8 bit): 0xE {09 07 A6 00 00 00 0E}
+0x1A9D2 			One Of Option: 40 ohm, Value (8 bit): 0x1C {09 07 A7 00 00 00 1C}
+0x1A9D9 			One Of Option: 34.3 ohm, Value (8 bit): 0x1E {09 07 A8 00 00 00 1E}
+0x1A9E0 		End One Of {29 02}
+0x1A9E2 		One Of: Processor ODT impedance, VarStoreInfo (VarOffset/VarName): 0x8C, VarStore: 0xF001, QuestionId: 0x55, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 A9 00 AA 00 55 00 01 F0 8C 00 10 10 00 FF 00}
+0x1A9F3 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1A9FA 			One Of Option: High Impedance, Value (8 bit): 0x0 {09 07 A1 00 00 00 00}
+0x1AA01 			One Of Option: 480 ohm, Value (8 bit): 0x1 {09 07 AB 00 00 00 01}
+0x1AA08 			One Of Option: 240 ohm, Value (8 bit): 0x2 {09 07 A2 00 00 00 02}
+0x1AA0F 			One Of Option: 160 ohm, Value (8 bit): 0x3 {09 07 AC 00 00 00 03}
+0x1AA16 			One Of Option: 120 ohm, Value (8 bit): 0x4 {09 07 A3 00 00 00 04}
+0x1AA1D 			One Of Option: 96 ohm, Value (8 bit): 0x5 {09 07 AD 00 00 00 05}
+0x1AA24 			One Of Option: 80 ohm, Value (8 bit): 0x6 {09 07 A4 00 00 00 06}
+0x1AA2B 			One Of Option: 68.6 ohm, Value (8 bit): 0x7 {09 07 AE 00 00 00 07}
+0x1AA32 			One Of Option: 60 ohm, Value (8 bit): 0xC {09 07 A5 00 00 00 0C}
+0x1AA39 			One Of Option: 53.3 ohm, Value (8 bit): 0xD {09 07 AF 00 00 00 0D}
+0x1AA40 			One Of Option: 48 ohm, Value (8 bit): 0xE {09 07 A6 00 00 00 0E}
+0x1AA47 			One Of Option: 43.6 ohm, Value (8 bit): 0xF {09 07 B0 00 00 00 0F}
+0x1AA4E 			One Of Option: 40 ohm, Value (8 bit): 0x1C {09 07 A7 00 00 00 1C}
+0x1AA55 			One Of Option: 36.9 ohm, Value (8 bit): 0x1D {09 07 B1 00 00 00 1D}
+0x1AA5C 			One Of Option: 34.3 ohm, Value (8 bit): 0x1E {09 07 A8 00 00 00 1E}
+0x1AA63 			One Of Option: 32 ohm, Value (8 bit): 0x1F {09 07 B2 00 00 00 1F}
+0x1AA6A 			One Of Option: 30 ohm, Value (8 bit): 0x3C {09 07 B3 00 00 00 3C}
+0x1AA71 			One Of Option: 28.2 ohm, Value (8 bit): 0x3D {09 07 B4 00 00 00 3D}
+0x1AA78 			One Of Option: 26.7 ohm, Value (8 bit): 0x3E {09 07 B5 00 00 00 3E}
+0x1AA7F 			One Of Option: 25.3 ohm, Value (8 bit): 0x3F {09 07 B6 00 00 00 3F}
+0x1AA86 		End One Of {29 02}
+0x1AA88 		One Of: Dram DQ drive strengths, VarStoreInfo (VarOffset/VarName): 0x8D, VarStore: 0xF001, QuestionId: 0x56, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 B7 00 B8 00 56 00 01 F0 8D 00 10 10 00 FF 00}
+0x1AA99 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AAA0 			One Of Option: 48 ohm, Value (8 bit): 0x2 {09 07 A6 00 00 00 02}
+0x1AAA7 			One Of Option: 40 ohm, Value (8 bit): 0x1 {09 07 A7 00 00 00 01}
+0x1AAAE 			One Of Option: 34 ohm, Value (8 bit): 0x0 {09 07 B9 00 00 00 00}
+0x1AAB5 		End One Of {29 02}
+0x1AAB7 		One Of: Dram ODT impedance RTT_NOM_WR, VarStoreInfo (VarOffset/VarName): 0x8E, VarStore: 0xF001, QuestionId: 0x57, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 BA 00 BB 00 57 00 01 F0 8E 00 10 10 00 FF 00}
+0x1AAC8 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AACF 			One Of Option: RTT_OFF, Value (8 bit): 0x0 {09 07 BC 00 00 00 00}
+0x1AAD6 			One Of Option: RZQ (240), Value (8 bit): 0x1 {09 07 BD 00 00 00 01}
+0x1AADD 			One Of Option: RZQ/2 (120), Value (8 bit): 0x2 {09 07 BE 00 00 00 02}
+0x1AAE4 			One Of Option: RZQ/3 (80), Value (8 bit): 0x3 {09 07 BF 00 00 00 03}
+0x1AAEB 			One Of Option: RZQ/4 (60), Value (8 bit): 0x4 {09 07 C0 00 00 00 04}
+0x1AAF2 			One Of Option: RZQ/5 (48), Value (8 bit): 0x5 {09 07 C1 00 00 00 05}
+0x1AAF9 			One Of Option: RZQ/6 (40), Value (8 bit): 0x6 {09 07 C2 00 00 00 06}
+0x1AB00 			One Of Option: RZQ/7 (34), Value (8 bit): 0x7 {09 07 C3 00 00 00 07}
+0x1AB07 		End One Of {29 02}
+0x1AB09 		One Of: Dram ODT impedance RTT_NOM_RD, VarStoreInfo (VarOffset/VarName): 0x8F, VarStore: 0xF001, QuestionId: 0x58, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 C4 00 C5 00 58 00 01 F0 8F 00 10 10 00 FF 00}
+0x1AB1A 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AB21 			One Of Option: RTT_OFF, Value (8 bit): 0x0 {09 07 BC 00 00 00 00}
+0x1AB28 			One Of Option: RZQ (240), Value (8 bit): 0x1 {09 07 BD 00 00 00 01}
+0x1AB2F 			One Of Option: RZQ/2 (120), Value (8 bit): 0x2 {09 07 BE 00 00 00 02}
+0x1AB36 			One Of Option: RZQ/3 (80), Value (8 bit): 0x3 {09 07 BF 00 00 00 03}
+0x1AB3D 			One Of Option: RZQ/4 (60), Value (8 bit): 0x4 {09 07 C0 00 00 00 04}
+0x1AB44 			One Of Option: RZQ/5 (48), Value (8 bit): 0x5 {09 07 C1 00 00 00 05}
+0x1AB4B 			One Of Option: RZQ/6 (40), Value (8 bit): 0x6 {09 07 C2 00 00 00 06}
+0x1AB52 			One Of Option: RZQ/7 (34), Value (8 bit): 0x7 {09 07 C3 00 00 00 07}
+0x1AB59 		End One Of {29 02}
+0x1AB5B 		One Of: Dram ODT impedance RTT_WR, VarStoreInfo (VarOffset/VarName): 0x90, VarStore: 0xF001, QuestionId: 0x59, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 C6 00 C7 00 59 00 01 F0 90 00 10 10 00 FF 00}
+0x1AB6C 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AB73 			One Of Option: RTT_OFF, Value (8 bit): 0x0 {09 07 BC 00 00 00 00}
+0x1AB7A 			One Of Option: RZQ (240), Value (8 bit): 0x1 {09 07 BD 00 00 00 01}
+0x1AB81 			One Of Option: RZQ/2 (120), Value (8 bit): 0x2 {09 07 BE 00 00 00 02}
+0x1AB88 			One Of Option: RZQ/3 (80), Value (8 bit): 0x3 {09 07 BF 00 00 00 03}
+0x1AB8F 			One Of Option: RZQ/4 (60), Value (8 bit): 0x4 {09 07 C0 00 00 00 04}
+0x1AB96 			One Of Option: RZQ/5 (48), Value (8 bit): 0x5 {09 07 C1 00 00 00 05}
+0x1AB9D 			One Of Option: RZQ/6 (40), Value (8 bit): 0x6 {09 07 C2 00 00 00 06}
+0x1ABA4 			One Of Option: RZQ/7 (34), Value (8 bit): 0x7 {09 07 C3 00 00 00 07}
+0x1ABAB 		End One Of {29 02}
+0x1ABAD 		One Of: Dram ODT impedance RTT_PARK, VarStoreInfo (VarOffset/VarName): 0x91, VarStore: 0xF001, QuestionId: 0x5A, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 C8 00 C9 00 5A 00 01 F0 91 00 10 10 00 FF 00}
+0x1ABBE 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1ABC5 			One Of Option: RTT_OFF, Value (8 bit): 0x0 {09 07 BC 00 00 00 00}
+0x1ABCC 			One Of Option: RZQ (240), Value (8 bit): 0x1 {09 07 BD 00 00 00 01}
+0x1ABD3 			One Of Option: RZQ/2 (120), Value (8 bit): 0x2 {09 07 BE 00 00 00 02}
+0x1ABDA 			One Of Option: RZQ/3 (80), Value (8 bit): 0x3 {09 07 BF 00 00 00 03}
+0x1ABE1 			One Of Option: RZQ/4 (60), Value (8 bit): 0x4 {09 07 C0 00 00 00 04}
+0x1ABE8 			One Of Option: RZQ/5 (48), Value (8 bit): 0x5 {09 07 C1 00 00 00 05}
+0x1ABEF 			One Of Option: RZQ/6 (40), Value (8 bit): 0x6 {09 07 C2 00 00 00 06}
+0x1ABF6 			One Of Option: RZQ/7 (34), Value (8 bit): 0x7 {09 07 C3 00 00 00 07}
+0x1ABFD 		End One Of {29 02}
+0x1ABFF 		One Of: Dram ODT impedance DQS_RTT_PARK, VarStoreInfo (VarOffset/VarName): 0x92, VarStore: 0xF001, QuestionId: 0x5B, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 CA 00 CB 00 5B 00 01 F0 92 00 10 10 00 FF 00}
+0x1AC10 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AC17 			One Of Option: RTT_OFF, Value (8 bit): 0x0 {09 07 BC 00 00 00 00}
+0x1AC1E 			One Of Option: RZQ (240), Value (8 bit): 0x1 {09 07 BD 00 00 00 01}
+0x1AC25 			One Of Option: RZQ/2 (120), Value (8 bit): 0x2 {09 07 BE 00 00 00 02}
+0x1AC2C 			One Of Option: RZQ/3 (80), Value (8 bit): 0x3 {09 07 BF 00 00 00 03}
+0x1AC33 			One Of Option: RZQ/4 (60), Value (8 bit): 0x4 {09 07 C0 00 00 00 04}
+0x1AC3A 			One Of Option: RZQ/5 (48), Value (8 bit): 0x5 {09 07 C1 00 00 00 05}
+0x1AC41 			One Of Option: RZQ/6 (40), Value (8 bit): 0x6 {09 07 C2 00 00 00 06}
+0x1AC48 			One Of Option: RZQ/7 (34), Value (8 bit): 0x7 {09 07 C3 00 00 00 07}
+0x1AC4F 		End One Of {29 02}
+0x1AC51 	End Form {29 02}
+0x1AC53 	Form: DDR Controller Configuration, FormId: 0x115 {01 86 15 01 29 00}
+0x1AC59 		Subtitle: Statement.Prompt: DDR Controller Configuration, Flags: 0x0 {02 87 29 00 00 00 00}
+0x1AC60 		End {29 02}
+0x1AC62 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1AC69 		End {29 02}
+0x1AC6B 		Ref: DDR Power Options, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x5C, FormId: 0x118 {0F 0F CC 00 CC 00 5C 00 00 00 FF FF 00 18 01}
+0x1AC7A 	End Form {29 02}
+0x1AC7C 	Form: DDR Power Options, FormId: 0x118 {01 86 18 01 CC 00}
+0x1AC82 		Subtitle: Statement.Prompt: DDR Power Options, Flags: 0x0 {02 87 CC 00 00 00 00}
+0x1AC89 		End {29 02}
+0x1AC8B 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1AC92 		End {29 02}
+0x1AC94 		One Of: Power Down Enable, VarStoreInfo (VarOffset/VarName): 0x93, VarStore: 0xF001, QuestionId: 0x5D, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 CD 00 CE 00 5D 00 01 F0 93 00 10 10 00 FF 00}
+0x1ACA5 			One Of Option: Disabled, Value (8 bit): 0x0 {09 07 CF 00 00 00 00}
+0x1ACAC 			One Of Option: Enabled, Value (8 bit): 0x1 {09 07 2F 00 00 00 01}
+0x1ACB3 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1ACBA 		End One Of {29 02}
+0x1ACBC 	End Form {29 02}
+0x1ACBE 	Form: Infinity Fabric Frequency and Dividers, FormId: 0x112 {01 86 12 01 26 00}
+0x1ACC4 		Subtitle: Statement.Prompt: Infinity Fabric Frequency and Dividers, Flags: 0x0 {02 87 26 00 00 00 00}
+0x1ACCB 		End {29 02}
+0x1ACCD 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1ACD4 		End {29 02}
+0x1ACD6 		One Of: Infinity Fabric Frequency and Dividers, VarStoreInfo (VarOffset/VarName): 0x94, VarStore: 0xF001, QuestionId: 0x5E, Size: 2, Min: 0x64, Max 0xFFFF, Step: 0x0 {05 94 D0 00 D1 00 5E 00 01 F0 94 00 10 11 64 00 FF FF 00 00}
+0x1ACEA 			One Of Option: Auto, Value (16 bit): 0xFFFF (default) {09 08 1F 00 11 01 FF FF}
+0x1ACF2 			One Of Option: 100 MHz, Value (16 bit): 0x64 {09 08 D2 00 01 01 64 00}
+0x1ACFA 			One Of Option: 200 MHz, Value (16 bit): 0xC8 {09 08 D3 00 01 01 C8 00}
+0x1AD02 			One Of Option: 400 MHz, Value (16 bit): 0x190 {09 08 D4 00 01 01 90 01}
+0x1AD0A 			One Of Option: 500 MHz, Value (16 bit): 0x1F4 {09 08 D5 00 01 01 F4 01}
+0x1AD12 			One Of Option: 800 MHz, Value (16 bit): 0x320 {09 08 D6 00 01 01 20 03}
+0x1AD1A 			One Of Option: 933 MHz, Value (16 bit): 0x3A5 {09 08 D7 00 01 01 A5 03}
+0x1AD22 			One Of Option: 1100 MHz, Value (16 bit): 0x44C {09 08 D8 00 01 01 4C 04}
+0x1AD2A 			One Of Option: 1120 MHz, Value (16 bit): 0x460 {09 08 D9 00 01 01 60 04}
+0x1AD32 			One Of Option: 1143 MHz, Value (16 bit): 0x477 {09 08 DA 00 01 01 77 04}
+0x1AD3A 			One Of Option: 1200 MHz, Value (16 bit): 0x4B0 {09 08 DB 00 01 01 B0 04}
+0x1AD42 			One Of Option: 1250 MHz, Value (16 bit): 0x4E2 {09 08 DC 00 01 01 E2 04}
+0x1AD4A 			One Of Option: 1257 MHz, Value (16 bit): 0x4E9 {09 08 DD 00 01 01 E9 04}
+0x1AD52 			One Of Option: 1280 MHz, Value (16 bit): 0x500 {09 08 DE 00 01 01 00 05}
+0x1AD5A 			One Of Option: 1300 MHz, Value (16 bit): 0x514 {09 08 DF 00 01 01 14 05}
+0x1AD62 			One Of Option: 1320 MHz, Value (16 bit): 0x528 {09 08 E0 00 01 01 28 05}
+0x1AD6A 			One Of Option: 1333 MHz, Value (16 bit): 0x535 {09 08 E1 00 01 01 35 05}
+0x1AD72 			One Of Option: 1371 MHz, Value (16 bit): 0x55B {09 08 E2 00 01 01 5B 05}
+0x1AD7A 			One Of Option: 1400 MHz, Value (16 bit): 0x578 {09 08 E3 00 01 01 78 05}
+0x1AD82 			One Of Option: 1440 MHz, Value (16 bit): 0x5A0 {09 08 E4 00 01 01 A0 05}
+0x1AD8A 			One Of Option: 1467 MHz, Value (16 bit): 0x5BB {09 08 E5 00 01 01 BB 05}
+0x1AD92 			One Of Option: 1485 MHz, Value (16 bit): 0x5CD {09 08 E6 00 01 01 CD 05}
+0x1AD9A 			One Of Option: 1500 MHz, Value (16 bit): 0x5DC {09 08 E7 00 01 01 DC 05}
+0x1ADA2 			One Of Option: 1560 MHz, Value (16 bit): 0x618 {09 08 E8 00 01 01 18 06}
+0x1ADAA 			One Of Option: 1600 MHz, Value (16 bit): 0x640 {09 08 E9 00 01 01 40 06}
+0x1ADB2 			One Of Option: 1650 MHz, Value (16 bit): 0x672 {09 08 EA 00 01 01 72 06}
+0x1ADBA 			One Of Option: 1680 MHz, Value (16 bit): 0x690 {09 08 EB 00 01 01 90 06}
+0x1ADC2 			One Of Option: 1733 MHz, Value (16 bit): 0x6C5 {09 08 EC 00 01 01 C5 06}
+0x1ADCA 			One Of Option: 1750 MHz, Value (16 bit): 0x6D6 {09 08 ED 00 01 01 D6 06}
+0x1ADD2 			One Of Option: 1760 MHz, Value (16 bit): 0x6E0 {09 08 EE 00 01 01 E0 06}
+0x1ADDA 			One Of Option: 1800 MHz, Value (16 bit): 0x708 {09 08 EF 00 01 01 08 07}
+0x1ADE2 			One Of Option: 2000 MHz, Value (16 bit): 0x7D0 {09 08 F0 00 01 01 D0 07}
+0x1ADEA 			One Of Option: 2033 MHz, Value (16 bit): 0x7F1 {09 08 F1 00 01 01 F1 07}
+0x1ADF2 			One Of Option: 2067 MHz, Value (16 bit): 0x813 {09 08 F2 00 01 01 13 08}
+0x1ADFA 			One Of Option: 2100 MHz, Value (16 bit): 0x834 {09 08 F3 00 01 01 34 08}
+0x1AE02 			One Of Option: 2133 MHz, Value (16 bit): 0x855 {09 08 F4 00 01 01 55 08}
+0x1AE0A 			One Of Option: 2167 MHz, Value (16 bit): 0x877 {09 08 F5 00 01 01 77 08}
+0x1AE12 			One Of Option: 2200 MHz, Value (16 bit): 0x898 {09 08 F6 00 01 01 98 08}
+0x1AE1A 			One Of Option: 2233 MHz, Value (16 bit): 0x8B9 {09 08 F7 00 01 01 B9 08}
+0x1AE22 			One Of Option: 2267 MHz, Value (16 bit): 0x8DB {09 08 F8 00 01 01 DB 08}
+0x1AE2A 			One Of Option: 2400 MHz, Value (16 bit): 0x960 {09 08 F9 00 01 01 60 09}
+0x1AE32 			One Of Option: 2433 MHz, Value (16 bit): 0x981 {09 08 FA 00 01 01 81 09}
+0x1AE3A 			One Of Option: 2467 MHz, Value (16 bit): 0x9A3 {09 08 FB 00 01 01 A3 09}
+0x1AE42 			One Of Option: 2500 MHz, Value (16 bit): 0x9C4 {09 08 FC 00 01 01 C4 09}
+0x1AE4A 			One Of Option: 2550 MHz, Value (16 bit): 0x9F6 {09 08 FD 00 01 01 F6 09}
+0x1AE52 			One Of Option: 2600 MHz, Value (16 bit): 0xA28 {09 08 FE 00 01 01 28 0A}
+0x1AE5A 			One Of Option: 2650 MHz, Value (16 bit): 0xA5A {09 08 FF 00 01 01 5A 0A}
+0x1AE62 			One Of Option: 2700 MHz, Value (16 bit): 0xA8C {09 08 00 01 01 01 8C 0A}
+0x1AE6A 			One Of Option: 2750 MHz, Value (16 bit): 0xABE {09 08 01 01 01 01 BE 0A}
+0x1AE72 			One Of Option: 2800 MHz, Value (16 bit): 0xAF0 {09 08 02 01 01 01 F0 0A}
+0x1AE7A 			One Of Option: 2850 MHz, Value (16 bit): 0xB22 {09 08 03 01 01 01 22 0B}
+0x1AE82 			One Of Option: 2900 MHz, Value (16 bit): 0xB54 {09 08 04 01 01 01 54 0B}
+0x1AE8A 			One Of Option: 2950 MHz, Value (16 bit): 0xB86 {09 08 05 01 01 01 86 0B}
+0x1AE92 			One Of Option: 3000 MHz, Value (16 bit): 0xBB8 {09 08 06 01 01 01 B8 0B}
+0x1AE9A 		End One Of {29 02}
+0x1AE9C 		One Of: UCLK DIV1 MODE, VarStoreInfo (VarOffset/VarName): 0x96, VarStore: 0xF001, QuestionId: 0x5F, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 07 01 08 01 5F 00 01 F0 96 00 10 10 00 FF 00}
+0x1AEAD 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AEB4 			One Of Option: UCLK=MEMCLK, Value (8 bit): 0x1 {09 07 09 01 00 00 01}
+0x1AEBB 			One Of Option: UCLK=MEMCLK/2, Value (8 bit): 0x0 {09 07 0A 01 00 00 00}
+0x1AEC2 		End One Of {29 02}
+0x1AEC4 	End Form {29 02}
+0x1AEC6 	Form: Precision Boost Overdrive, FormId: 0x104 {01 86 04 01 0D 00}
+0x1AECC 		Subtitle: Statement.Prompt: Precision Boost Overdrive, Flags: 0x0 {02 87 0D 00 00 00 00}
+0x1AED3 		End {29 02}
+0x1AED5 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1AEDC 		End {29 02}
+0x1AEDE 		One Of: Precision Boost Overdrive, VarStoreInfo (VarOffset/VarName): 0x9A, VarStore: 0xF001, QuestionId: 0x60, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 0B 01 0C 01 60 00 01 F0 9A 00 10 10 00 FF 00}
+0x1AEEF 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AEF6 			One Of Option: Disable, Value (8 bit): 0x0 {09 07 20 00 00 00 00}
+0x1AEFD 			One Of Option: Enabled, Value (8 bit): 0x1 {09 07 2F 00 00 00 01}
+0x1AF04 			One Of Option: Advanced, Value (8 bit): 0x2 {09 07 0D 01 00 00 02}
+0x1AF0B 		End One Of {29 02}
+0x1AF0D 		Suppress If {0A 82}
+0x1AF0F 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1AF15 				Not {17 02}
+0x1AF17 			End {29 02}
+0x1AF19 			One Of: PBO Limits, VarStoreInfo (VarOffset/VarName): 0x9B, VarStore: 0xF001, QuestionId: 0x61, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 0E 01 0F 01 61 00 01 F0 9B 00 10 10 00 FF 00}
+0x1AF2A 				One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1AF31 				One Of Option: Disable, Value (8 bit): 0x0 {09 07 20 00 00 00 00}
+0x1AF38 				One Of Option: Motherboard, Value (8 bit): 0x1 {09 07 10 01 00 00 01}
+0x1AF3F 				One Of Option: Manual, Value (8 bit): 0x2 {09 07 36 00 00 00 02}
+0x1AF46 			End One Of {29 02}
+0x1AF48 		End If {29 02}
+0x1AF4A 		Suppress If {0A 82}
+0x1AF4C 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1AF52 				Not {17 02}
+0x1AF54 				QuestionId: 0x61 equals value 0x2 {12 06 61 00 02 00}
+0x1AF5A 				Not {17 02}
+0x1AF5C 				Or {16 02}
+0x1AF5E 			End {29 02}
+0x1AF60 			Numeric: PPT Limit [mW], VarStoreInfo (VarOffset/VarName): 0x9C, VarStore: 0xF001, QuestionId: 0x62, Size: 4, Min: 0x0, Max 0xFFFFFFFF, Step: 0x0 {07 9A 11 01 12 01 62 00 01 F0 9C 00 10 12 00 00 00 00 FF FF FF FF 00 00 00 00}
+0x1AF7A 				Default: DefaultId: 0x0, Value (32 bit): 0x0 {5B 09 00 00 02 00 00 00 00}
+0x1AF83 			End {29 02}
+0x1AF85 		End If {29 02}
+0x1AF87 		Suppress If {0A 82}
+0x1AF89 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1AF8F 				Not {17 02}
+0x1AF91 				QuestionId: 0x61 equals value 0x2 {12 06 61 00 02 00}
+0x1AF97 				Not {17 02}
+0x1AF99 				Or {16 02}
+0x1AF9B 			End {29 02}
+0x1AF9D 			Numeric: TDC Limit [mA], VarStoreInfo (VarOffset/VarName): 0xA0, VarStore: 0xF001, QuestionId: 0x63, Size: 4, Min: 0x0, Max 0xFFFFFFFF, Step: 0x0 {07 9A 13 01 14 01 63 00 01 F0 A0 00 10 12 00 00 00 00 FF FF FF FF 00 00 00 00}
+0x1AFB7 				Default: DefaultId: 0x0, Value (32 bit): 0x0 {5B 09 00 00 02 00 00 00 00}
+0x1AFC0 			End {29 02}
+0x1AFC2 		End If {29 02}
+0x1AFC4 		Suppress If {0A 82}
+0x1AFC6 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1AFCC 				Not {17 02}
+0x1AFCE 				QuestionId: 0x61 equals value 0x2 {12 06 61 00 02 00}
+0x1AFD4 				Not {17 02}
+0x1AFD6 				Or {16 02}
+0x1AFD8 			End {29 02}
+0x1AFDA 			Numeric: EDC Limit [mA], VarStoreInfo (VarOffset/VarName): 0xA4, VarStore: 0xF001, QuestionId: 0x64, Size: 4, Min: 0x0, Max 0xFFFFFFFF, Step: 0x0 {07 9A 15 01 16 01 64 00 01 F0 A4 00 10 12 00 00 00 00 FF FF FF FF 00 00 00 00}
+0x1AFF4 				Default: DefaultId: 0x0, Value (32 bit): 0x0 {5B 09 00 00 02 00 00 00 00}
+0x1AFFD 			End {29 02}
+0x1AFFF 		End If {29 02}
+0x1B001 		Suppress If {0A 82}
+0x1B003 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B009 				Not {17 02}
+0x1B00B 				QuestionId: 0x86 equals value 0x1 {12 06 86 00 01 00}
+0x1B011 				Not {17 02}
+0x1B013 				Or {16 02}
+0x1B015 			End {29 02}
+0x1B017 			One Of: Precision Boost Overdrive Scalar Ctrl, VarStoreInfo (VarOffset/VarName): 0xA8, VarStore: 0xF001, QuestionId: 0x65, Size: 1, Min: 0x1, Max 0xFF, Step: 0x0 {05 91 17 01 18 01 65 00 01 F0 A8 00 10 10 01 FF 00}
+0x1B028 				One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1B02F 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B036 			End One Of {29 02}
+0x1B038 		End If {29 02}
+0x1B03A 		Suppress If {0A 82}
+0x1B03C 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B042 				Not {17 02}
+0x1B044 				QuestionId: 0x65 equals value 0x1 {12 06 65 00 01 00}
+0x1B04A 				Not {17 02}
+0x1B04C 				Or {16 02}
+0x1B04E 				QuestionId: 0x86 equals value 0x1 {12 06 86 00 01 00}
+0x1B054 				Not {17 02}
+0x1B056 				Or {16 02}
+0x1B058 			End {29 02}
+0x1B05A 			One Of: Precision Boost Overdrive Scalar, VarStoreInfo (VarOffset/VarName): 0xA9, VarStore: 0xF001, QuestionId: 0x66, Size: 4, Min: 0x64, Max 0x3E8, Step: 0x0 {05 9A 19 01 1A 01 66 00 01 F0 A9 00 10 12 64 00 00 00 E8 03 00 00 00 00 00 00}
+0x1B074 				One Of Option: 1X, Value (32 bit): 0x64 (default) {09 0A 1B 01 12 02 64 00 00 00}
+0x1B07E 				One Of Option: 2X, Value (32 bit): 0xC8 {09 0A 1C 01 02 02 C8 00 00 00}
+0x1B088 				One Of Option: 3X, Value (32 bit): 0x12C {09 0A 1D 01 02 02 2C 01 00 00}
+0x1B092 				One Of Option: 4X, Value (32 bit): 0x190 {09 0A 1E 01 02 02 90 01 00 00}
+0x1B09C 				One Of Option: 5X, Value (32 bit): 0x1F4 {09 0A 1F 01 02 02 F4 01 00 00}
+0x1B0A6 				One Of Option: 6X, Value (32 bit): 0x258 {09 0A 20 01 02 02 58 02 00 00}
+0x1B0B0 				One Of Option: 7X, Value (32 bit): 0x2BC {09 0A 21 01 02 02 BC 02 00 00}
+0x1B0BA 				One Of Option: 8X, Value (32 bit): 0x320 {09 0A 22 01 02 02 20 03 00 00}
+0x1B0C4 				One Of Option: 9X, Value (32 bit): 0x384 {09 0A 23 01 02 02 84 03 00 00}
+0x1B0CE 				One Of Option: 10X, Value (32 bit): 0x3E8 {09 0A 24 01 02 02 E8 03 00 00}
+0x1B0D8 			End One Of {29 02}
+0x1B0DA 		End If {29 02}
+0x1B0DC 		Suppress If {0A 82}
+0x1B0DE 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B0E4 				Not {17 02}
+0x1B0E6 				QuestionId: 0x86 equals value 0x1 {12 06 86 00 01 00}
+0x1B0EC 				Not {17 02}
+0x1B0EE 				Or {16 02}
+0x1B0F0 			End {29 02}
+0x1B0F2 			One Of: CPU Boost Clock Override, VarStoreInfo (VarOffset/VarName): 0xAD, VarStore: 0xF001, QuestionId: 0x67, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 25 01 26 01 67 00 01 F0 AD 00 10 10 00 02 00}
+0x1B103 				One Of Option: Disabled, Value (8 bit): 0x0 (default) {09 07 CF 00 10 00 00}
+0x1B10A 				One Of Option: Enabled (Positive), Value (8 bit): 0x1 {09 07 27 01 00 00 01}
+0x1B111 				One Of Option: Enabled (Negative), Value (8 bit): 0x2 {09 07 28 01 00 00 02}
+0x1B118 			End One Of {29 02}
+0x1B11A 		End If {29 02}
+0x1B11C 		Suppress If {0A 82}
+0x1B11E 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B124 				Not {17 02}
+0x1B126 				QuestionId: 0x67 equals value 0x1 {12 06 67 00 01 00}
+0x1B12C 				Not {17 02}
+0x1B12E 				Or {16 02}
+0x1B130 				QuestionId: 0x86 equals value 0x1 {12 06 86 00 01 00}
+0x1B136 				Not {17 02}
+0x1B138 				Or {16 02}
+0x1B13A 			End {29 02}
+0x1B13C 			Numeric: Max CPU Boost Clock Override(+), VarStoreInfo (VarOffset/VarName): 0xAE, VarStore: 0xF001, QuestionId: 0x68, Size: 1, Min: 0x19, Max 0xC8, Step: 0x19 {07 91 29 01 2A 01 68 00 01 F0 AE 00 10 10 19 C8 19}
+0x1B14D 				Default: DefaultId: 0x0, Value (8 bit): 0x19 {5B 06 00 00 00 19}
+0x1B153 			End {29 02}
+0x1B155 		End If {29 02}
+0x1B157 		Suppress If {0A 82}
+0x1B159 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B15F 				Not {17 02}
+0x1B161 				QuestionId: 0x67 equals value 0x2 {12 06 67 00 02 00}
+0x1B167 				Not {17 02}
+0x1B169 				Or {16 02}
+0x1B16B 				QuestionId: 0x86 equals value 0x1 {12 06 86 00 01 00}
+0x1B171 				Not {17 02}
+0x1B173 				Or {16 02}
+0x1B175 			End {29 02}
+0x1B177 			Numeric: Max CPU Boost Clock Override(-), VarStoreInfo (VarOffset/VarName): 0xAF, VarStore: 0xF001, QuestionId: 0x69, Size: 2, Min: 0x19, Max 0x3E8, Step: 0x19 {07 94 2B 01 2C 01 69 00 01 F0 AF 00 10 11 19 00 E8 03 19 00}
+0x1B18B 				Default: DefaultId: 0x0, Value (16 bit): 0x19 {5B 07 00 00 01 19 00}
+0x1B192 			End {29 02}
+0x1B194 		End If {29 02}
+0x1B196 		Suppress If {0A 82}
+0x1B198 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B19E 				Not {17 02}
+0x1B1A0 			End {29 02}
+0x1B1A2 			One Of: Platform Thermal Throttle Ctrl, VarStoreInfo (VarOffset/VarName): 0xB1, VarStore: 0xF001, QuestionId: 0x6A, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 2D 01 2E 01 6A 00 01 F0 B1 00 10 10 00 01 00}
+0x1B1B3 				One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B1BA 				One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1B1C1 			End One Of {29 02}
+0x1B1C3 		End If {29 02}
+0x1B1C5 		Suppress If {0A 82}
+0x1B1C7 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B1CD 				Not {17 02}
+0x1B1CF 				QuestionId: 0x6A equals value 0x1 {12 06 6A 00 01 00}
+0x1B1D5 				Not {17 02}
+0x1B1D7 				Or {16 02}
+0x1B1D9 			End {29 02}
+0x1B1DB 			Numeric: Platform Thermal Throttle Limit, VarStoreInfo (VarOffset/VarName): 0xB2, VarStore: 0xF001, QuestionId: 0x6B, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 2F 01 30 01 6B 00 01 F0 B2 00 10 10 00 FF 00}
+0x1B1EC 				Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x1B1F2 			End {29 02}
+0x1B1F4 		End If {29 02}
+0x1B1F6 		Suppress If {0A 82}
+0x1B1F8 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B1FE 				Not {17 02}
+0x1B200 				QuestionId: 0x86 equals value 0x1 {12 06 86 00 01 00}
+0x1B206 				Not {17 02}
+0x1B208 				Or {16 02}
+0x1B20A 			End {29 02}
+0x1B20C 			Ref: GFX Curve Optimizer, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x6C, FormId: 0x119 {0F 0F 31 01 31 01 6C 00 00 00 FF FF 00 19 01}
+0x1B21B 		End If {29 02}
+0x1B21D 		Suppress If {0A 82}
+0x1B21F 			QuestionId: 0x86 equals value 0x1 {12 86 86 00 01 00}
+0x1B225 				Not {17 02}
+0x1B227 				QuestionId: 0x60 equals value 0x2 {12 06 60 00 02 00}
+0x1B22D 				Not {17 02}
+0x1B22F 				Or {16 02}
+0x1B231 			End {29 02}
+0x1B233 			Ref: Curve Optimizer, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x6D, FormId: 0x11A {0F 0F 32 01 32 01 6D 00 00 00 FF FF 00 1A 01}
+0x1B242 		End If {29 02}
+0x1B244 	End Form {29 02}
+0x1B246 	Form: GFX Curve Optimizer, FormId: 0x119 {01 86 19 01 31 01}
+0x1B24C 		Subtitle: Statement.Prompt: GFX Curve Optimizer, Flags: 0x0 {02 87 31 01 00 00 00}
+0x1B253 		End {29 02}
+0x1B255 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B25C 		End {29 02}
+0x1B25E 		One Of: GFX Curve Optimizer, VarStoreInfo (VarOffset/VarName): 0xB3, VarStore: 0xF001, QuestionId: 0x6E, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 33 01 34 01 6E 00 01 F0 B3 00 10 10 00 01 00}
+0x1B26F 			One Of Option: Disable, Value (8 bit): 0x0 (default) {09 07 20 00 10 00 00}
+0x1B276 			One Of Option: GFX Curve Optimizer, Value (8 bit): 0x1 {09 07 35 01 00 00 01}
+0x1B27D 		End One Of {29 02}
+0x1B27F 		Suppress If {0A 82}
+0x1B281 			QuestionId: 0x6E equals value 0x1 {12 86 6E 00 01 00}
+0x1B287 				Not {17 02}
+0x1B289 			End {29 02}
+0x1B28B 			One Of: GFX Curve Optimizer Sign, VarStoreInfo (VarOffset/VarName): 0xB4, VarStore: 0xF001, QuestionId: 0x6F, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 36 01 37 01 6F 00 01 F0 B4 00 10 10 00 01 00}
+0x1B29C 				One Of Option: Positive, Value (8 bit): 0x0 (default) {09 07 38 01 10 00 00}
+0x1B2A3 				One Of Option: Negative, Value (8 bit): 0x1 {09 07 39 01 00 00 01}
+0x1B2AA 			End One Of {29 02}
+0x1B2AC 		End If {29 02}
+0x1B2AE 		Suppress If {0A 82}
+0x1B2B0 			QuestionId: 0x6E equals value 0x1 {12 86 6E 00 01 00}
+0x1B2B6 				Not {17 02}
+0x1B2B8 			End {29 02}
+0x1B2BA 			Numeric: GFX Curve Optimizer Magnitude, VarStoreInfo (VarOffset/VarName): 0xB5, VarStore: 0xF001, QuestionId: 0x70, Size: 1, Min: 0x0, Max 0x1E, Step: 0x0 {07 91 3A 01 3B 01 70 00 01 F0 B5 00 10 10 00 1E 00}
+0x1B2CB 				Default: DefaultId: 0x0, Value (8 bit): 0x0 {5B 06 00 00 00 00}
+0x1B2D1 			End {29 02}
+0x1B2D3 		End If {29 02}
+0x1B2D5 	End Form {29 02}
+0x1B2D7 	Form: Curve Optimizer, FormId: 0x11A {01 86 1A 01 32 01}
+0x1B2DD 		Subtitle: Statement.Prompt: Curve Optimizer, Flags: 0x0 {02 87 32 01 00 00 00}
+0x1B2E4 		End {29 02}
+0x1B2E6 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B2ED 		End {29 02}
+0x1B2EF 		Suppress If {0A 82}
+0x1B2F1 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B2F7 				Not {17 02}
+0x1B2F9 			End {29 02}
+0x1B2FB 			One Of: Curve Optimizer, VarStoreInfo (VarOffset/VarName): 0xB6, VarStore: 0xF001, QuestionId: 0x71, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 3C 01 3D 01 71 00 01 F0 B6 00 10 10 00 02 00}
+0x1B30C 				One Of Option: Disable, Value (8 bit): 0x0 (default) {09 07 20 00 10 00 00}
+0x1B313 				One Of Option: All Cores, Value (8 bit): 0x1 {09 07 3E 01 00 00 01}
+0x1B31A 				One Of Option: Per Core, Value (8 bit): 0x2 {09 07 3F 01 00 00 02}
+0x1B321 			End One Of {29 02}
+0x1B323 		End If {29 02}
+0x1B325 		Suppress If {0A 82}
+0x1B327 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B32D 				Not {17 02}
+0x1B32F 				QuestionId: 0x71 equals value 0x1 {12 06 71 00 01 00}
+0x1B335 				Not {17 02}
+0x1B337 				Or {16 02}
+0x1B339 			End {29 02}
+0x1B33B 			One Of: All Core Curve Optimizer Sign, VarStoreInfo (VarOffset/VarName): 0xB7, VarStore: 0xF001, QuestionId: 0x72, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 40 01 41 01 72 00 01 F0 B7 00 10 10 00 01 00}
+0x1B34C 				One Of Option: Positive, Value (8 bit): 0x0 (default) {09 07 38 01 10 00 00}
+0x1B353 				One Of Option: Negative, Value (8 bit): 0x1 {09 07 39 01 00 00 01}
+0x1B35A 			End One Of {29 02}
+0x1B35C 		End If {29 02}
+0x1B35E 		Suppress If {0A 82}
+0x1B360 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B366 				Not {17 02}
+0x1B368 				QuestionId: 0x71 equals value 0x1 {12 06 71 00 01 00}
+0x1B36E 				Not {17 02}
+0x1B370 				Or {16 02}
+0x1B372 			End {29 02}
+0x1B374 			Numeric: All Core Curve Optimizer Magnitude, VarStoreInfo (VarOffset/VarName): 0xB8, VarStore: 0xF001, QuestionId: 0x73, Size: 2, Min: 0x0, Max 0x1E, Step: 0x0 {07 94 42 01 43 01 73 00 01 F0 B8 00 10 11 00 00 1E 00 00 00}
+0x1B388 				Default: DefaultId: 0x0, Value (16 bit): 0x0 {5B 07 00 00 01 00 00}
+0x1B38F 			End {29 02}
+0x1B391 		End If {29 02}
+0x1B393 		Suppress If {0A 82}
+0x1B395 			QuestionId: 0x60 equals value 0x2 {12 86 60 00 02 00}
+0x1B39B 				Not {17 02}
+0x1B39D 				QuestionId: 0x71 equals value 0x2 {12 06 71 00 02 00}
+0x1B3A3 				Not {17 02}
+0x1B3A5 				Or {16 02}
+0x1B3A7 			End {29 02}
+0x1B3A9 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 1D 21}
+0x1B3BE 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 1E 21}
+0x1B3D3 		End If {29 02}
+0x1B3D5 	End Form {29 02}
+0x1B3D7 	Form: VDDG Voltage Control, FormId: 0x105 {01 86 05 01 0E 00}
+0x1B3DD 		Subtitle: Statement.Prompt: The input VDDG voltage 6.6mV * N negative/postive based on 850mv will have minimum error of calculation. There is a threshold, if FCLK Freq > 1500 MHz will apply high data rates voltage otherwise will appy low data rates voltage. Adjustment is based on High Data Rates, High Data Rates alway 50mV big than Low Data Rates., Flags: 0x0 {02 87 4C 01 00 00 00}
+0x1B3E4 		End {29 02}
+0x1B3E6 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B3ED 		End {29 02}
+0x1B3EF 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 25 21}
+0x1B404 		Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 26 21}
+0x1B419 		One Of: VDDG Voltage Control, VarStoreInfo (VarOffset/VarName): 0x17A, VarStore: 0xF001, QuestionId: 0x74, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 44 01 45 01 74 00 01 F0 7A 01 10 10 00 02 00}
+0x1B42A 			One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1B431 			One Of Option: Global VDDG Voltage Control, Value (8 bit): 0x1 {09 07 46 01 00 00 01}
+0x1B438 			One Of Option: Per-CCD VDDG Voltage Control, Value (8 bit): 0x2 {09 07 47 01 00 00 02}
+0x1B43F 		End One Of {29 02}
+0x1B441 		Suppress If {0A 82}
+0x1B443 			QuestionId: 0x74 equals value 0x1 {12 86 74 00 01 00}
+0x1B449 				Not {17 02}
+0x1B44B 			End {29 02}
+0x1B44D 			Numeric: Global VDDG CCD Voltage, VarStoreInfo (VarOffset/VarName): 0x17B, VarStore: 0xF001, QuestionId: 0x75, Size: 2, Min: 0x28A, Max 0x672, Step: 0xA {07 94 48 01 49 01 75 00 01 F0 7B 01 10 11 8A 02 72 06 0A 00}
+0x1B461 				Default: DefaultId: 0x0, Value (16 bit): 0x352 {5B 07 00 00 01 52 03}
+0x1B468 			End {29 02}
+0x1B46A 		End If {29 02}
+0x1B46C 		Suppress If {0A 82}
+0x1B46E 			QuestionId: 0x74 equals value 0x1 {12 86 74 00 01 00}
+0x1B474 				Not {17 02}
+0x1B476 			End {29 02}
+0x1B478 			Numeric: Global VDDG IOD Voltage, VarStoreInfo (VarOffset/VarName): 0x17D, VarStore: 0xF001, QuestionId: 0x76, Size: 2, Min: 0x28A, Max 0x672, Step: 0xA {07 94 4A 01 4B 01 76 00 01 F0 7D 01 10 11 8A 02 72 06 0A 00}
+0x1B48C 				Default: DefaultId: 0x0, Value (16 bit): 0x352 {5B 07 00 00 01 52 03}
+0x1B493 			End {29 02}
+0x1B495 		End If {29 02}
+0x1B497 		Suppress If {0A 82}
+0x1B499 			QuestionId: 0x74 equals value 0x2 {12 86 74 00 02 00}
+0x1B49F 				Not {17 02}
+0x1B4A1 			End {29 02}
+0x1B4A3 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 21 21}
+0x1B4B8 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 22 21}
+0x1B4CD 		End If {29 02}
+0x1B4CF 	End Form {29 02}
+0x1B4D1 	Form: VDDP Voltage Control, FormId: 0x106 {01 86 06 01 0F 00}
+0x1B4D7 		Subtitle: Statement.Prompt: VDDP Voltage Control, Flags: 0x0 {02 87 0F 00 00 00 00}
+0x1B4DE 		End {29 02}
+0x1B4E0 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B4E7 		End {29 02}
+0x1B4E9 		One Of: VDDP Voltage Control, VarStoreInfo (VarOffset/VarName): 0x187, VarStore: 0xF001, QuestionId: 0x77, Size: 1, Min: 0x1, Max 0xFF, Step: 0x0 {05 91 4D 01 4E 01 77 00 01 F0 87 01 10 10 01 FF 00}
+0x1B4FA 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1B501 			One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B508 		End One Of {29 02}
+0x1B50A 		Suppress If {0A 82}
+0x1B50C 			QuestionId: 0x77 equals value 0x1 {12 86 77 00 01 00}
+0x1B512 				Not {17 02}
+0x1B514 			End {29 02}
+0x1B516 			Numeric: VDDP Voltage Adjust, VarStoreInfo (VarOffset/VarName): 0x188, VarStore: 0xF001, QuestionId: 0x78, Size: 2, Min: 0x0, Max 0x514, Step: 0x5 {07 94 4F 01 50 01 78 00 01 F0 88 01 10 11 00 00 14 05 05 00}
+0x1B52A 				Default: DefaultId: 0x0, Value (16 bit): 0x0 {5B 07 00 00 01 00 00}
+0x1B531 			End {29 02}
+0x1B533 		End If {29 02}
+0x1B535 	End Form {29 02}
+0x1B537 	Form: SoC/Uncore OC Mode, FormId: 0x107 {01 86 07 01 10 00}
+0x1B53D 		Subtitle: Statement.Prompt: SoC/Uncore OC Mode, Flags: 0x0 {02 87 10 00 00 00 00}
+0x1B544 		End {29 02}
+0x1B546 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B54D 		End {29 02}
+0x1B54F 		One Of: SoC/Uncore OC Mode, VarStoreInfo (VarOffset/VarName): 0x18A, VarStore: 0xF001, QuestionId: 0x79, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 51 01 52 01 79 00 01 F0 8A 01 10 10 00 FF 00}
+0x1B560 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1B567 			One Of Option: Enabled, Value (8 bit): 0x1 {09 07 2F 00 00 00 01}
+0x1B56E 			One Of Option: Disabled, Value (8 bit): 0x0 {09 07 CF 00 00 00 00}
+0x1B575 		End One Of {29 02}
+0x1B577 	End Form {29 02}
+0x1B579 	Form: SoC Voltage, FormId: 0x108 {01 86 08 01 11 00}
+0x1B57F 		Subtitle: Statement.Prompt: SoC Voltage, Flags: 0x0 {02 87 11 00 00 00 00}
+0x1B586 		End {29 02}
+0x1B588 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B58F 		End {29 02}
+0x1B591 		Subtitle: Statement.Prompt: Specifies the SoC/uncore voltage (VDD_SOC) in mV to support memory and Infinity Fabric overclocking. VDD_SOC also determines the GPU voltage on processors with integrated graphics. Stepping is 5mv, Flags: 0x0 {02 87 53 01 00 00 00}
+0x1B598 		End {29 02}
+0x1B59A 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B5A1 		End {29 02}
+0x1B5A3 		Numeric: SoC Voltage, VarStoreInfo (VarOffset/VarName): 0x18B, VarStore: 0xF001, QuestionId: 0x7A, Size: 4, Min: 0x0, Max 0x9C4, Step: 0x5 {07 9A 54 01 55 01 7A 00 01 F0 8B 01 10 12 00 00 00 00 C4 09 00 00 05 00 00 00}
+0x1B5BD 			Default: DefaultId: 0x0, Value (32 bit): 0x0 {5B 09 00 00 02 00 00 00 00}
+0x1B5C6 		End {29 02}
+0x1B5C8 	End Form {29 02}
+0x1B5CA 	Form: LN2 Mode, FormId: 0x109 {01 86 09 01 12 00}
+0x1B5D0 		Subtitle: Statement.Prompt: LN2 Mode, Flags: 0x0 {02 87 12 00 00 00 00}
+0x1B5D7 		End {29 02}
+0x1B5D9 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B5E0 		End {29 02}
+0x1B5E2 		One Of: LN2 Mode, VarStoreInfo (VarOffset/VarName): 0x18F, VarStore: 0xF001, QuestionId: 0x7B, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 56 01 57 01 7B 00 01 F0 8F 01 10 10 00 FF 00}
+0x1B5F3 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1B5FA 			One Of Option: Disabled, Value (8 bit): 0x0 {09 07 CF 00 00 00 00}
+0x1B601 			One Of Option: Enabled, Value (8 bit): 0x1 {09 07 2F 00 00 00 01}
+0x1B608 		End One Of {29 02}
+0x1B60A 	End Form {29 02}
+0x1B60C 	Form: VDD Misc, FormId: 0x10A {01 86 0A 01 13 00}
+0x1B612 		Subtitle: Statement.Prompt: VDD Misc, Flags: 0x0 {02 87 13 00 00 00 00}
+0x1B619 		End {29 02}
+0x1B61B 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B622 		End {29 02}
+0x1B624 		One Of: VDD Misc Control, VarStoreInfo (VarOffset/VarName): 0x97, VarStore: 0xF001, QuestionId: 0x7C, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 58 01 59 01 7C 00 01 F0 97 00 10 10 00 01 00}
+0x1B635 			One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1B63C 			One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B643 		End One Of {29 02}
+0x1B645 		Suppress If {0A 82}
+0x1B647 			QuestionId: 0x7C equals value 0x1 {12 86 7C 00 01 00}
+0x1B64D 				Not {17 02}
+0x1B64F 			End {29 02}
+0x1B651 			Numeric: VDD Misc Voltage, VarStoreInfo (VarOffset/VarName): 0x98, VarStore: 0xF001, QuestionId: 0x7D, Size: 2, Min: 0x44C, Max 0x672, Step: 0xA {07 94 5A 01 5B 01 7D 00 01 F0 98 00 10 11 4C 04 72 06 0A 00}
+0x1B665 				Default: DefaultId: 0x0, Value (16 bit): 0x44C {5B 07 00 00 01 4C 04}
+0x1B66C 			End {29 02}
+0x1B66E 		End If {29 02}
+0x1B670 	End Form {29 02}
+0x1B672 	Form: LCLK Frequency Control, FormId: 0x10B {01 86 0B 01 14 00}
+0x1B678 		Subtitle: Statement.Prompt: LCLK Frequency Control, Flags: 0x0 {02 87 14 00 00 00 00}
+0x1B67F 		End {29 02}
+0x1B681 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B688 		End {29 02}
+0x1B68A 		One Of: LCLK Frequency Control, VarStoreInfo (VarOffset/VarName): 0x1A3, VarStore: 0xF001, QuestionId: 0x7E, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 5C 01 5D 01 7E 00 01 F0 A3 01 10 10 00 01 00}
+0x1B69B 			One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1B6A2 			One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B6A9 		End One Of {29 02}
+0x1B6AB 		Suppress If {0A 82}
+0x1B6AD 			QuestionId: 0x7E equals value 0x1 {12 86 7E 00 01 00}
+0x1B6B3 				Not {17 02}
+0x1B6B5 			End {29 02}
+0x1B6B7 			Numeric: Maximum Frequency, VarStoreInfo (VarOffset/VarName): 0x1A6, VarStore: 0xF001, QuestionId: 0x1016, Size: 2, Min: 0x405, Max 0x9C4, Step: 0x0 {07 94 5E 01 5F 01 16 10 01 F0 A6 01 14 11 05 04 C4 09 00 00}
+0x1B6CB 				Default: DefaultId: 0x0, Value (16 bit): 0x405 {5B 07 00 00 01 05 04}
+0x1B6D2 			End {29 02}
+0x1B6D4 		End If {29 02}
+0x1B6D6 	End Form {29 02}
+0x1B6D8 	Form: Onboard Voltage Control, FormId: 0x10C {01 86 0C 01 15 00}
+0x1B6DE 		Subtitle: Statement.Prompt: Onboard Voltage Control, Flags: 0x0 {02 87 15 00 00 00 00}
+0x1B6E5 		End {29 02}
+0x1B6E7 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B6EE 		End {29 02}
+0x1B6F0 		Ref: VDDIO Voltage Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x7F, FormId: 0x12B {0F 0F 60 01 60 01 7F 00 00 00 FF FF 00 2B 01}
+0x1B6FF 		Ref: VPP Voltage Control, VarStoreInfo (VarOffset/VarName): 0xFFFF, VarStore: 0x0, QuestionId: 0x80, FormId: 0x12C {0F 0F 61 01 61 01 80 00 00 00 FF FF 00 2C 01}
+0x1B70E 	End Form {29 02}
+0x1B710 	Form: VDDIO Voltage Control, FormId: 0x12B {01 86 2B 01 60 01}
+0x1B716 		Subtitle: Statement.Prompt: VDDIO Voltage Control, Flags: 0x0 {02 87 60 01 00 00 00}
+0x1B71D 		End {29 02}
+0x1B71F 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B726 		End {29 02}
+0x1B728 		Text: Statement.Prompt: Current DIMM VDD Voltage, TextTwo: N/A {03 08 63 01 06 00 62 01}
+0x1B730 		Text: Statement.Prompt: Current DIMM VDDQ Voltage, TextTwo: N/A {03 08 65 01 06 00 64 01}
+0x1B738 		Text: Statement.Prompt: Current APU VDDIO Voltage, TextTwo: N/A {03 08 67 01 06 00 66 01}
+0x1B740 		One Of: VDDIO Ctrl, VarStoreInfo (VarOffset/VarName): 0x192, VarStore: 0xF001, QuestionId: 0x81, Size: 1, Min: 0x0, Max 0x2, Step: 0x0 {05 91 68 01 69 01 81 00 01 F0 92 01 10 10 00 02 00}
+0x1B751 			One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1B758 			One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B75F 			One Of Option: Separate, Value (8 bit): 0x2 {09 07 6A 01 00 00 02}
+0x1B766 		End One Of {29 02}
+0x1B768 		Suppress If {0A 82}
+0x1B76A 			QuestionId: 0x81 equals value 0x1 {12 86 81 00 01 00}
+0x1B770 				Not {17 02}
+0x1B772 				QuestionId: 0x81 equals value 0x2 {12 06 81 00 02 00}
+0x1B778 				Not {17 02}
+0x1B77A 				And {15 02}
+0x1B77C 			End {29 02}
+0x1B77E 			Numeric: DIMM VDD Adjust, VarStoreInfo (VarOffset/VarName): 0x193, VarStore: 0xF001, QuestionId: 0x1012, Size: 2, Min: 0x320, Max 0x596, Step: 0xA {07 94 6B 01 6C 01 12 10 01 F0 93 01 14 11 20 03 96 05 0A 00}
+0x1B792 				Default: DefaultId: 0x0, Value (16 bit): 0x44C {5B 07 00 00 01 4C 04}
+0x1B799 			End {29 02}
+0x1B79B 		End If {29 02}
+0x1B79D 		Suppress If {0A 82}
+0x1B79F 			QuestionId: 0x81 equals value 0x2 {12 86 81 00 02 00}
+0x1B7A5 				Not {17 02}
+0x1B7A7 			End {29 02}
+0x1B7A9 			Numeric: DIMM VDDQ Adjust, VarStoreInfo (VarOffset/VarName): 0x195, VarStore: 0xF001, QuestionId: 0x82, Size: 2, Min: 0x320, Max 0x596, Step: 0xA {07 94 6D 01 6E 01 82 00 01 F0 95 01 10 11 20 03 96 05 0A 00}
+0x1B7BD 				Default: DefaultId: 0x0, Value (16 bit): 0x44C {5B 07 00 00 01 4C 04}
+0x1B7C4 			End {29 02}
+0x1B7C6 		End If {29 02}
+0x1B7C8 		Suppress If {0A 82}
+0x1B7CA 			QuestionId: 0x81 equals value 0x2 {12 86 81 00 02 00}
+0x1B7D0 				Not {17 02}
+0x1B7D2 			End {29 02}
+0x1B7D4 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 1F 21}
+0x1B7E9 			Guid: [0F0B1735-87A0-4193-B266-538C38AF48CE] {5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 20 21}
+0x1B7FE 		End If {29 02}
+0x1B800 		One Of: Enable Platform PMIC Control, VarStoreInfo (VarOffset/VarName): 0x1A9, VarStore: 0xF001, QuestionId: 0x83, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {05 91 80 01 81 01 83 00 01 F0 A9 01 10 10 00 FF 00}
+0x1B811 			One Of Option: Auto, Value (8 bit): 0xFF (default) {09 07 1F 00 10 00 FF}
+0x1B818 			One Of Option: Enable, Value (8 bit): 0x1 {09 07 2C 00 00 00 01}
+0x1B81F 			One Of Option: Disable, Value (8 bit): 0x0 {09 07 20 00 00 00 00}
+0x1B826 		End One Of {29 02}
+0x1B828 	End Form {29 02}
+0x1B82A 	Form: VPP Voltage Control, FormId: 0x12C {01 86 2C 01 61 01}
+0x1B830 		Subtitle: Statement.Prompt: VPP Voltage Control, Flags: 0x0 {02 87 61 01 00 00 00}
+0x1B837 		End {29 02}
+0x1B839 		Subtitle: Statement.Prompt: , Flags: 0x0 {02 87 06 00 00 00 00}
+0x1B840 		End {29 02}
+0x1B842 		Text: Statement.Prompt: Current VPP Voltage, TextTwo: n/a {03 08 72 01 06 00 71 01}
+0x1B84A 		One Of: VPP Ctrl, VarStoreInfo (VarOffset/VarName): 0x19B, VarStore: 0xF001, QuestionId: 0x84, Size: 1, Min: 0x0, Max 0x1, Step: 0x0 {05 91 73 01 74 01 84 00 01 F0 9B 01 10 10 00 01 00}
+0x1B85B 			One Of Option: Auto, Value (8 bit): 0x0 (default) {09 07 1F 00 10 00 00}
+0x1B862 			One Of Option: Manual, Value (8 bit): 0x1 {09 07 36 00 00 00 01}
+0x1B869 		End One Of {29 02}
+0x1B86B 		Suppress If {0A 82}
+0x1B86D 			QuestionId: 0x84 equals value 0x1 {12 86 84 00 01 00}
+0x1B873 				Not {17 02}
+0x1B875 			End {29 02}
+0x1B877 			Numeric: VPP Adjust, VarStoreInfo (VarOffset/VarName): 0x199, VarStore: 0xF001, QuestionId: 0x85, Size: 2, Min: 0x5DC, Max 0x852, Step: 0xA {07 94 75 01 76 01 85 00 01 F0 99 01 10 11 DC 05 52 08 0A 00}
+0x1B88B 				Default: DefaultId: 0x0, Value (16 bit): 0x708 {5B 07 00 00 01 08 07}
+0x1B892 			End {29 02}
+0x1B894 		End If {29 02}
+0x1B896 		Disable If {1E 82}
+0x1B898 			True {46 02}
+0x1B89A 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x5, VarStore: 0xF001, QuestionId: 0x86, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 86 00 01 F0 05 00 00 10 00 FF 00}
+0x1B8AB 			End {29 02}
+0x1B8AD 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x3A, VarStore: 0xF001, QuestionId: 0x87, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 87 00 01 F0 3A 00 00 10 00 FF 00}
+0x1B8BE 			End {29 02}
+0x1B8C0 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x2, VarStore: 0xF001, QuestionId: 0x88, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 88 00 01 F0 02 00 00 10 00 FF 00}
+0x1B8D1 			End {29 02}
+0x1B8D3 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x3, VarStore: 0xF001, QuestionId: 0x89, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 89 00 01 F0 03 00 00 10 00 FF 00}
+0x1B8E4 			End {29 02}
+0x1B8E6 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0xA, VarStore: 0xF001, QuestionId: 0x8A, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 8A 00 01 F0 0A 00 00 10 00 FF 00}
+0x1B8F7 			End {29 02}
+0x1B8F9 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x8, VarStore: 0xF001, QuestionId: 0x8B, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 8B 00 01 F0 08 00 00 10 00 FF 00}
+0x1B90A 			End {29 02}
+0x1B90C 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x9, VarStore: 0xF001, QuestionId: 0x8C, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 8C 00 01 F0 09 00 00 10 00 FF 00}
+0x1B91D 			End {29 02}
+0x1B91F 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0xB, VarStore: 0xF001, QuestionId: 0x8D, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 8D 00 01 F0 0B 00 00 10 00 FF 00}
+0x1B930 			End {29 02}
+0x1B932 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x7, VarStore: 0xF001, QuestionId: 0x8E, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 8E 00 01 F0 07 00 00 10 00 FF 00}
+0x1B943 			End {29 02}
+0x1B945 			Numeric: en-US, VarStoreInfo (VarOffset/VarName): 0x4, VarStore: 0xF001, QuestionId: 0x8F, Size: 1, Min: 0x0, Max 0xFF, Step: 0x0 {07 91 00 00 00 00 8F 00 01 F0 04 00 00 10 00 FF 00}
+0x1B956 			End {29 02}
+0x1B958 		End If {29 02}
+0x1B95A 	End Form {29 02}
+0x1B95C End Form Set {29 02}
